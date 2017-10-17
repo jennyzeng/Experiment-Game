@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: eece541e616631c4b9787f21cb4d31a5
+timeCreated: 1452882035
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Slash
+  fontNames:
+  - Slash
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: aa701c33feade464bab16b265a323f3e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

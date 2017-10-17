@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 81a25a6495d23fb48b5374006c9b3948
+timeCreated: 1459847161
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Orange Kid
+  fontNames:
+  - Orange Kid
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0fa31812d63b86d4983fec5d5338e6e0, type: 3}
+  - {fileID: 12800000, guid: 0f03458534bea45e4bba9ab3411321b2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

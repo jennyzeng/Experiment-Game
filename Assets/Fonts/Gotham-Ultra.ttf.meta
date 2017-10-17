@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 62cf8a6d309a94f478cb0080dd3851e0
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gotham Ultra
+  fontNames:
+  - Gotham Ultra
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 955296f4b4df04345b06197dc1151a1c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

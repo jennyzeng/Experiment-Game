@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 53722b64805d21941bf8d2de08c9a6f7
+timeCreated: 1426923779
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bizon
+  fontNames:
+  - Bizon
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8148e9febcd71694a8a18085f2ed966d, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

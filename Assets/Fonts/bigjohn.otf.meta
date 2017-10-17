@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f761c5fa223efce40a188932375bad90
+timeCreated: 1457567232
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Big John
+  fontNames:
+  - Big John
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a56147b2c49b1424ea427ae90a1b8ba4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

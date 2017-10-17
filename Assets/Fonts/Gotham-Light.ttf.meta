@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: f2430b7ff45b9f94799e1737ef007a69
+timeCreated: 1434292076
+licenseType: Store
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gotham Light
+  fontNames:
+  - Gotham Light
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: abcfe02ca2847804caf9be73c7b8a997, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
