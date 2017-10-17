@@ -1,16 +1,83 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GameManager : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+// singleton
+private static GameManager instance;
+
+   private GameManager () {}
+	/// <summary>
+	/// Start is called on the frame when a script is enabled just before
+	/// any of the Update methods is called the first time.
+	/// </summary>
+	void Start()
+	{
+		if (instance!= null){
+			if (instance != this)
+				Destroy(instance.gameObject);
+			else
+			return;
+		}
+		GameManager gameManager = GetComponent<GameManager>();
+		instance =  gameManager;
+		InitManagers();
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+   public static GameManager Instance
+   {
+      get 
+      {
+         if (instance == null)
+         {
+			 GameObject go = new GameObject("GameManager");
+            instance =  go.AddComponent<GameManager>();
+         }
+         return instance;
+      }
+   }
+
+public BaseManager[] preLoadManagerList;
+private List<BaseManager> managerList;
+
+	/// <summary>
+	/// Start is called on the frame when a script is enabled just before
+	/// any of the Update methods is called the first time.
+	/// </summary>
+	void InitManagers()
+	{
+		managerList = new List<BaseManager>();
+		foreach(BaseManager manager in preLoadManagerList)
+		{
+			BaseManager managerInstance = Instantiate(manager, transform);
+			managerList.Add(managerInstance);
+		}
 	}
+	void ClearManagers()
+	{
+		foreach(BaseManager manager in managerList)
+		{
+			Destroy(manager);
+		}
+		managerList = null;
+	}
+   
+   public T GetManager<T>() where T: BaseManager
+   {
+	   if(managerList==null)
+	   {
+		   Debug.LogError("Managers have not yet initiated.");
+		   return null;
+	   }
+	   BaseManager manager = managerList.Find(item => item is T);
+	   if (manager == null) 
+	   {
+			Debug.LogError("Failed to get " + manager.name + " because it is not registered");
+			return null;
+	   }
+	   return manager as T;
+	   	
+   }
 }
