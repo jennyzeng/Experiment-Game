@@ -1,0 +1,7133 @@
+fileFormatVersion: 2
+guid: b04e7ff5373ac4525bf072201041bdc7
+timeCreated: 1508381194
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Doctor_0
+    21300002: Doctor_1
+    21300004: Doctor_2
+    21300006: Doctor_3
+    21300008: Doctor_4
+    21300010: Doctor_5
+    21300012: Doctor_6
+    21300014: Doctor_7
+    21300016: Doctor_8
+    21300018: Doctor_9
+    21300020: Doctor_10
+    21300022: Doctor_11
+    21300024: Doctor_12
+    21300026: Doctor_13
+    21300028: Doctor_14
+    21300030: Doctor_15
+    21300032: Doctor_16
+    21300034: Doctor_17
+    21300036: Doctor_18
+    21300038: Doctor_19
+    21300040: Doctor_20
+    21300042: Doctor_21
+    21300044: Doctor_22
+    21300046: Doctor_23
+    21300048: Doctor_24
+    21300050: Doctor_25
+    21300052: Doctor_26
+    21300054: Doctor_27
+    21300056: Doctor_28
+    21300058: Doctor_29
+    21300060: Doctor_30
+    21300062: Doctor_31
+    21300064: Doctor_32
+    21300066: Doctor_33
+    21300068: Doctor_34
+    21300070: Doctor_35
+    21300072: Doctor_36
+    21300074: Doctor_37
+    21300076: Doctor_38
+    21300078: Doctor_39
+    21300080: Doctor_40
+    21300082: Doctor_41
+    21300084: Doctor_42
+    21300086: Doctor_43
+    21300088: Doctor_44
+    21300090: Doctor_45
+    21300092: Doctor_46
+    21300094: Doctor_47
+    21300096: Doctor_48
+    21300098: Doctor_49
+    21300100: Doctor_50
+    21300102: Doctor_51
+    21300104: Doctor_52
+    21300106: Doctor_53
+    21300108: Doctor_54
+    21300110: Doctor_55
+    21300112: Doctor_56
+    21300114: Doctor_57
+    21300116: Doctor_58
+    21300118: Doctor_59
+    21300120: Doctor_60
+    21300122: Doctor_61
+    21300124: Doctor_62
+    21300126: Doctor_63
+    21300128: Doctor_64
+    21300130: Doctor_65
+    21300132: Doctor_66
+    21300134: Doctor_67
+    21300136: Doctor_68
+    21300138: Doctor_69
+    21300140: Doctor_70
+    21300142: Doctor_71
+    21300144: Doctor_72
+    21300146: Doctor_73
+    21300148: Doctor_74
+    21300150: Doctor_75
+    21300152: Doctor_76
+    21300154: Doctor_77
+    21300156: Doctor_78
+    21300158: Doctor_79
+    21300160: Doctor_80
+    21300162: Doctor_81
+    21300164: Doctor_82
+    21300166: Doctor_83
+    21300168: Doctor_84
+    21300170: Doctor_85
+    21300172: Doctor_86
+    21300174: Doctor_87
+    21300176: Doctor_88
+    21300178: Doctor_89
+    21300180: Doctor_90
+    21300182: Doctor_91
+    21300184: Doctor_92
+    21300186: Doctor_93
+    21300188: Doctor_94
+    21300190: Doctor_95
+    21300192: Doctor_96
+    21300194: Doctor_97
+    21300196: Doctor_98
+    21300198: Doctor_99
+    21300200: Doctor_100
+    21300202: Doctor_101
+    21300204: Doctor_102
+    21300206: Doctor_103
+    21300208: Doctor_104
+    21300210: Doctor_105
+    21300212: Doctor_106
+    21300214: Doctor_107
+    21300216: Doctor_108
+    21300218: Doctor_109
+    21300220: Doctor_110
+    21300222: Doctor_111
+    21300224: Doctor_112
+    21300226: Doctor_113
+    21300228: Doctor_114
+    21300230: Doctor_115
+    21300232: Doctor_116
+    21300234: Doctor_117
+    21300236: Doctor_118
+    21300238: Doctor_119
+    21300240: Doctor_120
+    21300242: Doctor_121
+    21300244: Doctor_122
+    21300246: Doctor_123
+    21300248: Doctor_124
+    21300250: Doctor_125
+    21300252: Doctor_126
+    21300254: Doctor_127
+    21300256: Doctor_128
+    21300258: Doctor_129
+    21300260: Doctor_130
+    21300262: Doctor_131
+    21300264: Doctor_132
+    21300266: Doctor_133
+    21300268: Doctor_134
+    21300270: Doctor_135
+    21300272: Doctor_136
+    21300274: Doctor_137
+    21300276: Doctor_138
+    21300278: Doctor_139
+    21300280: Doctor_140
+    21300282: Doctor_141
+    21300284: Doctor_142
+    21300286: Doctor_143
+    21300288: Doctor_144
+    21300290: Doctor_145
+    21300292: Doctor_146
+    21300294: Doctor_147
+    21300296: Doctor_148
+    21300298: Doctor_149
+    21300300: Doctor_150
+    21300302: Doctor_151
+    21300304: Doctor_152
+    21300306: Doctor_153
+    21300308: Doctor_154
+    21300310: Doctor_155
+    21300312: Doctor_156
+    21300314: Doctor_157
+    21300316: Doctor_158
+    21300318: Doctor_159
+    21300320: Doctor_160
+    21300322: Doctor_161
+    21300324: Doctor_162
+    21300326: Doctor_163
+    21300328: Doctor_164
+    21300330: Doctor_165
+    21300332: Doctor_166
+    21300334: Doctor_167
+    21300336: Doctor_168
+    21300338: Doctor_169
+    21300340: Doctor_170
+    21300342: Doctor_171
+    21300344: Doctor_172
+    21300346: Doctor_173
+    21300348: Doctor_174
+    21300350: Doctor_175
+    21300352: Doctor_176
+    21300354: Doctor_177
+    21300356: Doctor_178
+    21300358: Doctor_179
+    21300360: Doctor_180
+    21300362: Doctor_181
+    21300364: Doctor_182
+    21300366: Doctor_183
+    21300368: Doctor_184
+    21300370: Doctor_185
+    21300372: Doctor_186
+    21300374: Doctor_187
+    21300376: Doctor_188
+    21300378: Doctor_189
+    21300380: Doctor_190
+    21300382: Doctor_191
+    21300384: Doctor_192
+    21300386: Doctor_193
+    21300388: Doctor_194
+    21300390: Doctor_195
+    21300392: Doctor_196
+    21300394: Doctor_197
+    21300396: Doctor_198
+    21300398: Doctor_199
+    21300400: Doctor_200
+    21300402: Doctor_201
+    21300404: Doctor_202
+    21300406: Doctor_203
+    21300408: Doctor_204
+    21300410: Doctor_205
+    21300412: Doctor_206
+    21300414: Doctor_207
+    21300416: Doctor_208
+    21300418: Doctor_209
+    21300420: Doctor_210
+    21300422: Doctor_211
+    21300424: Doctor_212
+    21300426: Doctor_213
+    21300428: Doctor_214
+    21300430: Doctor_215
+    21300432: Doctor_216
+    21300434: Doctor_217
+    21300436: Doctor_218
+    21300438: Doctor_219
+    21300440: Doctor_220
+    21300442: Doctor_221
+    21300444: Doctor_222
+    21300446: Doctor_223
+    21300448: Doctor_224
+    21300450: Doctor_225
+    21300452: Doctor_226
+    21300454: Doctor_227
+    21300456: Doctor_228
+    21300458: Doctor_229
+    21300460: Doctor_230
+    21300462: Doctor_231
+    21300464: Doctor_232
+    21300466: Doctor_233
+    21300468: Doctor_234
+    21300470: Doctor_235
+    21300472: Doctor_236
+    21300474: Doctor_237
+    21300476: Doctor_238
+    21300478: Doctor_239
+    21300480: Doctor_240
+    21300482: Doctor_241
+    21300484: Doctor_242
+    21300486: Doctor_243
+    21300488: Doctor_244
+    21300490: Doctor_245
+    21300492: Doctor_246
+    21300494: Doctor_247
+    21300496: Doctor_248
+    21300498: Doctor_249
+    21300500: Doctor_250
+    21300502: Doctor_251
+    21300504: Doctor_252
+    21300506: Doctor_253
+    21300508: Doctor_254
+    21300510: Doctor_255
+    21300512: Doctor_256
+    21300514: Doctor_257
+    21300516: Doctor_258
+    21300518: Doctor_259
+    21300520: Doctor_260
+    21300522: Doctor_261
+    21300524: Doctor_262
+    21300526: Doctor_263
+    21300528: Doctor_264
+    21300530: Doctor_265
+    21300532: Doctor_266
+    21300534: Doctor_267
+    21300536: Doctor_268
+    21300538: Doctor_269
+    21300540: Doctor_270
+    21300542: Doctor_271
+    21300544: Doctor_272
+    21300546: Doctor_273
+    21300548: Doctor_274
+    21300550: Doctor_275
+    21300552: Doctor_276
+    21300554: Doctor_277
+    21300556: Doctor_278
+    21300558: Doctor_279
+    21300560: Doctor_280
+    21300562: Doctor_281
+    21300564: Doctor_282
+    21300566: Doctor_283
+    21300568: Doctor_284
+    21300570: Doctor_285
+    21300572: Doctor_286
+    21300574: Doctor_287
+    21300576: Doctor_288
+    21300578: Doctor_289
+    21300580: Doctor_290
+    21300582: Doctor_291
+    21300584: Doctor_292
+    21300586: Doctor_293
+    21300588: Doctor_294
+    21300590: Doctor_295
+    21300592: Doctor_296
+    21300594: Doctor_297
+    21300596: Doctor_298
+    21300598: Doctor_299
+    21300600: Doctor_300
+    21300602: Doctor_301
+    21300604: Doctor_302
+    21300606: Doctor_303
+    21300608: Doctor_304
+    21300610: Doctor_305
+    21300612: Doctor_306
+    21300614: Doctor_307
+    21300616: Doctor_308
+    21300618: Doctor_309
+    21300620: Doctor_310
+    21300622: Doctor_311
+    21300624: Doctor_312
+    21300626: Doctor_313
+    21300628: Doctor_314
+    21300630: Doctor_315
+    21300632: Doctor_316
+    21300634: Doctor_317
+    21300636: Doctor_318
+    21300638: Doctor_319
+    21300640: Doctor_320
+    21300642: Doctor_321
+    21300644: Doctor_322
+    21300646: Doctor_323
+    21300648: Doctor_324
+    21300650: Doctor_325
+    21300652: Doctor_326
+    21300654: Doctor_327
+    21300656: Doctor_328
+    21300658: Doctor_329
+    21300660: Doctor_330
+    21300662: Doctor_331
+    21300664: Doctor_332
+    21300666: Doctor_333
+    21300668: Doctor_334
+    21300670: Doctor_335
+    21300672: Doctor_336
+    21300674: Doctor_337
+    21300676: Doctor_338
+    21300678: Doctor_339
+    21300680: Doctor_340
+    21300682: Doctor_341
+    21300684: Doctor_342
+    21300686: Doctor_343
+    21300688: Doctor_344
+    21300690: Doctor_345
+    21300692: Doctor_346
+    21300694: Doctor_347
+    21300696: Doctor_348
+    21300698: Doctor_349
+    21300700: Doctor_350
+    21300702: Doctor_351
+    21300704: Doctor_352
+    21300706: Doctor_353
+    21300708: Doctor_354
+    21300710: Doctor_355
+    21300712: Doctor_356
+    21300714: Doctor_357
+    21300716: Doctor_358
+    21300718: Doctor_359
+    21300720: Doctor_360
+    21300722: Doctor_361
+    21300724: Doctor_362
+    21300726: Doctor_363
+    21300728: Doctor_364
+    21300730: Doctor_365
+    21300732: Doctor_366
+    21300734: Doctor_367
+    21300736: Doctor_368
+    21300738: Doctor_369
+    21300740: Doctor_370
+    21300742: Doctor_371
+    21300744: Doctor_372
+    21300746: Doctor_373
+    21300748: Doctor_374
+    21300750: Doctor_375
+    21300752: Doctor_376
+    21300754: Doctor_377
+    21300756: Doctor_378
+    21300758: Doctor_379
+    21300760: Doctor_380
+    21300762: Doctor_381
+    21300764: Doctor_382
+    21300766: Doctor_383
+    21300768: Doctor_384
+    21300770: Doctor_385
+    21300772: Doctor_386
+    21300774: Doctor_387
+    21300776: Doctor_388
+    21300778: Doctor_389
+    21300780: Doctor_390
+    21300782: Doctor_391
+    21300784: Doctor_392
+    21300786: Doctor_393
+    21300788: Doctor_394
+    21300790: Doctor_395
+    21300792: Doctor_396
+    21300794: Doctor_397
+    21300796: Doctor_398
+    21300798: Doctor_399
+    21300800: Doctor_400
+    21300802: Doctor_401
+    21300804: Doctor_402
+    21300806: Doctor_403
+    21300808: Doctor_404
+    21300810: Doctor_405
+    21300812: Doctor_406
+    21300814: Doctor_407
+    21300816: Doctor_408
+    21300818: Doctor_409
+    21300820: Doctor_410
+    21300822: Doctor_411
+    21300824: Doctor_412
+    21300826: Doctor_413
+    21300828: Doctor_414
+    21300830: Doctor_415
+    21300832: Doctor_416
+    21300834: Doctor_417
+    21300836: Doctor_418
+    21300838: Doctor_419
+    21300840: Doctor_420
+    21300842: Doctor_421
+    21300844: Doctor_422
+    21300846: Doctor_423
+    21300848: Doctor_424
+    21300850: Doctor_425
+    21300852: Doctor_426
+    21300854: Doctor_427
+    21300856: Doctor_428
+    21300858: Doctor_429
+    21300860: Doctor_430
+    21300862: Doctor_431
+    21300864: Doctor_432
+    21300866: Doctor_433
+    21300868: Doctor_434
+    21300870: Doctor_435
+    21300872: Doctor_436
+    21300874: Doctor_437
+    21300876: Doctor_438
+    21300878: Doctor_439
+    21300880: Doctor_440
+    21300882: Doctor_441
+    21300884: Doctor_442
+    21300886: Doctor_443
+    21300888: Doctor_444
+    21300890: Doctor_445
+    21300892: Doctor_446
+    21300894: Doctor_447
+    21300896: Doctor_448
+    21300898: Doctor_449
+    21300900: Doctor_450
+    21300902: Doctor_451
+    21300904: Doctor_452
+    21300906: Doctor_453
+    21300908: Doctor_454
+    21300910: Doctor_455
+    21300912: Doctor_456
+    21300914: Doctor_457
+    21300916: Doctor_458
+    21300918: Doctor_459
+    21300920: Doctor_460
+    21300922: Doctor_461
+    21300924: Doctor_462
+    21300926: Doctor_463
+    21300928: Doctor_464
+    21300930: Doctor_465
+    21300932: Doctor_466
+    21300934: Doctor_467
+    21300936: Doctor_468
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 50
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Doctor_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 3668
+        width: 33
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 3668
+        width: 34
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3668
+        width: 35
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_3
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 3668
+        width: 33
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_4
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 3668
+        width: 53
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 3668
+        width: 53
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_6
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 3667
+        width: 53
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_7
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 3667
+        width: 53
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_8
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3667
+        width: 40
+        height: 54
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_9
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 3669
+        width: 41
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_10
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 3669
+        width: 45
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_11
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 3669
+        width: 44
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_12
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 3665
+        width: 40
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_13
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3595
+        width: 156
+        height: 137
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3590
+        width: 35
+        height: 47
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_15
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 3597
+        width: 42
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_16
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3617
+        width: 47
+        height: 39
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_17
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3597
+        width: 44
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 3590
+        width: 34
+        height: 47
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_19
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 3590
+        width: 42
+        height: 38
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_20
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 3590
+        width: 33
+        height: 47
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_21
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 3588
+        width: 35
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_22
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 3588
+        width: 40
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_23
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 3588
+        width: 40
+        height: 46
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_24
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 3586
+        width: 34
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_25
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 3586
+        width: 34
+        height: 55
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_26
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 3586
+        width: 37
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_27
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 3586
+        width: 33
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_28
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 3597
+        width: 20
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_29
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 3597
+        width: 18
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_30
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 3597
+        width: 19
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_31
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 3597
+        width: 18
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_32
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 3597
+        width: 38
+        height: 28
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_33
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 3597
+        width: 20
+        height: 28
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_34
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3512
+        width: 36
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_35
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 3510
+        width: 28
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_36
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3509
+        width: 29
+        height: 65
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_37
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 3509
+        width: 29
+        height: 65
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_38
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 3517
+        width: 53
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_39
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 3528
+        width: 62
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_40
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 3520
+        width: 49
+        height: 54
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_41
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 3523
+        width: 46
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_42
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 3523
+        width: 34
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_43
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 3523
+        width: 45
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_44
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 3523
+        width: 35
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_45
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 3523
+        width: 32
+        height: 47
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_46
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3441
+        width: 39
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_47
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 3441
+        width: 43
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_48
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3441
+        width: 40
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_49
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 3441
+        width: 39
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_50
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 3450
+        width: 55
+        height: 35
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_51
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 3453
+        width: 58
+        height: 35
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_52
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 3455
+        width: 57
+        height: 31
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_53
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 3453
+        width: 58
+        height: 38
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_54
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 3455
+        width: 54
+        height: 30
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_55
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3451
+        width: 38
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_56
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 3451
+        width: 58
+        height: 22
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_57
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3451
+        width: 39
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_58
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 3459
+        width: 51
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_59
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 3459
+        width: 40
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_60
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 3451
+        width: 40
+        height: 41
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_61
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3338
+        width: 32
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_62
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 3338
+        width: 33
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_63
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3337
+        width: 35
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_64
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 3337
+        width: 37
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_65
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 3380
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_66
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3338
+        width: 49
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_67
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 3338
+        width: 47
+        height: 46
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_68
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 3337
+        width: 51
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_69
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 3334
+        width: 79
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_70
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 3342
+        width: 99
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_71
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 3338
+        width: 60
+        height: 90
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_72
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 3340
+        width: 69
+        height: 99
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_73
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 3340
+        width: 62
+        height: 97
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_74
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 3338
+        width: 5
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_75
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 3340
+        width: 14
+        height: 18
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_76
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 3340
+        width: 17
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_77
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 3342
+        width: 21
+        height: 15
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_78
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3276
+        width: 33
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_79
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 3276
+        width: 44
+        height: 55
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_80
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 3276
+        width: 71
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_81
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 3276
+        width: 74
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_82
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 3276
+        width: 76
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_83
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 3276
+        width: 78
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_84
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 3276
+        width: 51
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_85
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 3276
+        width: 34
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_86
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 3209
+        width: 35
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_87
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 3213
+        width: 39
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_88
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 3216
+        width: 43
+        height: 46
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_89
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3216
+        width: 44
+        height: 43
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_90
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 3216
+        width: 44
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_91
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 3213
+        width: 40
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_92
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 3211
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_93
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 3216
+        width: 44
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_94
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 3216
+        width: 44
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_95
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 3220
+        width: 35
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_96
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 3221
+        width: 35
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_97
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 3225
+        width: 26
+        height: 28
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_98
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 3225
+        width: 31
+        height: 31
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_99
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 3222
+        width: 36
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_100
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3149
+        width: 34
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_101
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 3149
+        width: 34
+        height: 43
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 3149
+        width: 47
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_103
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 3147
+        width: 47
+        height: 54
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_104
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 3147
+        width: 47
+        height: 54
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_105
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 3149
+        width: 58
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_106
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 3156
+        width: 51
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_107
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 3154
+        width: 59
+        height: 46
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_108
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 3151
+        width: 40
+        height: 40
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_109
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 3162
+        width: 50
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_110
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 3157
+        width: 40
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_111
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 3149
+        width: 42
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_112
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 3140
+        width: 159
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_113
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 3116
+        width: 50
+        height: 22
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_114
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 3028
+        width: 68
+        height: 108
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_115
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 3028
+        width: 62
+        height: 108
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_116
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 3028
+        width: 64
+        height: 108
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_117
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 3030
+        width: 68
+        height: 108
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_118
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 3120
+        width: 57
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_119
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 3033
+        width: 42
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_120
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3032
+        width: 42
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_121
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3089
+        width: 6
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_122
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 3079
+        width: 38
+        height: 19
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_123
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 3034
+        width: 43
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_124
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3034
+        width: 43
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_125
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3032
+        width: 44
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_126
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 3023
+        width: 91
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_127
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3032
+        width: 44
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_128
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 3032
+        width: 42
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_129
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 3081
+        width: 6
+        height: 6
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_130
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 3032
+        width: 44
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_131
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 3032
+        width: 32
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_132
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 3032
+        width: 47
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_133
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2971
+        width: 41
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_134
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2974
+        width: 40
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_135
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2974
+        width: 42
+        height: 43
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_136
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2974
+        width: 44
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_137
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2975
+        width: 44
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_138
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 2975
+        width: 43
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_139
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2975
+        width: 40
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_140
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 2974
+        width: 44
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_141
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 2974
+        width: 41
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_142
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2977
+        width: 36
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_143
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 2979
+        width: 34
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_144
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 2983
+        width: 26
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_145
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 2983
+        width: 33
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_146
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 2979
+        width: 35
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_147
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2910
+        width: 32
+        height: 43
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_148
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 2908
+        width: 35
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_149
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2909
+        width: 34
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_150
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2909
+        width: 38
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_151
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 2909
+        width: 33
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_152
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 2908
+        width: 33
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_153
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2841
+        width: 39
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_154
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2840
+        width: 32
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_155
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 2840
+        width: 48
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_156
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 2840
+        width: 49
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_157
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 2840
+        width: 49
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_158
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 2840
+        width: 38
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_159
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 2846
+        width: 11
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_160
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 2841
+        width: 22
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_161
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 2841
+        width: 52
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_162
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 2841
+        width: 63
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_163
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 2842
+        width: 28
+        height: 22
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_164
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 2855
+        width: 13
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_165
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2842
+        width: 39
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_166
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 2842
+        width: 25
+        height: 22
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_167
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 2857
+        width: 18
+        height: 14
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_168
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 2842
+        width: 38
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_169
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2773
+        width: 36
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_170
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2773
+        width: 35
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_171
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2773
+        width: 51
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_172
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 2773
+        width: 51
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_173
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 2773
+        width: 51
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_174
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2773
+        width: 36
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_175
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2766
+        width: 66
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_176
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 2768
+        width: 61
+        height: 63
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_177
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2706
+        width: 38
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_178
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2706
+        width: 34
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_179
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 2706
+        width: 35
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_180
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2706
+        width: 50
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_181
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 2706
+        width: 49
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_182
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 2706
+        width: 51
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_183
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 2706
+        width: 40
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_184
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2709
+        width: 45
+        height: 40
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_185
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 2709
+        width: 34
+        height: 40
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_186
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 2709
+        width: 40
+        height: 46
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_187
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2645
+        width: 43
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_188
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 2645
+        width: 40
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_189
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 2647
+        width: 42
+        height: 44
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_190
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2647
+        width: 43
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_191
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2645
+        width: 40
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_192
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 2645
+        width: 40
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_193
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 2647
+        width: 40
+        height: 35
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_194
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 2645
+        width: 36
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_195
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2647
+        width: 35
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_196
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 2651
+        width: 26
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_197
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2651
+        width: 33
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_198
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 2651
+        width: 29
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_199
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 2647
+        width: 24
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_200
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2588
+        width: 49
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_201
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 2545
+        width: 33
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_202
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2545
+        width: 51
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_203
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2545
+        width: 51
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_204
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2545
+        width: 52
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_205
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 2545
+        width: 47
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_206
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 2545
+        width: 42
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_207
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 2545
+        width: 42
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_208
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 2545
+        width: 35
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_209
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2543
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_210
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 2530
+        width: 67
+        height: 99
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_211
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 2532
+        width: 57
+        height: 95
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_212
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 2534
+        width: 98
+        height: 47
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_213
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 2536
+        width: 85
+        height: 11
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_214
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2448
+        width: 148
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_215
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2450
+        width: 32
+        height: 54
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_216
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 2441
+        width: 244
+        height: 63
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_217
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 2479
+        width: 20
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_218
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 2479
+        width: 13
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_219
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 2479
+        width: 20
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_220
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2478
+        width: 18
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_221
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 2437
+        width: 60
+        height: 84
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_222
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 2428
+        width: 55
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_223
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 2468
+        width: 225
+        height: 59
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_224
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 2470
+        width: 127
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_225
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 2447
+        width: 22
+        height: 27
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_226
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 2447
+        width: 21
+        height: 24
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_227
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 2414
+        width: 86
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_228
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 2416
+        width: 133
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_229
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 2419
+        width: 125
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_230
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2213
+        width: 148
+        height: 193
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_231
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2328
+        width: 33
+        height: 47
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_232
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 2328
+        width: 35
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_233
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2328
+        width: 37
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_234
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2328
+        width: 75
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_235
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2328
+        width: 75
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_236
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2329
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_237
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 2326
+        width: 84
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_238
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 2329
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_239
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2330
+        width: 56
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_240
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 2328
+        width: 60
+        height: 72
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_241
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 2337
+        width: 69
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_242
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 2332
+        width: 57
+        height: 76
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_243
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2242
+        width: 59
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_244
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 2242
+        width: 76
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_245
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2242
+        width: 75
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_246
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 2242
+        width: 74
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_247
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 2240
+        width: 35
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_248
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 2241
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_249
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2241
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_250
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2246
+        width: 69
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_251
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 2247
+        width: 53
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_252
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 2135
+        width: 34
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_253
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 2135
+        width: 37
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_254
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2137
+        width: 35
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_255
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 2137
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_256
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 2137
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_257
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 2137
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_258
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2137
+        width: 79
+        height: 91
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_259
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 2134
+        width: 84
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_260
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 2133
+        width: 82
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_261
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 2137
+        width: 82
+        height: 65
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_262
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 2053
+        width: 75
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_263
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 2053
+        width: 74
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_264
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 2052
+        width: 75
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_265
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 2052
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_266
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2051
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_267
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 2051
+        width: 33
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_268
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1982
+        width: 69
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_269
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1981
+        width: 97
+        height: 61
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_270
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1980
+        width: 110
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_271
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 1978
+        width: 108
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_272
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1978
+        width: 49
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_273
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1978
+        width: 49
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_274
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1978
+        width: 49
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_275
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1978
+        width: 49
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_276
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1918
+        width: 240
+        height: 47
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_277
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1852
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_278
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 1852
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_279
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1852
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_280
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 1852
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_281
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 1853
+        width: 57
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_282
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 1852
+        width: 60
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_283
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1859
+        width: 69
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_284
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1856
+        width: 56
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_285
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1850
+        width: 33
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_286
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1850
+        width: 35
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_287
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1852
+        width: 37
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_288
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1848
+        width: 84
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_289
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1765
+        width: 58
+        height: 65
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_290
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1765
+        width: 78
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_291
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 1765
+        width: 75
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_292
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1764
+        width: 75
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_293
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1764
+        width: 35
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_294
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 1764
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_295
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 1764
+        width: 32
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_296
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1760
+        width: 62
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_297
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 1760
+        width: 63
+        height: 41
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_298
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1760
+        width: 58
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_299
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1766
+        width: 52
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_300
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1661
+        width: 35
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_301
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 1661
+        width: 35
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_302
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1662
+        width: 35
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_303
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1662
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_304
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 1662
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_305
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1662
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_306
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1662
+        width: 74
+        height: 92
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_307
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1657
+        width: 75
+        height: 64
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_308
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 1661
+        width: 75
+        height: 62
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_309
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 1661
+        width: 82
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_310
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1577
+        width: 74
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_311
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1577
+        width: 75
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_312
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1576
+        width: 35
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_313
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1502
+        width: 66
+        height: 126
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_314
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1577
+        width: 32
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_315
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1502
+        width: 38
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_316
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1502
+        width: 38
+        height: 45
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_317
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 1502
+        width: 59
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_318
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1502
+        width: 72
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_319
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1502
+        width: 73
+        height: 58
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_320
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1502
+        width: 75
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_321
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1502
+        width: 77
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_322
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1369
+        width: 148
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_323
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1383
+        width: 33
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_324
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1383
+        width: 35
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_325
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1383
+        width: 37
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_326
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1383
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_327
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1383
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_328
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1383
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_329
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1383
+        width: 79
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_330
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 1383
+        width: 79
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_331
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 1383
+        width: 79
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_332
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 1383
+        width: 79
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_333
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 1301
+        width: 78
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_334
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 1301
+        width: 79
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_335
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 1301
+        width: 79
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_336
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1303
+        width: 79
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_337
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1303
+        width: 79
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_338
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 1303
+        width: 79
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_339
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1301
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_340
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1301
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_341
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1301
+        width: 35
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_342
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 1301
+        width: 33
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_343
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 1301
+        width: 32
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_344
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1236
+        width: 146
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_345
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1236
+        width: 146
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_346
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 1155
+        width: 32
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_347
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1155
+        width: 36
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_348
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 1157
+        width: 35
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_349
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 1157
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_350
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1157
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_351
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1157
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_352
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 1157
+        width: 69
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_353
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1157
+        width: 84
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_354
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 1157
+        width: 84
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_355
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 1157
+        width: 23
+        height: 33
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_356
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1157
+        width: 44
+        height: 60
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_357
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 1157
+        width: 48
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_358
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1155
+        width: 49
+        height: 43
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_359
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 1155
+        width: 49
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_360
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 1070
+        width: 58
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_361
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 1070
+        width: 77
+        height: 80
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_362
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1070
+        width: 91
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_363
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 1070
+        width: 82
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_364
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 1070
+        width: 76
+        height: 65
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_365
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 1070
+        width: 82
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_366
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1070
+        width: 80
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_367
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 1070
+        width: 71
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_368
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 963
+        width: 77
+        height: 81
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_369
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 962
+        width: 91
+        height: 77
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_370
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 962
+        width: 82
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_371
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 962
+        width: 76
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_372
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 962
+        width: 77
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_373
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 962
+        width: 64
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_374
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 964
+        width: 89
+        height: 76
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_375
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 965
+        width: 84
+        height: 84
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_376
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 966
+        width: 71
+        height: 84
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_377
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 878
+        width: 63
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_378
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 878
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_379
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 880
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_380
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 878
+        width: 75
+        height: 73
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_381
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 878
+        width: 33
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_382
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 878
+        width: 35
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_383
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 878
+        width: 33
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_384
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 758
+        width: 195
+        height: 96
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_385
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 761
+        width: 32
+        height: 49
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_386
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 761
+        width: 34
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_387
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 763
+        width: 36
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_388
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 763
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_389
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 763
+        width: 73
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_390
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 763
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_391
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 763
+        width: 75
+        height: 91
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_392
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 763
+        width: 112
+        height: 84
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_393
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 763
+        width: 113
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_394
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 761
+        width: 111
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_395
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 687
+        width: 99
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_396
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 687
+        width: 104
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_397
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 687
+        width: 106
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_398
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 687
+        width: 103
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_399
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 689
+        width: 80
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_400
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 689
+        width: 80
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_401
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 688
+        width: 81
+        height: 50
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_402
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 599
+        width: 20
+        height: 37
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_403
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 606
+        width: 15
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_404
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 594
+        width: 26
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_405
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 599
+        width: 20
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_406
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 606
+        width: 16
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_407
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 585
+        width: 74
+        height: 87
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_408
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 585
+        width: 80
+        height: 89
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_409
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 586
+        width: 89
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_410
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 595
+        width: 85
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_411
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 594
+        width: 343
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_412
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 599
+        width: 18
+        height: 35
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_413
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 486
+        width: 112
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_414
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 484
+        width: 75
+        height: 91
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_415
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 484
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_416
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 484
+        width: 73
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_417
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 484
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_418
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 482
+        width: 34
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_419
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 482
+        width: 34
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_420
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 389
+        width: 32
+        height: 48
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_421
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 389
+        width: 34
+        height: 51
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_422
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 389
+        width: 36
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_423
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 389
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_424
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 389
+        width: 73
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_425
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 389
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_426
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 389
+        width: 68
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_427
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 389
+        width: 84
+        height: 70
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_428
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 391
+        width: 82
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_429
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 302
+        width: 58
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_430
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 302
+        width: 78
+        height: 82
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_431
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 302
+        width: 89
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_432
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 302
+        width: 84
+        height: 67
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_433
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 302
+        width: 76
+        height: 65
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_434
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 302
+        width: 82
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_435
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 302
+        width: 78
+        height: 74
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_436
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 302
+        width: 71
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_437
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 196
+        width: 78
+        height: 82
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_438
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 196
+        width: 89
+        height: 75
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_439
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 196
+        width: 84
+        height: 68
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_440
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 196
+        width: 76
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_441
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 196
+        width: 77
+        height: 66
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_442
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 196
+        width: 62
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_443
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 196
+        width: 89
+        height: 78
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_444
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 198
+        width: 84
+        height: 84
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_445
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 199
+        width: 71
+        height: 85
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_446
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 112
+        width: 62
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_447
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 112
+        width: 71
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_448
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 112
+        width: 82
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_449
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 112
+        width: 107
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_450
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 112
+        width: 77
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_451
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 112
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_452
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 112
+        width: 74
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_453
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 112
+        width: 77
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_454
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 112
+        width: 75
+        height: 71
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_455
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 109
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_456
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 109
+        width: 33
+        height: 52
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_457
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 6
+        width: 53
+        height: 84
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_458
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 6
+        width: 53
+        height: 88
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_459
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 66
+        width: 28
+        height: 41
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_460
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 68
+        width: 28
+        height: 42
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_461
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 45
+        width: 13
+        height: 53
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_462
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 25
+        width: 82
+        height: 69
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_463
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 5
+        width: 23
+        height: 32
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_464
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 5
+        width: 42
+        height: 60
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_465
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 6
+        width: 48
+        height: 20
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_466
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 10
+        width: 18
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_467
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 25
+        width: 68
+        height: 21
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Doctor_468
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 25
+        width: 70
+        height: 21
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
