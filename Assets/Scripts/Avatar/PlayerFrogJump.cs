@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerFrogJump : MonoBehaviour
+public class PlayerFrogJump : PlayerAbility
 {
 
     // Use this for initialization
@@ -14,10 +14,15 @@ public class PlayerFrogJump : MonoBehaviour
     float pastTime;
     float curVelocity;
     bool isPreparing;
-    Rigidbody2D rigid;
-    void Start()
+
+    public override void Initialize()
     {
-        rigid = GetComponent<Rigidbody2D>();
+        throw new System.NotImplementedException();
+    }
+
+    protected override void Start()
+    {
+        base.Start();
         isPreparing = false;
         preparingEffectAnim.SetBool("blueFire", false);
         preparingEffectAnim.gameObject.SetActive(false);

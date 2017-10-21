@@ -2,24 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMultiJump : MonoBehaviour
+public class PlayerMultiJump : PlayerAbility
 {
     public float jumpVelocity;
     public KeyCode controlKey = KeyCode.Space;
 
 	public int maxJumpTime=2; // how many times can the player jump
 	private int curJumpTime=0;
-    Rigidbody2D rigid;
-    Animator animator;
+
+    public override void Initialize()
+    {
+        throw new System.NotImplementedException();
+    }
 
     // Use this for initialization
-    void Start()
+    protected override void Start()
     {
-
-        rigid = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+		base.Start();
 		curJumpTime = 0;
     }
+	
 
 	/// <summary>
 	/// OnCollisionEnter is called when this collider/rigidbody has begun
@@ -28,11 +30,23 @@ public class PlayerMultiJump : MonoBehaviour
 	/// <param name="other">The Collision data associated with this collision.</param>
 	void OnCollisionEnter(Collision other)
 	{
-		if (rigid.velocity.y != 0)
-		{
-			curJumpTime = maxJumpTime-1;
+		// if (rigid.velocity.y != 0)
+		// {
+			ContactPoint contact = other.contacts[0];
+			if (contact.point.x == transform.position.x)
+			{//hit ground
+				curJumpTime = 0;
+			}
+			else
+			{
+				curJumpTime = maxJumpTime-1;
+				rigid.velocity = new Vector2(0,rigid.mass*5);
+			}
+			
+			
+
 			// rigid.velocity = new Vector2(0,rigid.mass*5);
-		}
+		// }
 	}
 
     // Update is called once per frame

@@ -5,19 +5,16 @@ using UnityEngine;
 /*
 
  */
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : PlayerAbility {
 	public float maxSpeed = 10f;
 	public bool facingRight = true;
-	Rigidbody2D rigid;
-	Animator animator;
 
-	// Use this for initialization
-	void Start () {
-		rigid = GetComponent<Rigidbody2D>();
-		animator = GetComponent<Animator>();
-	}
-	
-	void FixedUpdate () {
+    public override void Initialize()
+    {
+        throw new System.NotImplementedException();
+    }
+
+    void FixedUpdate () {
 		float move = Input.GetAxis("Horizontal");
 		if (move != 0)
 		{
