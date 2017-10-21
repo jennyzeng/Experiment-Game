@@ -6,7 +6,7 @@ using UnityEngine;
 single jump implementation
  */
 public class PlayerJump : MonoBehaviour {
-	public float jumpForce;
+	public float jumpVelocity;
 	Rigidbody2D rigid;
 	Animator animator;
 	// Use this for initialization
@@ -22,7 +22,7 @@ public class PlayerJump : MonoBehaviour {
 		Debug.Log(jump);
 		if(jump && rigid.velocity.y == 0)
 		{
-			rigid.velocity = new Vector2(rigid.velocity.x, jumpForce);
+			rigid.velocity = new Vector2(rigid.velocity.x, jumpVelocity);
 		}
 	}
 }
