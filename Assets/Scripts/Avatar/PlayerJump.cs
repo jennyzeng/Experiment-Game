@@ -6,7 +6,7 @@ using UnityEngine;
 single jump implementation
  */
 public class PlayerJump : MonoBehaviour {
-	float jumpForce;
+	public float jumpForce;
 	Rigidbody2D rigid;
 	Animator animator;
 	// Use this for initialization
@@ -18,10 +18,11 @@ public class PlayerJump : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float jump = Input.GetAxis("Jump");
-		if(jump>0)
+		bool jump = Input.GetKeyUp(KeyCode.Space);
+		Debug.Log(jump);
+		if(jump && rigid.velocity.y == 0)
 		{
-			rigid.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+			rigid.velocity = new Vector2(rigid.velocity.x, jumpForce);
 		}
 	}
 }
