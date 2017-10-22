@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+http://answers.unity3d.com/questions/783377/detect-side-of-collision-in-box-collider-2d.html
+
+a collision states control for player,
+it can detect the side of collision happened.
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -63,42 +69,6 @@ public class CollisionStates
 				// Debug.Log("left");
 			}
 		}
-
-        // Collider2D collider = other.collider;
-        // float RectWidth =  myCollider.bounds.size.x;
-        // float RectHeight =  myCollider.bounds.size.y;
-        // // float circleRad = collider.bounds.size.x;
-
-        // //  if(collider.name == "target")
-        // //  { 
-        // Vector3 contactPoint = other.contacts[0].point;
-        // Vector3 center = collider.bounds.center;
-
-        // if (contactPoint.y > center.y && //checks that circle is on top of rectangle
-        //     (contactPoint.x < center.x + RectWidth / 2 && contactPoint.x > center.x - RectWidth / 2))
-        // {
-		// 	Debug.Log("top");
-        //     collideFromTop.Add(other.gameObject);
-        // }
-        // else if (contactPoint.y < center.y &&
-        //     (contactPoint.x < center.x + RectWidth / 2 && contactPoint.x > center.x - RectWidth / 2))
-        // {
-		// 	Debug.Log("bottom");
-        //     collideFromBottom.Add(other.gameObject);
-        // }
-        // else if (contactPoint.x > center.x &&
-        //     (contactPoint.y < center.y + RectHeight / 2 && contactPoint.y > center.y - RectHeight / 2))
-        // {
-		// 	Debug.Log("right");
-		// 	collideFromRight.Add(other.gameObject);
-        // }
-        // else if (contactPoint.x < center.x &&
-        //     (contactPoint.y < center.y + RectHeight / 2 && contactPoint.y > center.y - RectHeight / 2))
-        // {
-		// 	Debug.Log("left");
-        //     collideFromLeft.Add(other.gameObject);
-        //     //  }
-        // }
 	}
 	public void RemoveCollisionFromStates(Collision2D collision)
 	{

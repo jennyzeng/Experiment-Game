@@ -9,7 +9,7 @@ public class PlayerMultiJump : PlayerAbility
 
 	public int maxJumpTime=2; // how many times can the player jump
 	private int curJumpTime=0;
-	public PlayerStates playerStates;
+	PlayerStates playerStates;
 
     public override void Initialize()
     {
@@ -19,7 +19,7 @@ public class PlayerMultiJump : PlayerAbility
     {
         base.Start();
         curJumpTime = 0;
-        // playerStates = GetComponent<PlayerStates>();
+        playerStates = GetComponent<PlayerStates>();
     }
     // Update is called once per frame
     void Update()
