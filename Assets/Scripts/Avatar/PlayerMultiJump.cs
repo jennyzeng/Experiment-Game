@@ -13,6 +13,7 @@ public class PlayerMultiJump : PlayerAbility
 
     public override void Initialize()
     {
+        throw new System.NotImplementedException();
     }
 
     protected override void Start()
@@ -29,12 +30,7 @@ public class PlayerMultiJump : PlayerAbility
 			curJumpTime += 1;
             rigid.velocity = new Vector2(rigid.velocity.x, jumpVelocity);
         }
-		if (playerStates.collisionStates.HasRightCollision() ||
-             playerStates.collisionStates.HasLeftCollision())
-		{
-			curJumpTime = maxJumpTime;
-		}
-		if (rigid.velocity.y == 0 && playerStates.collisionStates.HasBottomCollision())
+		if (rigid.velocity.y == 0)
 		{
 			curJumpTime = 0;
 		}
