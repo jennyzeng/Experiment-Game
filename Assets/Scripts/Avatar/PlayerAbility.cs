@@ -6,10 +6,10 @@ public abstract class PlayerAbility : MonoBehaviour {
     protected Rigidbody2D rigid;
     protected Animator animator;
 	// Use this for initialization
-	protected virtual void Start () {
+	protected virtual void Start () 
+	{
 		rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
 	}
-	public abstract void Initialize();
-	
+	public abstract void Initialize();	
 }
