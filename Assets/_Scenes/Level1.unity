@@ -157,7 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerSpawnPoint: {fileID: 1950683534}
   enemyContainer: {fileID: 512442642}
-  childCounter: 0
+  enemyCounter: 0
 --- !u!1001 &324974535
 Prefab:
   m_ObjectHideFlags: 0
@@ -373,7 +373,7 @@ Prefab:
     - target: {fileID: 20225386228895406, guid: ada1b64e33cd6e64085e977210178026,
         type: 2}
       propertyPath: orthographic size
-      value: 5.8369727
+      value: 6.639073
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ada1b64e33cd6e64085e977210178026, type: 2}

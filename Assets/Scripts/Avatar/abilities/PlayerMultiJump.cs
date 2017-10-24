@@ -29,6 +29,7 @@ public class PlayerMultiJump : PlayerAbility
         {
 			curJumpTime += 1;
             rigid.velocity = new Vector2(rigid.velocity.x, jumpVelocity);
+            animator.SetTrigger("Jump");
         }
 		if (rigid.velocity.y == 0)
 		{

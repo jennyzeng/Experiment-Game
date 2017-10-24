@@ -10,7 +10,7 @@ private static EnvironmentUtil instance;
 	public GameObject enemyContainer;
 
 	[HideInInspector]
-	public int childCounter;
+	public int enemyCounter;
 
 	void Start()
 	{
@@ -22,7 +22,7 @@ private static EnvironmentUtil instance;
 		}
 		EnvironmentUtil environmentUtil = GetComponent<EnvironmentUtil>();
 		instance = environmentUtil;
-		childCounter = enemyContainer.transform.childCount;
+		enemyCounter = enemyContainer.transform.childCount;
 
 	}
    public static EnvironmentUtil Instance
@@ -40,6 +40,6 @@ private static EnvironmentUtil instance;
 
    public bool IsAllEnemyDestroyed()
    {
-	   return childCounter == 0;
+	   return enemyCounter == 0;
    }
 }
