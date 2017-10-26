@@ -19,8 +19,7 @@ public class PlayerFrogJump : PlayerAbility
     public override void Action()
     {
         if (!isPreparing && rigid.velocity.y == 0 && Input.GetKeyDown(controlKey))
-        {
-            Debug.Log("prepare");
+        {// prepare
             isPreparing = true;
             preparingEffectAnim.gameObject.SetActive(true);
             preparingEffectAnim.SetBool("blueFire", true);
@@ -28,15 +27,13 @@ public class PlayerFrogJump : PlayerAbility
             curVelocity = addAmountEachTime;
         }
         if (isPreparing && Input.GetKey(controlKey) && Time.time - pastTime >= sensitivity)
-        {
-            Debug.Log("add amount");
+        {// add amount
             curVelocity += addAmountEachTime;
             if (curVelocity > maxJumpVelocity) curVelocity = maxJumpVelocity;
             pastTime = Time.time;
         }
         if (isPreparing && Input.GetKeyUp(controlKey))
-        {
-            Debug.Log("jump");
+        {// jump
             isPreparing = false;
             rigid.velocity = new Vector2(rigid.velocity.x, curVelocity);
             curVelocity = addAmountEachTime;
@@ -57,35 +54,5 @@ public class PlayerFrogJump : PlayerAbility
         isPreparing = false;
         preparingEffectAnim.SetBool("blueFire", false);
         preparingEffectAnim.gameObject.SetActive(false);
-
     }
-    // void FixedUpdate()
-    // {
-    //     if (!isPreparing && rigid.velocity.y == 0 && Input.GetKeyDown(controlKey))
-    //     {
-    //         Debug.Log("prepare");
-    //         isPreparing = true;
-    //         preparingEffectAnim.gameObject.SetActive(true);
-    //         preparingEffectAnim.SetBool("blueFire", true);
-    //         pastTime = Time.time;
-    //         curVelocity = addAmountEachTime;
-    //     }
-    //     if (isPreparing && Input.GetKey(controlKey) && Time.time - pastTime >= sensitivity)
-    //     {
-    //         Debug.Log("add amount");
-    //         curVelocity += addAmountEachTime;
-    //         if (curVelocity > maxJumpVelocity) curVelocity = maxJumpVelocity;
-    //         pastTime = Time.time;
-    //     }
-    //     if (isPreparing && Input.GetKeyUp(controlKey))
-    //     {
-    //         Debug.Log("jump");
-    //         isPreparing = false;
-    //         rigid.velocity = new Vector2(rigid.velocity.x, curVelocity);
-    //         curVelocity = addAmountEachTime;
-    //         preparingEffectAnim.SetBool("blueFire", false);
-    //         preparingEffectAnim.gameObject.SetActive(false);
-
-    //     }
-    // }
 }

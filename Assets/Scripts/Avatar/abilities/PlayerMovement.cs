@@ -17,15 +17,21 @@ public class PlayerMovement : PlayerAbility {
 		{
 			animator.SetBool("IsRunning", true);
 		}
-		else
-		{
-			animator.SetBool("IsRunning", false);
-		}
 
 		rigid.velocity = new Vector2(move * maxSpeed, rigid.velocity.y);
 
 		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) Flip();
     }
+
+	/// <summary>
+	/// Update is called every frame, if the MonoBehaviour is enabled.
+	/// </summary>
+	void Update()
+	{ // had to add this to correct the animation
+		if (animator.GetBool("IsRunning") && Input.GetAxis("Horizontal") == 0) 
+			animator.SetBool("IsRunning", false);
+	}
+
 
     public override void Initialize()
     {
