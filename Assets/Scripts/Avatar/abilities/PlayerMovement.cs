@@ -8,14 +8,11 @@ using UnityEngine;
 public class PlayerMovement : PlayerAbility {
 	public float maxSpeed = 10f;
 	public bool facingRight = true;
+	public string axis = "Horizontal";
 
-    public override void Initialize()
+    public override void Action()
     {
-        throw new System.NotImplementedException();
-    }
-
-    void FixedUpdate () {
-		float move = Input.GetAxis("Horizontal");
+        float move = Input.GetAxis("Horizontal");
 		if (move != 0)
 		{
 			animator.SetBool("IsRunning", true);
@@ -28,7 +25,36 @@ public class PlayerMovement : PlayerAbility {
 		rigid.velocity = new Vector2(move * maxSpeed, rigid.velocity.y);
 
 		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) Flip();
+    }
+
+    public override void Initialize()
+    {
+        GameManager.Instance.GetManager<InputManager>().RegisterAction(axis, Action);
+    }
+
+	/// <summary>
+	/// This function is called when the MonoBehaviour will be destroyed.
+	/// </summary>
+	void OnDestroy()
+	{
+		GameManager.Instance.GetManager<InputManager>().UnregisterAction(axis);
 	}
+
+    // void FixedUpdate () {
+	// 	float move = Input.GetAxis("Horizontal");
+	// 	if (move != 0)
+	// 	{
+	// 		animator.SetBool("IsRunning", true);
+	// 	}
+	// 	else
+	// 	{
+	// 		animator.SetBool("IsRunning", false);
+	// 	}
+
+	// 	rigid.velocity = new Vector2(move * maxSpeed, rigid.velocity.y);
+
+	// 	if ((move > 0 && !facingRight) || (move < 0 && facingRight)) Flip();
+	// }
 	void Flip()
 	{
 		facingRight = !facingRight;

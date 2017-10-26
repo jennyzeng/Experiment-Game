@@ -12,4 +12,5 @@ public abstract class PlayerAbility : MonoBehaviour {
         animator = GetComponent<Animator>();
 	}
 	public abstract void Initialize();	
+	public abstract void Action();
 }
