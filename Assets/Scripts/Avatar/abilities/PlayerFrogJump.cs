@@ -10,7 +10,7 @@ public class PlayerFrogJump : PlayerAbility
     public float addAmountEachTime;
     public float sensitivity;
     public KeyCode controlKey = KeyCode.Space;
-    public string axis = "Jump";
+    // public string axis = "Jump";
     public Animator preparingEffectAnim;
     float pastTime;
     float curVelocity;
@@ -48,15 +48,9 @@ public class PlayerFrogJump : PlayerAbility
 
     public override void Initialize()
     {
-       GameManager.Instance.GetManager<InputManager>().RegisterAction(axis, Action);
+        throw new System.NotImplementedException();
     }
-	/// <summary>
-	/// This function is called when the MonoBehaviour will be destroyed.
-	/// </summary>
-	void OnDestroy()
-	{
-		GameManager.Instance.GetManager<InputManager>().UnregisterAction(axis);
-	}
+
     protected override void Start()
     {
         base.Start();

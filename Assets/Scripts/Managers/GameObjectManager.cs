@@ -20,7 +20,8 @@ public class GameObjectManager : BaseManager {
 			 EnvironmentUtil.Instance.playerSpawnPoint.rotation);
 		foreach(PlayerAbility ability in player.GetComponentsInChildren<PlayerAbility>())
 		{
-			ability.Initialize();
+			// TODO: resource data loading should be added here in the future
+			// ability.Initialize();
 		}
 		// UIManager uIManager = GameManager.Instance.GetManager<UIManager>();
 		// uIManager.Initialize();

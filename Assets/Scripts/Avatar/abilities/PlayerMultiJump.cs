@@ -6,23 +6,12 @@ public class PlayerMultiJump : PlayerAbility
 {
     public float jumpVelocity;
     public KeyCode controlKey = KeyCode.Space;
-    public string axis="Jump";
+    // public string axis="Jump";
 
 	public int maxJumpTime=2; // how many times can the player jump
 	private int curJumpTime=0;
 	PlayerStates playerStates;
 
-    public override void Initialize()
-    {
-        GameManager.Instance.GetManager<InputManager>().RegisterAction(axis, Action);
-    }
-	/// <summary>
-	/// This function is called when the MonoBehaviour will be destroyed.
-	/// </summary>
-	void OnDestroy()
-	{
-		GameManager.Instance.GetManager<InputManager>().UnregisterAction(axis);
-	}
 
     protected override void Start()
     {
@@ -45,4 +34,8 @@ public class PlayerMultiJump : PlayerAbility
         }
     }
 
+    public override void Initialize()
+    {
+        throw new System.NotImplementedException();
+    }
 }
