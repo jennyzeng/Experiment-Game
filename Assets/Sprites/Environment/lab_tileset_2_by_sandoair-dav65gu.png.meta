@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: b0c7d51d8f3b34abda8c7d548176fa31
-timeCreated: 1509066552
+timeCreated: 1509072611
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -19,6 +19,7 @@ TextureImporter:
     21300024: lab_tileset_2_by_sandoair-dav65gu_11
     21300026: lab_tileset_2_by_sandoair-dav65gu_12
     21300028: lab_tileset_2_by_sandoair-dav65gu_13
+    21300030: lab_tileset_2_by_sandoair-dav65gu_14
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -296,6 +297,20 @@ TextureImporter:
         y: 99
         width: 34
         height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu_14
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 193
+        width: 72
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
