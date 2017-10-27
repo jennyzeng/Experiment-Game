@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class Health : MonoBehaviour {
 
 	public int maxHP;
-	public int curHP;
+	protected int curHP;
 	protected Animator anim;
 	protected virtual void Start () {
 		curHP = maxHP;
@@ -24,7 +24,13 @@ public abstract class Health : MonoBehaviour {
 		}
 		OnHPchange(curHP);
 	}
-	protected abstract void OnDie();
-	protected abstract void OnDamage();
+	protected virtual void OnDie()
+	{
+		anim.SetTrigger("Die");
+	}
+	protected virtual void OnDamage()
+	{
+		anim.SetTrigger("Hurt");
+	}
 	protected abstract void OnHPchange(int HP);
 }
