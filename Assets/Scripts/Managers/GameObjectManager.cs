@@ -18,6 +18,12 @@ public class GameObjectManager : BaseManager {
 	{
 		player = Instantiate(playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
 			 EnvironmentUtil.Instance.playerSpawnPoint.rotation);
+		// foreach(PlayerAbility ability in player.GetComponentsInChildren<PlayerAbility>())
+		// {
+			// TODO: resource data loading should be added here in the future
+			// ability.Initialize();
+		// }
+		
 		// UIManager uIManager = GameManager.Instance.GetManager<UIManager>();
 		// uIManager.Initialize();
 		// player.GetComponent<PlayerHealth>().Initialize();

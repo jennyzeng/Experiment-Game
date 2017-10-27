@@ -6,15 +6,12 @@ public class PlayerMultiJump : PlayerAbility
 {
     public float jumpVelocity;
     public KeyCode controlKey = KeyCode.Space;
+    // public string axis="Jump";
 
 	public int maxJumpTime=2; // how many times can the player jump
 	private int curJumpTime=0;
 	PlayerStates playerStates;
 
-    public override void Initialize()
-    {
-        throw new System.NotImplementedException();
-    }
 
     protected override void Start()
     {
@@ -22,18 +19,23 @@ public class PlayerMultiJump : PlayerAbility
         curJumpTime = 0;
         playerStates = GetComponent<PlayerStates>();
     }
-    // Update is called once per frame
-    void Update()
+    public override void Action()
     {
+        if (rigid.velocity.y == 0)
+		{
+			curJumpTime = 0;
+		}
+
         if (curJumpTime < maxJumpTime && Input.GetKeyDown(controlKey))
         {
 			curJumpTime += 1;
             rigid.velocity = new Vector2(rigid.velocity.x, jumpVelocity);
             animator.SetTrigger("Jump");
         }
-		if (rigid.velocity.y == 0)
-		{
-			curJumpTime = 0;
-		}
+    }
+
+    public override void Initialize()
+    {
+        throw new System.NotImplementedException();
     }
 }
