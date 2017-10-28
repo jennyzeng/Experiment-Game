@@ -23,8 +23,9 @@ GameObject:
   - component: {fileID: 95323888193933776}
   - component: {fileID: 50098939139204102}
   - component: {fileID: 61403381573094482}
-  - component: {fileID: 114610967246808782}
-  m_Layer: 9
+  - component: {fileID: 114949621944703552}
+  - component: {fileID: 114800101331190316}
+  m_Layer: 10
   m_Name: Frog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1684813097299088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.732, y: -3.412924, z: 0}
+  m_LocalPosition: {x: -1.22, y: -3.412924, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,7 +107,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114610967246808782
+--- !u!114 &114800101331190316
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -114,12 +115,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1684813097299088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4745bc331c285543a8a07976670c08a, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bf99d21be5d84025b428c9422ed757e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 10
+  maxHP: 1
+  timeDisappearAfterDie: 1
+--- !u!114 &114949621944703552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684813097299088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c98108e02af4f1c809d98b03ffffdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxSpeed: 3
   jumpPower: 5
-  facingRight: 0
+  monitor_range: 10
+  facingRight: 1
 --- !u!212 &212751594388622008
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -129,7 +144,6 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -145,18 +159,17 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -529559859
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300036, guid: 8348fcf19163545c088a8be4320bf765, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.08, y: 0.08}

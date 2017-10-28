@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 5
+  timeDisappearAfterDie: 1
 --- !u!114 &114046520447371372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,9 +136,10 @@ MonoBehaviour:
   axis: Fire1
   coolDownTime: 0.5
   attackRange: 1.5
+  attackAmount: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1280
 --- !u!114 &114765088731004202
 MonoBehaviour:
   m_ObjectHideFlags: 1

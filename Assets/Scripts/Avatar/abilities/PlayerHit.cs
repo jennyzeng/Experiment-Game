@@ -7,6 +7,7 @@ public class PlayerHit : PlayerAbility {
     // use Fire1 axis
     public float coolDownTime = 0.1f;
     public float attackRange = 1f;
+    public int attackAmount;
     public LayerMask layerMask;
     float lastTriggerTime;
     PlayerMovement playerMovement;
@@ -47,8 +48,15 @@ public class PlayerHit : PlayerAbility {
         }
         if (hit.collider!=null)
         {
-            Debug.Log(hit.collider.name);
-            
+            EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
+            if (enemyHealth != null) 
+            {
+                enemyHealth.TakeDamage(attackAmount);
+            }
+            else
+            {
+                Debug.LogError("Please add EnemyHealth script for GameObject "+ hit.collider.name);
+            }
         }
 
     }

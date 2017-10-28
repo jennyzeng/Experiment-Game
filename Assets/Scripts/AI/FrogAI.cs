@@ -26,11 +26,11 @@ public class FrogAI : MonoBehaviour {
 
 		if (rigid.velocity.y == 0 && !grounded)
 			grounded = true;
-			anim.SetBool ("inair", false);
+			// anim.SetBool ("inair", false);
 
 		if (grounded) {
 			grounded = false;
-			anim.SetBool ("inair", true);
+			// anim.SetBool ("inair", true);
 			anim.SetTrigger ("Jump1");
 			float move = 1;
 			if (Mathf.Abs (player.transform.position.x - transform.position.x) > monitor_range) {
