@@ -34,10 +34,7 @@ public class FrogAI : BaseAI {
 		Vector2 finalVelocity = CalculateJumpSpeed(targetPoint, out time);
         if ((finalVelocity.x < 0 && facingRight) || (finalVelocity.x > 0 && !facingRight) ) Flip();
         rigid.velocity = finalVelocity;
-
         anim.SetTrigger("Jump");
-        // anim.speed = 1/(time*2);
-        // Debug.Log(1/(time*2));
     }
  
     private Vector2 CalculateJumpSpeed(Vector2 targetPoint, out float time)

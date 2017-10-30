@@ -1091,98 +1091,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1001 &702386982
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1375214572}
-    m_Modifications:
-    - target: {fileID: 114949621944703552, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: idleRoute.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114800101331190316, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: maxHP
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114800101331190316, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: timeDisappearAfterDie
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114949621944703552, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: monitorRange
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114949621944703552, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: idleRoute.Array.data[0]
-      value: 
-      objectReference: {fileID: 1581753228}
-    - target: {fileID: 114949621944703552, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: idleRoute.Array.data[1]
-      value: 
-      objectReference: {fileID: 1196619636}
-    - target: {fileID: 114949621944703552, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: maxDiffDistanceAllowance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114949621944703552, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: idleRoute.Array.data[2]
-      value: 
-      objectReference: {fileID: 1950337680}
-    - target: {fileID: 114949621944703552, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: idleRoute.Array.data[3]
-      value: 
-      objectReference: {fileID: 914863999}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &702386983 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88,
-    type: 2}
-  m_PrefabInternal: {fileID: 702386982}
 --- !u!1 &713032577
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,34 +1402,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &914863998
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 914863999}
-  m_Layer: 0
-  m_Name: point 4
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &914863999
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 914863998}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.81, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978462931}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &932296986
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,34 +1928,57 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1196619635
-GameObject:
+--- !u!1001 &1203853254
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1196619636}
-  m_Layer: 0
-  m_Name: point 2
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1196619636
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1196619635}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.64, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978462931}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5.732
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.412924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307252560475746, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684813097299088, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_Name
+      value: FrogAI
+      objectReference: {fileID: 0}
+    - target: {fileID: 114611961532197662, guid: d03002688e7134600bb26c2f622bbb88,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1217753497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2431,36 +2334,6 @@ Transform:
   m_Father: {fileID: 56350020}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1375214571
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1375214572}
-  m_Layer: 0
-  m_Name: Frog1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1375214572
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1375214571}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.732, y: -3.412924, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 702386983}
-  - {fileID: 1978462931}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1383213152
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,34 +2649,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1581753227
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1581753228}
-  m_Layer: 0
-  m_Name: point 1
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1581753228
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1581753227}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978462931}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1678319066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3115,34 +2960,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1950337679
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1950337680}
-  m_Layer: 0
-  m_Name: point 3
-  m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1950337680
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1950337679}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.83, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1978462931}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1970212668
 GameObject:
   m_ObjectHideFlags: 0
@@ -3214,38 +3031,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1978462930
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1978462931}
-  m_Layer: 0
-  m_Name: FrogRoute
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1978462931
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1978462930}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1581753228}
-  - {fileID: 1196619636}
-  - {fileID: 1950337680}
-  - {fileID: 914863999}
-  m_Father: {fileID: 1375214572}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2006363157
 GameObject:
   m_ObjectHideFlags: 0
