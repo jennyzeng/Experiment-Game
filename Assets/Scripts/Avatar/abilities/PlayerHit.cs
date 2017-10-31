@@ -11,9 +11,11 @@ public class PlayerHit : PlayerAbility {
     public LayerMask layerMask;
     float lastTriggerTime;
     PlayerMovement playerMovement;
+    BoxCollider2D boxCollider2D;
     protected override void Start()
     {
         base.Start();
+        boxCollider2D = GetComponent<BoxCollider2D>();
         lastTriggerTime = Time.time;
         attackRange *= Mathf.Abs(transform.localScale.x);
     }
@@ -40,11 +42,13 @@ public class PlayerHit : PlayerAbility {
         RaycastHit2D hit;
         if (playerMovement.facingRight)
         {
-             hit = Physics2D.Raycast(transform.position, Vector2.right, attackRange, layerMask);
+             hit = Physics2D.Raycast(boxCollider2D.offset, Vector2.right, attackRange, layerMask);
+             Debug.DrawRay(transform.position, Vector2.right*attackRange, Color.red, 2);
         }
         else
         {
             hit = Physics2D.Raycast(transform.position, Vector2.left, attackRange, layerMask);
+            Debug.DrawRay(transform.position, Vector2.left*attackRange, Color.red, 2);
         }
         if (hit.collider!=null)
         {

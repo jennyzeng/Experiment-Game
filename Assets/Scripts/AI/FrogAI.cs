@@ -4,28 +4,11 @@ using UnityEngine;
 
 public class FrogAI : BaseAI {
 	public float maxSpeed = 3f; //max x speed
-
-	// public float jumpPower = 5f;
-	public float maxJumpDistance = 3f;
+    public float maxJumpDistance = 5f;
     bool updateNextPoint=true;
     protected override void GoToNextPoint(Vector2 nextPoint)
     {
-        if (Vector2.Distance(nextPoint, transform.position) < maxJumpDistance)
-		{
-            JumpTowardPoint(nextPoint);
-            updateNextPoint = true;
-        }
-        else
-        {
-            // jump to the max distance point before the actual point
-            Vector2 targetPoint;
-            if (nextPoint.x > transform.position.x) // on the right
-                targetPoint = new Vector2(transform.position.x + maxJumpDistance, nextPoint.y);
-            else    // next point on the left
-                targetPoint = new Vector2(transform.position.x - maxJumpDistance, nextPoint.y);
-            JumpTowardPoint(targetPoint);
-            updateNextPoint = false;
-        }
+        JumpTowardPoint(nextPoint);
     }
 
 	void JumpTowardPoint(Vector2 targetPoint)
@@ -34,6 +17,7 @@ public class FrogAI : BaseAI {
 		Vector2 finalVelocity = CalculateJumpSpeed(targetPoint, out time);
         if ((finalVelocity.x < 0 && facingRight) || (finalVelocity.x > 0 && !facingRight) ) Flip();
         rigid.velocity = finalVelocity;
+        anim.speed = 1/(time*2);
         anim.SetTrigger("Jump");
     }
  
@@ -63,38 +47,12 @@ public class FrogAI : BaseAI {
 
     protected override bool NeedCommand()
     {
-        return rigid.velocity.y == 0;
+        return rigid.velocity.y == 0 ;
     }
 
     protected override bool ShouldUpdateNextPoint()
     {
-        return updateNextPoint;
+        return true;
     }
-
-    // void FixedUpdate () {
-    // 	if(player == null) player = GameManager.Instance.GetManager<GameObjectManager> ().player;
-    // 	if (player == null)
-    // 		return;
-
-    // 	if (rigid.velocity.y == 0 && !grounded)
-    // 		grounded = true;
-    // 		// anim.SetBool ("inair", false);
-
-    // 	if (grounded) {
-    // 		grounded = false;
-    // 		// anim.SetBool ("inair", true);
-    // 		anim.SetTrigger ("Jump1");
-    // 		float move = 1;
-    // 		if (Mathf.Abs (player.transform.position.x - transform.position.x) > monitor_range) {
-    // 			move = (Random.Range (0, 2) == 0) ? -1 : 1;
-    // 		} else {
-    // 			move = (player.transform.position.x - transform.position.x > 0) ? 1 : -1;
-    // 		}
-
-    // 		if ((move > 0 && !facingRight) || (move < 0 && facingRight)) Flip();
-    // 		rigid.velocity = new Vector2(move * maxSpeed, jumpPower);
-    // 	}
-
-    // }
 
 }
