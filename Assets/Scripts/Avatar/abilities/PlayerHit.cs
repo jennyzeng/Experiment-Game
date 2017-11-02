@@ -52,8 +52,9 @@ public class PlayerHit : PlayerAbility {
         }
         if (hit.collider!=null)
         {
-            EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
-            enemyHealth.TakeDamage(attackAmount);
+            Health health = hit.collider.GetComponent<Health>();
+            if (health != null)
+                health.TakeDamage(attackAmount);
         }
 
     }
