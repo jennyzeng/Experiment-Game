@@ -139,7 +139,7 @@ MonoBehaviour:
   attackAmount: 1
   layerMask:
     serializedVersion: 2
-    m_Bits: 1280
+    m_Bits: 1024
 --- !u!114 &114765088731004202
 MonoBehaviour:
   m_ObjectHideFlags: 1

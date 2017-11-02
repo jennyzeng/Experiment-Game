@@ -8,7 +8,7 @@ public class PlayerHit : PlayerAbility {
     public float coolDownTime = 0.1f;
     public float attackRange = 1f;
     public int attackAmount;
-    public LayerMask layerMask;
+    public LayerMask layerMask = LayerMask.GetMask("Enemies");
     float lastTriggerTime;
     PlayerMovement playerMovement;
     BoxCollider2D boxCollider2D;
@@ -42,37 +42,25 @@ public class PlayerHit : PlayerAbility {
         RaycastHit2D hit;
         if (playerMovement.facingRight)
         {
-             hit = Physics2D.Raycast(boxCollider2D.offset, Vector2.right, attackRange, layerMask);
-             Debug.DrawRay(transform.position, Vector2.right*attackRange, Color.red, 2);
+             hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.right, attackRange, layerMask);
+             Debug.DrawRay(boxCollider2D.bounds.center, Vector2.right*attackRange, Color.red, 2);
         }
         else
         {
-            hit = Physics2D.Raycast(transform.position, Vector2.left, attackRange, layerMask);
-            Debug.DrawRay(transform.position, Vector2.left*attackRange, Color.red, 2);
+            hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.left, attackRange, layerMask);
+            Debug.DrawRay(boxCollider2D.bounds.center, Vector2.left*attackRange, Color.red, 2);
         }
         if (hit.collider!=null)
         {
             EnemyHealth enemyHealth = hit.collider.GetComponent<EnemyHealth>();
-            if (enemyHealth != null) 
-            {
-                enemyHealth.TakeDamage(attackAmount);
-            }
-            else
-            {
-                Debug.LogError("Please add EnemyHealth script for GameObject "+ hit.collider.name);
-            }
+            enemyHealth.TakeDamage(attackAmount);
         }
 
     }
-
 
     public override void Initialize()
     {
         throw new System.NotImplementedException();
     }
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
