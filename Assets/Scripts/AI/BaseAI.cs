@@ -16,11 +16,13 @@ public abstract class BaseAI : MonoBehaviour
     protected GameObject player;
     protected int nextIdlePoint;
     protected int next;
+    protected EnemyHealth enemyHealth;
 
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
+        enemyHealth = GetComponent<EnemyHealth>();
         if (idleRoute.Length == 0)
         {
             Debug.LogError("please add idle route for the monster " + gameObject.name);
@@ -30,7 +32,10 @@ public abstract class BaseAI : MonoBehaviour
         next = 1;
         isIdling = true;
         transform.position = idleRoute[0].position;
-
+        if (transform.localScale.x < 0)
+        {
+            enemyHealth.FlipHealthCanvas();
+        }
     }
 
     protected virtual void FixedUpdate()
@@ -102,5 +107,6 @@ public abstract class BaseAI : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+        enemyHealth.FlipHealthCanvas();
     }
 }
