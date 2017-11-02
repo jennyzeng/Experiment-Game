@@ -8,7 +8,7 @@ public class PlayerHit : PlayerAbility {
     public float coolDownTime = 0.1f;
     public float attackRange = 1f;
     public int attackAmount;
-    public LayerMask layerMask = LayerMask.GetMask("Enemies");
+    public LayerMask layerMask;
     float lastTriggerTime;
     PlayerMovement playerMovement;
     BoxCollider2D boxCollider2D;
