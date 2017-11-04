@@ -38,6 +38,7 @@ public class GameObjectManager : BaseManager {
 		// UIManager uIManager = GameManager.Instance.GetManager<UIManager>();
 		// uIManager.Initialize();
 		player.GetComponent<PlayerHealth>().Initialize();		
+		EnvironmentUtil.Instance.AferInit();
 	}
 	public void OnPlayerDie()
 	{
