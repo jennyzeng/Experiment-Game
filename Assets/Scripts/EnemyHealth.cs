@@ -8,6 +8,7 @@ public class EnemyHealth : Health
     public GameObject healthBarPrefab;
     [HideInInspector]
     public Slider healthBar;
+    public float transparencyAfterDie = 0.5f;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -27,12 +28,13 @@ public class EnemyHealth : Health
         enabled = false;
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(), 
             GameManager.Instance.GetManager<GameObjectManager>().player.GetComponent<Collider2D>(), true);
+        Destroy(healthBar.transform.parent.gameObject);
     }
     protected override void DestroyAction()
     {
         // just stop there
         anim.enabled = false;
-        GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f, 0.7f);
+        GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f, transparencyAfterDie);
         
         // Destroy(transform.parent.gameObject); // destroy the enemy and the route
     }
