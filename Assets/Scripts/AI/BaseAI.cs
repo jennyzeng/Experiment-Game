@@ -53,7 +53,6 @@ public abstract class BaseAI : MonoBehaviour
         }
         else
         {
-            Debug.Log("found");
             FoundPlayerBehavior();
         }
     }
@@ -96,6 +95,7 @@ public abstract class BaseAI : MonoBehaviour
     protected abstract bool ShouldUpdateNextPoint();
     protected virtual void TransFromFollowPlayerToIdle()
     {
+        // find the closet idle point
         Vector2 minpoint = transform.position;
         float minDistance = float.MaxValue;
         foreach (Transform point in idleRoute)
@@ -111,7 +111,7 @@ public abstract class BaseAI : MonoBehaviour
     }
 
     protected abstract bool NeedCommand();
-    // protected abstract bool ShouldGotoNextIdlePoint();
+
     protected abstract void GoToNextPoint(Vector2 nextPoint);
     protected virtual void FoundPlayerBehavior()
     {

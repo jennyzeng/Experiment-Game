@@ -25,8 +25,8 @@ public class EnemyHealth : Health
         Rigidbody2D rigid = GetComponent<Rigidbody2D>();
         rigid.velocity = new Vector2(0, rigid.velocity.y);
         enabled = false;
-    //     Physics2D.IgnoreCollision(GetComponent<Collider2D>(), 
-    //         GameManager.Instance.GetManager<GameObjectManager>().player.GetComponent<Collider2D>(), true);
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), 
+            GameManager.Instance.GetManager<GameObjectManager>().player.GetComponent<Collider2D>(), true);
     }
     protected override void DestroyAction()
     {
