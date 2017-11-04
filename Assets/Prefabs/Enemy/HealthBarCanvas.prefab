@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 223635854960601388}
   - component: {fileID: 114109409556173274}
   - component: {fileID: 114163119128650392}
+  - component: {fileID: 225565957040558864}
   m_Layer: 5
   m_Name: HealthBarCanvas
   m_TagString: Untagged
@@ -359,3 +360,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0.7}
   m_SizeDelta: {x: 3.758, y: 5.486}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225565957040558864
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420705963545756}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0

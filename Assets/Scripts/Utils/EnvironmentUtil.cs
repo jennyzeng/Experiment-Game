@@ -12,7 +12,7 @@ private static EnvironmentUtil instance;
 	[HideInInspector]
 	public int enemyCounter;
 
-	void Start()
+	void Awake()
 	{
 		if (instance!= null){
 			if (instance != this)

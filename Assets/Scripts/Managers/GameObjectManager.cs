@@ -8,13 +8,24 @@ public class GameObjectManager : BaseManager {
 	public GameObject player;
 	public GameObject playerPrefab;
 	// public HealthCanvas healthCanvas;
-	int score; // player score
-	
 
-	/// <summary>
-	/// Awake is called when the script instance is being loaded.
-	/// </summary>
-	void Start()
+	// void Start()
+	// {
+	// 	player = Instantiate(playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
+	// 		 EnvironmentUtil.Instance.playerSpawnPoint.rotation);
+	// 	// foreach(PlayerAbility ability in player.GetComponentsInChildren<PlayerAbility>())
+	// 	// {
+	// 		// TODO: resource data loading should be added here in the future
+	// 		// ability.Initialize();
+	// 	// }
+		
+	// 	UIManager uIManager = GameManager.Instance.GetManager<UIManager>();
+	// 	uIManager.Initialize();
+	// 	player.GetComponent<PlayerHealth>().Initialize();
+	// 	// uIManager.GetCanvas<SkillCanvas>().Initialize(player);
+	// 	// healthCanvas = uIManager.GetCanvas<HealthCanvas>();
+	// }
+	public override void Initialize()
 	{
 		player = Instantiate(playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
 			 EnvironmentUtil.Instance.playerSpawnPoint.rotation);
@@ -26,33 +37,13 @@ public class GameObjectManager : BaseManager {
 		
 		// UIManager uIManager = GameManager.Instance.GetManager<UIManager>();
 		// uIManager.Initialize();
-		// player.GetComponent<PlayerHealth>().Initialize();
-		// uIManager.GetCanvas<SkillCanvas>().Initialize(player);
-		// healthCanvas = uIManager.GetCanvas<HealthCanvas>();
-		OnScoreChange();
+		player.GetComponent<PlayerHealth>().Initialize();		
 	}
-
-	void OnScoreChange()
-	{
-		// healthCanvas.ChangeScoreText(score);
-		// if (EnvironmentUtil.Instance.IsAllEnemyDestroyed())
-		// {
-		// 	// win
-		// 	GameOverCanvas gameOverCanvas = GameManager.Instance.GetManager<UIManager>().GetCanvas<GameOverCanvas>();
-		// 	gameOverCanvas.OnWin(score);
-		// }
-	}
-
 	public void OnPlayerDie()
 	{
 		// GameOverCanvas gameOverCanvas = GameManager.Instance.GetManager<UIManager>().GetCanvas<GameOverCanvas>();
 		// gameOverCanvas.OnGameOver(score);
 		player = null;
 	}
-	
-	public void AddScore(int score)
-	{
-		this.score += score;
-		OnScoreChange();
-	}
+
 }

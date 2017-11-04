@@ -4,8 +4,11 @@ using UnityEngine;
 using System;
 public class TimerManager : BaseManager
 {
-	public List<Timer> CurrentTimers = new List<Timer>();
+	public List<Timer> CurrentTimers;// = new List<Timer>();
 		
+	public override void Initialize(){
+		CurrentTimers = new List<Timer>();
+	}
 	void Update ()
 	{
 		//if (Game.isPaused)

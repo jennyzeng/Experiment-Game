@@ -6,10 +6,12 @@ public class InputManager : BaseManager {
 
 	Dictionary<String, Action> inputMap;
 	// Use this for initialization
-	void Start () {
+	// void Start () {
+	// 	inputMap = new Dictionary<String, Action> ();
+	// }
+	public override void Initialize(){
 		inputMap = new Dictionary<String, Action> ();
 	}
-
 	public void RegisterAction(String axis, Action action)
 	{
 		if (inputMap.ContainsKey(axis)) 
