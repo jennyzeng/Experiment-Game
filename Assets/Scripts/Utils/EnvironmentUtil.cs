@@ -40,7 +40,8 @@ private static EnvironmentUtil instance;
 
 	public void AferInit()
 	{
-		door.Trigger();
+		if (door != null)
+			door.Trigger();
 	}
    public bool IsAllEnemyDestroyed()
    {

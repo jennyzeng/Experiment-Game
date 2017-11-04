@@ -112,7 +112,7 @@ public abstract class BaseAI : MonoBehaviour
 
     protected virtual void OnCollisionEnter2D(Collision2D other)
     {
-        if ( other.collider.CompareTag("Player"))
+        if (enabled && other.collider.CompareTag("Player"))
         {
             other.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
         }

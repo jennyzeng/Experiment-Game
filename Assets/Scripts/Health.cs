@@ -15,6 +15,7 @@ public abstract class Health : MonoBehaviour {
 	
 	public virtual void TakeDamage(int amount)
 	{
+		if (!enabled) return;
 		Debug.Log("take damage");
 		curHP -= amount;
 		if (curHP <= 0 ){

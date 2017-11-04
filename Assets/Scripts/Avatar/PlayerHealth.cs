@@ -35,7 +35,7 @@ public class PlayerHealth : Health {
         {
             curHP -= Mathf.Max(0, (amount-defendAmount));
             if (curHP <= 0 ){
-                curHP = 0;
+                curHP = 0; 
                 OnDie();
             }
             else{

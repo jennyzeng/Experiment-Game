@@ -22,12 +22,18 @@ public class EnemyHealth : Health
     {
         base.OnDie();
         GetComponent<BaseAI>().enabled = false;
+        Rigidbody2D rigid = GetComponent<Rigidbody2D>();
+        rigid.velocity = new Vector2(0, rigid.velocity.y);
+        enabled = false;
+    //     Physics2D.IgnoreCollision(GetComponent<Collider2D>(), 
+    //         GameManager.Instance.GetManager<GameObjectManager>().player.GetComponent<Collider2D>(), true);
     }
     protected override void DestroyAction()
     {
         // just stop there
         anim.enabled = false;
         GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f, 0.7f);
+        
         // Destroy(transform.parent.gameObject); // destroy the enemy and the route
     }
 
