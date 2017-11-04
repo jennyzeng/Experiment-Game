@@ -7,39 +7,47 @@ public abstract class BaseAI : MonoBehaviour
 {
     public bool facingRight = true;
     public float monitorRange = 10f;
-
+    public int damageAmount;
     public Transform[] idleRoute;
     [HideInInspector]
     public bool isIdling;
     protected Rigidbody2D rigid;
     protected Animator anim;
     protected GameObject player;
-    protected int nextIdlePoint;
+    protected int nextIdleIdx;
+    protected Vector2 nextIdlePoint;
     protected int next;
+    protected EnemyHealth enemyHealth;
 
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody2D>();
+        enemyHealth = GetComponent<EnemyHealth>();
         if (idleRoute.Length == 0)
         {
             Debug.LogError("please add idle route for the monster " + gameObject.name);
             Destroy(gameObject);
         }
-        nextIdlePoint = 1;
+        nextIdleIdx = 1;
         next = 1;
         isIdling = true;
         transform.position = idleRoute[0].position;
-
+        if (transform.localScale.x < 0)
+        {
+            enemyHealth.FlipHealthCanvas();
+        }
     }
 
     protected virtual void FixedUpdate()
     {
         if (player == null)
+        {
             player = GameManager.Instance.GetManager<GameObjectManager>().player;
-        if (player == null)
-            return;
-        if (Vector2.Distance(player.transform.position, transform.position) > monitorRange)
+            if (player == null)
+                return;
+        }
+        if (!DetectPlayer())
         {
             Idle();
         }
@@ -47,6 +55,20 @@ public abstract class BaseAI : MonoBehaviour
         {
             FoundPlayerBehavior();
         }
+    }
+
+    protected virtual bool DetectPlayer()
+    {
+        if (Vector2.Distance(player.transform.position, transform.position) > monitorRange)
+            return false;
+        var heading = player.transform.position - transform.position;
+        var distance = heading.magnitude;
+        var direction = heading / distance; // This is now the normalized direction.
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, LayerMask.GetMask("Platforms"));
+        Debug.DrawLine(transform.position, transform.position + direction * distance, Color.red, 2f);
+        return hit.collider == null;
+        
     }
     protected virtual void Idle()
     {
@@ -58,20 +80,22 @@ public abstract class BaseAI : MonoBehaviour
         }
         if (NeedCommand())
         {
-            GoToNextPoint(idleRoute[nextIdlePoint].position);
+            GoToNextPoint(nextIdlePoint);
             if (ShouldUpdateNextPoint())
             {
-                if (nextIdlePoint >= idleRoute.Length-1 || nextIdlePoint == 0)
+                if (nextIdleIdx >= idleRoute.Length-1 || nextIdleIdx == 0)
                 {
                     next = -next;
                 }
-                nextIdlePoint += next;
+                nextIdleIdx += next;
+                nextIdlePoint = idleRoute[nextIdleIdx].position;
             }
         }
     }
     protected abstract bool ShouldUpdateNextPoint();
     protected virtual void TransFromFollowPlayerToIdle()
     {
+        // find the closet idle point
         Vector2 minpoint = transform.position;
         float minDistance = float.MaxValue;
         foreach (Transform point in idleRoute)
@@ -87,13 +111,15 @@ public abstract class BaseAI : MonoBehaviour
     }
 
     protected abstract bool NeedCommand();
-    // protected abstract bool ShouldGotoNextIdlePoint();
+
     protected abstract void GoToNextPoint(Vector2 nextPoint);
     protected virtual void FoundPlayerBehavior()
     {
         isIdling = false;
+        if (nextIdlePoint.Equals(idleRoute[nextIdleIdx].position))
+            nextIdlePoint = player.transform.position;
         if (rigid.velocity.y == 0)
-            GoToNextPoint(player.transform.position);
+            GoToNextPoint(nextIdlePoint);
     }
 
     protected virtual void Flip()
@@ -102,5 +128,14 @@ public abstract class BaseAI : MonoBehaviour
         Vector3 theScale = transform.localScale;
         theScale.x *= -1;
         transform.localScale = theScale;
+        enemyHealth.FlipHealthCanvas();
+    }
+
+    protected virtual void OnCollisionEnter2D(Collision2D other)
+    {
+        if (enabled && other.collider.CompareTag("Player"))
+        {
+            other.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
+        }
     }
 }

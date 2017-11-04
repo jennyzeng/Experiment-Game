@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class PlayerHit : PlayerAbility {
 
+    public Transform bulletSpawnPoint;
+    public Bullet bulletPrefab;
+    public float outForce;
     // use Fire1 axis
     public float coolDownTime = 0.1f;
     public float attackRange = 1f;
     public int attackAmount;
-    public LayerMask layerMask;
     float lastTriggerTime;
     PlayerMovement playerMovement;
     BoxCollider2D boxCollider2D;
@@ -39,24 +41,16 @@ public class PlayerHit : PlayerAbility {
 
     void DetectHit()
     {
-        RaycastHit2D hit;
-        if (playerMovement.facingRight)
+        Bullet bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        if (!playerMovement.facingRight)
         {
-             hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.right, attackRange, layerMask);
-             Debug.DrawRay(boxCollider2D.bounds.center, Vector2.right*attackRange, Color.red, 2);
+            MathTools.Flip(bullet.transform);
+            bullet.initialize(-outForce, attackAmount);
         }
         else
         {
-            hit = Physics2D.Raycast(boxCollider2D.bounds.center, Vector2.left, attackRange, layerMask);
-            Debug.DrawRay(boxCollider2D.bounds.center, Vector2.left*attackRange, Color.red, 2);
+            bullet.initialize(outForce, attackAmount);
         }
-        if (hit.collider!=null)
-        {
-            Health health = hit.collider.GetComponent<Health>();
-            if (health != null)
-                health.TakeDamage(attackAmount);
-        }
-
     }
 
     public override void Initialize()

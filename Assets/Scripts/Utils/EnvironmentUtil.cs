@@ -8,11 +8,11 @@ private static EnvironmentUtil instance;
 
 	public Transform playerSpawnPoint;
 	public GameObject enemyContainer;
-
+	public Door door;
 	[HideInInspector]
 	public int enemyCounter;
 
-	void Start()
+	void Awake()
 	{
 		if (instance!= null){
 			if (instance != this)
@@ -38,6 +38,11 @@ private static EnvironmentUtil instance;
       }
    }
 
+	public void AferInit()
+	{
+		if (door != null)
+			door.Trigger();
+	}
    public bool IsAllEnemyDestroyed()
    {
 	   return enemyCounter == 0;

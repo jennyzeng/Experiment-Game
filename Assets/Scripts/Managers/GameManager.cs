@@ -57,6 +57,7 @@ public class GameManager : MonoBehaviour
         foreach (BaseManager manager in preLoadManagerList)
         {
             BaseManager managerInstance = Instantiate(manager, transform);
+            managerInstance.Initialize();
             managerList.Add(managerInstance);
         }
     }

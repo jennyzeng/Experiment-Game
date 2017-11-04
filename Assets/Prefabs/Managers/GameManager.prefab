@@ -54,4 +54,5 @@ MonoBehaviour:
   preLoadManagerList:
   - {fileID: 114100322544622830, guid: b201dbedce4eab14283dc6de7d365f94, type: 2}
   - {fileID: 114289076891404714, guid: e8d6bf85625c94f4cacb6eef2e79ccc5, type: 2}
+  - {fileID: 114668615584143846, guid: e8c6c42f976324832bb2437657cf9052, type: 2}
   - {fileID: 114341479451271810, guid: 91c89a41fe6bc493babc71a31c1604ad, type: 2}

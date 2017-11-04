@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class FrogAI : BaseAI {
 	public float maxSpeed = 3f; //max x speed
+    public float maxJumpYvelocity = 20f;
     public float maxJumpDistance = 5f;
-    bool updateNextPoint=true;
+    // bool updateNextPoint=true;
     protected override void GoToNextPoint(Vector2 nextPoint)
     {
         JumpTowardPoint(nextPoint);
@@ -27,11 +28,12 @@ public class FrogAI : BaseAI {
         float xOffset = targetPoint.x - transform.position.x;
         time = Mathf.Abs(xOffset/maxSpeed);
         if (time == 0){
-            return new Vector2(0,0);
+            return  new Vector2(rigid.velocity.x, rigid.velocity.y);
         } 
 
         float yOffset = targetPoint.y - transform.position.y;
         float ySpeed = (yOffset + 0.5f * gravity * time * time) / time;
+        if (Mathf.Abs(ySpeed) > maxJumpYvelocity) return new Vector2(rigid.velocity.x, rigid.velocity.y);
         Vector2 finalVelocity;
         if (xOffset > 0)
         {

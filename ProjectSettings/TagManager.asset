@@ -16,7 +16,7 @@ TagManager:
   - Platforms
   - Players
   - Enemies
-  - 
+  - Bullets
   - 
   - 
   - 
@@ -41,9 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: 
+    uniqueID: 492686627
+    locked: 0
   - name: Platform
     uniqueID: 2601216217
     locked: 0
   - name: GameObjects
     uniqueID: 3765407437
+    locked: 0
+  - name: UI
+    uniqueID: 42942045
     locked: 0
