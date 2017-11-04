@@ -14,7 +14,8 @@ public abstract class BaseAI : MonoBehaviour
     protected Rigidbody2D rigid;
     protected Animator anim;
     protected GameObject player;
-    protected int nextIdlePoint;
+    protected int nextIdleIdx;
+    protected Vector2 nextIdlePoint;
     protected int next;
     protected EnemyHealth enemyHealth;
 
@@ -28,7 +29,7 @@ public abstract class BaseAI : MonoBehaviour
             Debug.LogError("please add idle route for the monster " + gameObject.name);
             Destroy(gameObject);
         }
-        nextIdlePoint = 1;
+        nextIdleIdx = 1;
         next = 1;
         isIdling = true;
         transform.position = idleRoute[0].position;
@@ -41,17 +42,34 @@ public abstract class BaseAI : MonoBehaviour
     protected virtual void FixedUpdate()
     {
         if (player == null)
+        {
             player = GameManager.Instance.GetManager<GameObjectManager>().player;
-        if (player == null)
-            return;
-        if (Vector2.Distance(player.transform.position, transform.position) > monitorRange)
+            if (player == null)
+                return;
+        }
+        if (!DetectPlayer())
         {
             Idle();
         }
         else
         {
+            Debug.Log("found");
             FoundPlayerBehavior();
         }
+    }
+
+    protected virtual bool DetectPlayer()
+    {
+        if (Vector2.Distance(player.transform.position, transform.position) > monitorRange)
+            return false;
+        var heading = player.transform.position - transform.position;
+        var distance = heading.magnitude;
+        var direction = heading / distance; // This is now the normalized direction.
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, distance, LayerMask.GetMask("Platforms"));
+        Debug.DrawLine(transform.position, transform.position + direction * distance, Color.red, 2f);
+        return hit.collider == null;
+        
     }
     protected virtual void Idle()
     {
@@ -63,14 +81,15 @@ public abstract class BaseAI : MonoBehaviour
         }
         if (NeedCommand())
         {
-            GoToNextPoint(idleRoute[nextIdlePoint].position);
+            GoToNextPoint(nextIdlePoint);
             if (ShouldUpdateNextPoint())
             {
-                if (nextIdlePoint >= idleRoute.Length-1 || nextIdlePoint == 0)
+                if (nextIdleIdx >= idleRoute.Length-1 || nextIdleIdx == 0)
                 {
                     next = -next;
                 }
-                nextIdlePoint += next;
+                nextIdleIdx += next;
+                nextIdlePoint = idleRoute[nextIdleIdx].position;
             }
         }
     }
@@ -97,8 +116,10 @@ public abstract class BaseAI : MonoBehaviour
     protected virtual void FoundPlayerBehavior()
     {
         isIdling = false;
+        if (nextIdlePoint.Equals(idleRoute[nextIdleIdx].position))
+            nextIdlePoint = player.transform.position;
         if (rigid.velocity.y == 0)
-            GoToNextPoint(player.transform.position);
+            GoToNextPoint(nextIdlePoint);
     }
 
     protected virtual void Flip()

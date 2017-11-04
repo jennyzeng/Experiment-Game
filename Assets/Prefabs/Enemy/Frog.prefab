@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facingRight: 1
-  monitorRange: 0
+  monitorRange: 1
   damageAmount: 1
   idleRoute:
   - {fileID: 4980673446446378}
@@ -332,6 +332,7 @@ MonoBehaviour:
   - {fileID: 4651515446949206}
   isIdling: 0
   maxSpeed: 5
+  maxJumpYvelocity: 20
   maxJumpDistance: 3
 --- !u!114 &114886467224890598
 MonoBehaviour:
