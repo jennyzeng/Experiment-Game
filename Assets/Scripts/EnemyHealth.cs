@@ -25,7 +25,10 @@ public class EnemyHealth : Health
     }
     protected override void DestroyAction()
     {
-        Destroy(transform.parent.gameObject); // destroy the enemy and the route
+        // just stop there
+        anim.enabled = false;
+        GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f, 0.7f);
+        // Destroy(transform.parent.gameObject); // destroy the enemy and the route
     }
 
 
@@ -33,7 +36,6 @@ public class EnemyHealth : Health
     {
 
         healthBar.value = (float) curHP / maxHP;
-        Debug.Log("set value " + curHP / maxHP);
     }
 
     public void FlipHealthCanvas()

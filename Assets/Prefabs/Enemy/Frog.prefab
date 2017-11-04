@@ -323,6 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   facingRight: 1
   monitorRange: 0
+  damageAmount: 1
   idleRoute:
   - {fileID: 4980673446446378}
   - {fileID: 4070326573925790}
@@ -343,8 +344,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf99d21be5d84025b428c9422ed757e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 2
+  maxHP: 3
   timeDisappearAfterDie: 1
+  healthBarPrefab: {fileID: 1420705963545756, guid: 2d55ac27f9b4a4985b455deef0f394c1,
+    type: 2}
+  healthBar: {fileID: 0}
 --- !u!212 &212064414847887624
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -375,7 +379,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -529559859
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300036, guid: 8348fcf19163545c088a8be4320bf765, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

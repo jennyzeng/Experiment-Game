@@ -1976,25 +1976,6 @@ Prefab:
       propertyPath: m_Name
       value: FrogAI
       objectReference: {fileID: 0}
-    - target: {fileID: 4631693793366236, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4877547635515816, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114886467224890598, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: healthBarPrefab
-      value: 
-      objectReference: {fileID: 1420705963545756, guid: 2d55ac27f9b4a4985b455deef0f394c1,
-        type: 2}
-    - target: {fileID: 114886467224890598, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: maxHP
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
   m_IsPrefabParent: 0

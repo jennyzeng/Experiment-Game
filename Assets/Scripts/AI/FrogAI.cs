@@ -5,7 +5,7 @@ using UnityEngine;
 public class FrogAI : BaseAI {
 	public float maxSpeed = 3f; //max x speed
     public float maxJumpDistance = 5f;
-    bool updateNextPoint=true;
+    // bool updateNextPoint=true;
     protected override void GoToNextPoint(Vector2 nextPoint)
     {
         JumpTowardPoint(nextPoint);
@@ -32,6 +32,7 @@ public class FrogAI : BaseAI {
 
         float yOffset = targetPoint.y - transform.position.y;
         float ySpeed = (yOffset + 0.5f * gravity * time * time) / time;
+        if (ySpeed > 50) return new Vector2(0,0);
         Vector2 finalVelocity;
         if (xOffset > 0)
         {
@@ -41,7 +42,7 @@ public class FrogAI : BaseAI {
             finalVelocity = new Vector2(-maxSpeed, ySpeed);
         } 
         // draw velocity line for debugging
-        // Debug.DrawLine(transform.position, (Vector3)finalVelocity + transform.position, Color.red, 2);
+        Debug.DrawLine(transform.position, (Vector3)finalVelocity + transform.position, Color.red, 2);
         return finalVelocity;
     }
 
@@ -54,11 +55,5 @@ public class FrogAI : BaseAI {
     {
         return true;
     }
-
-	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "Player")
-			coll.gameObject.SendMessage("TakeDamage", 1);
-
-	}
 
 }

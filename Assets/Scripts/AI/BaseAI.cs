@@ -7,7 +7,7 @@ public abstract class BaseAI : MonoBehaviour
 {
     public bool facingRight = true;
     public float monitorRange = 10f;
-
+    public int damageAmount;
     public Transform[] idleRoute;
     [HideInInspector]
     public bool isIdling;
@@ -108,5 +108,13 @@ public abstract class BaseAI : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
         enemyHealth.FlipHealthCanvas();
+    }
+
+    protected virtual void OnCollisionEnter2D(Collision2D other)
+    {
+        if ( other.collider.CompareTag("Player"))
+        {
+            other.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
+        }
     }
 }
