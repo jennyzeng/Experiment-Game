@@ -34,8 +34,14 @@ public class GameManager : MonoBehaviour
         {
             if (instance == null)
             {
-                GameObject go = new GameObject("GameManager");
-                instance = go.AddComponent<GameManager>();
+                instance = FindObjectOfType(typeof(GameManager)) as GameManager;
+                if (!instance)
+                {
+                    Debug.LogError("There needs to be one active GameManager script on a GameObject in your scene");
+                    return null;
+                }
+                // GameObject go = new GameObject("GameManager");
+                // instance = go.AddComponent<GameManager>();
             }
             return instance;
         }
