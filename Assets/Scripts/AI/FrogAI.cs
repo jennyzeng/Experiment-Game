@@ -6,7 +6,9 @@ public class FrogAI : BaseAI {
 	public float maxSpeed = 3f; //max x speed
     public float maxJumpYvelocity = 20f;
     public float maxJumpDistance = 5f;
+
     // bool updateNextPoint=true;
+
     protected override void GoToNextPoint(Vector2 nextPoint)
     {
         JumpTowardPoint(nextPoint);
@@ -30,10 +32,11 @@ public class FrogAI : BaseAI {
         if (time == 0){
             return  new Vector2(rigid.velocity.x, rigid.velocity.y);
         } 
-
         float yOffset = targetPoint.y - transform.position.y;
         float ySpeed = (yOffset + 0.5f * gravity * time * time) / time;
-        if (Mathf.Abs(ySpeed) > maxJumpYvelocity) return new Vector2(rigid.velocity.x, rigid.velocity.y);
+        if (Mathf.Abs(ySpeed) > maxJumpYvelocity) 
+            return new Vector2(rigid.velocity.x, rigid.velocity.y);
+            // return new Vector2(0,0);
         Vector2 finalVelocity;
         if (xOffset > 0)
         {
@@ -49,7 +52,7 @@ public class FrogAI : BaseAI {
 
     protected override bool NeedCommand()
     {
-        return rigid.velocity.y == 0 ;
+        return rigid.velocity.y ==0;
     }
 
     protected override bool ShouldUpdateNextPoint()

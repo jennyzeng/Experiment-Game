@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerStates : MonoBehaviour
+public class GameObjStates : MonoBehaviour
 {
     public CollisionStates collisionStates;
 

@@ -19,6 +19,18 @@ public class EnemyHealth : Health
         healthBar = healthBarGo.GetComponentInChildren<Slider>();
     }
 
+    /// <summary>
+    /// Start is called on the frame when a script is enabled just before
+    /// any of the Update methods is called the first time.
+    /// </summary>
+    protected override void Start()
+    {
+        base.Start();
+        if (transform.localScale.x < 0)
+        {
+            FlipHealthCanvas();
+        }
+    }
     protected override void OnDie()
     {
         base.OnDie();
@@ -26,7 +38,7 @@ public class EnemyHealth : Health
         Rigidbody2D rigid = GetComponent<Rigidbody2D>();
         rigid.velocity = new Vector2(0, rigid.velocity.y);
         enabled = false;
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), 
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(),
             GameManager.Instance.GetManager<GameObjectManager>().player.GetComponent<Collider2D>(), true);
         Destroy(healthBar.transform.parent.gameObject);
     }
@@ -34,8 +46,8 @@ public class EnemyHealth : Health
     {
         // just stop there
         anim.enabled = false;
-        GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f, transparencyAfterDie);
-        
+        GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, transparencyAfterDie);
+
         // Destroy(transform.parent.gameObject); // destroy the enemy and the route
     }
 
@@ -43,7 +55,7 @@ public class EnemyHealth : Health
     protected override void OnHPchange(int HP)
     {
 
-        healthBar.value = (float) curHP / maxHP;
+        healthBar.value = (float)curHP / maxHP;
     }
 
     public void FlipHealthCanvas()

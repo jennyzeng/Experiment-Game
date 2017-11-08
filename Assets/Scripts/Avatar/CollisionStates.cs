@@ -29,7 +29,6 @@ public class CollisionStates
     }
 	public void AddCollisionForStates(Collision2D other, Collider2D myCollider)
 	{
-
 		Collider2D collider = other.collider;
 		Vector2 contactPoint = (other.contacts[0].point+other.contacts[1].point)/2;
         Vector2 center = myCollider.bounds.center;

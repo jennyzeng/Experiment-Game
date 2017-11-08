@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 95874409559763770}
   - component: {fileID: 50215044701736620}
   - component: {fileID: 61280989515721106}
+  - component: {fileID: 114682065203892780}
   - component: {fileID: 114611961532197662}
   - component: {fileID: 114886467224890598}
   m_Layer: 10
@@ -144,7 +145,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1627664113748148}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.64, y: 0, z: 0}
+  m_LocalPosition: {x: 1.94, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4877547635515816}
@@ -156,7 +157,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1684813097299088}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.732, y: -3.412924, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -211,7 +212,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614745139390318}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: -0.05, z: 0}
+  m_LocalPosition: {x: 3.89, y: -0.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4877547635515816}
@@ -322,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facingRight: 1
-  monitorRange: 1
+  monitorRange: 0
   damageAmount: 1
   idleRoute:
   - {fileID: 4980673446446378}
@@ -333,7 +334,18 @@ MonoBehaviour:
   isIdling: 0
   maxSpeed: 5
   maxJumpYvelocity: 20
-  maxJumpDistance: 3
+  maxJumpDistance: 10
+--- !u!114 &114682065203892780
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1907174969487698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e66716b131140628945e0f5cdcf107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114886467224890598
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -350,6 +362,7 @@ MonoBehaviour:
   healthBarPrefab: {fileID: 1420705963545756, guid: 2d55ac27f9b4a4985b455deef0f394c1,
     type: 2}
   healthBar: {fileID: 0}
+  transparencyAfterDie: 0.5
 --- !u!212 &212064414847887624
 SpriteRenderer:
   m_ObjectHideFlags: 1
