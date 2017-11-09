@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHealth : Health {
-
-    public float transparentAmount=0.5f;
-    public Color transColor = new Color(1f,1f,1f,0.5f);
-    public float avoidDamageTimeDuration=5f;
+public class PlayerHealth : Health
+{
+    public float transparentAmount = 0.5f;
+    public float avoidDamageTimeDuration = 5f;
     public float flashIntervalWhenDamge = 0.5f;
     public int defendAmount = 0;
     HUDCanvas hUDCanvas;
     int score;
-
     Color normalColor;
     SpriteRenderer spriteRenderer;
+    private Color transColor= new Color(1f,1f,1f,0.5f);
     protected override void Start()
     {
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        normalColor = new Color(spriteRenderer.color.r,spriteRenderer.color.g, spriteRenderer.color.b,
+        normalColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
                         spriteRenderer.color.a);
     }
     public void Initialize()
@@ -26,31 +25,35 @@ public class PlayerHealth : Health {
         // TODO: load resources 
         curHP = maxHP;
         hUDCanvas = GameManager.Instance.GetManager<UIManager>().GetCanvas<HUDCanvas>();
-        hUDCanvas.OnHPchange((float) curHP/maxHP);
+        hUDCanvas.OnHPchange((float)curHP / maxHP);
+        // transColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
+        //                 transparentAmount);
 
-    }   
+    }
     public override void TakeDamage(int amount)
     {
         if (amount > 0)
         {
-            curHP -= Mathf.Max(0, (amount-defendAmount));
-            if (curHP <= 0 ){
-                curHP = 0; 
+            curHP -= Mathf.Max(0, (amount - defendAmount));
+            if (curHP <= 0)
+            {
+                curHP = 0;
                 OnDie();
             }
-            else{
+            else
+            {
                 OnDamage();
             }
         }
-        else 
+        else
         {// add health
             curHP -= amount;
-            if(curHP > maxHP) curHP = maxHP;
+            if (curHP > maxHP) curHP = maxHP;
             OnGetHealth();
         }
         OnHPchange(curHP);
     }
-    void OnGetHealth(){}
+    void OnGetHealth() { }
 
     protected override void OnDamage()
     {
@@ -58,8 +61,8 @@ public class PlayerHealth : Health {
         ActivateCollision(true);
         TimerManager timerManager = GameManager.Instance.GetManager<TimerManager>();
         // flash effect
-        timerManager.AddTimer(0,gameObject, Flash, flashIntervalWhenDamge, 
-        (int) (avoidDamageTimeDuration/flashIntervalWhenDamge));
+        timerManager.AddTimer(0, gameObject, Flash, flashIntervalWhenDamge,
+        (int)(avoidDamageTimeDuration / flashIntervalWhenDamge));
         // reset to normal state, no longer invulnerable
         timerManager.AddTimer(avoidDamageTimeDuration, gameObject, ResetToNormal);
     }
@@ -88,7 +91,8 @@ public class PlayerHealth : Health {
             spriteRenderer.color = normalColor;
         }
     }
-    public void AddScore(int amount){
+    public void AddScore(int amount)
+    {
         score += amount;
         OnScoreChange(score);
     }
@@ -99,7 +103,7 @@ public class PlayerHealth : Health {
     }
     protected override void OnHPchange(int HP)
     {
-        hUDCanvas.OnHPchange((float) curHP/maxHP);
+        hUDCanvas.OnHPchange((float)curHP / maxHP);
     }
 
 }

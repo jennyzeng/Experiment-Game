@@ -5,7 +5,6 @@ using System;
 
 public class GameManager : MonoBehaviour
 {
-
     // singleton
     private static GameManager instance;
 
