@@ -27,4 +27,21 @@ public class GameManager : SingletonBase<GameManager>
     {
         UIManager.Instance.GetCanvas<HUDCanvas>().OnScoreChange(score);
     }
+
+    public void GameOver()
+    {
+        UIManager.Instance.GetCanvas<HUDCanvas>().gameObject.SetActive(false);
+        UIManager.Instance.GetCanvas<GameOverCanvas>().OpenCanvas(score);
+    }
+
+
+    public void RestartGame()
+    {
+        
+    }
+
+    public void BackToMenu()
+    {
+
+    }
 }

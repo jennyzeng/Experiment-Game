@@ -104,6 +104,17 @@ public class PlayerHealth : Health
         timerManager.AddTimer(avoidDamageTimeDuration, gameObject, ResetToNormal);
     }
 
+    protected override void OnDie()
+    {
+        // base.OnDie();
+        anim.SetTrigger("Die");
+        GameManager.Instance.GameOver();
+        foreach(PlayerAbility ability in GetComponents<PlayerAbility>())
+        {
+            ability.enabled = false;
+        }
+    }
+
     void ActivateCollision(bool ignore)
     {
         int playerLayer = LayerMask.NameToLayer("Players");

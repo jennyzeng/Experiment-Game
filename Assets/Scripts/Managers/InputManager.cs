@@ -16,6 +16,11 @@ public class InputManager : SingletonBase<InputManager>
         transform.SetParent(GameManager.Instance.transform);
         // register in game manager		
     }
+
+    public static void UnregisterAllActions()
+    {
+        Instance.inputMap.Clear();
+    }
     public static void RegisterAction(String axis, Action action)
     {
         if (Instance.inputMap.ContainsKey(axis))
