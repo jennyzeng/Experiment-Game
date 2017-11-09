@@ -2,40 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-public class TimerManager : BaseManager
+public class TimerManager : SingletonBase<TimerManager>
 {
 	public List<Timer> CurrentTimers;// = new List<Timer>();
 		
-	public override void Initialize(){
+	protected override void Init(){
+		transform.SetParent(GameManager.Instance.transform);
 		CurrentTimers = new List<Timer>();
 	}
-	void Update ()
+	void FixedUpdate ()
 	{
 		//if (Game.isPaused)
 		//    return;
 
-		foreach (Timer timer in CurrentTimers.ToArray())
+		foreach (Timer timer in Instance.CurrentTimers.ToArray())
 		{
 			timer.Tick(Time.deltaTime);
 			if (timer.IsFinished)
 			{
-				CurrentTimers.Remove(timer);
+				Instance.CurrentTimers.Remove(timer);
 			}
 		}
+
 	}
 
 	public void AddTimer(float duration, GameObject go, Action callback,
 						 float interval = 0, int repeat = 0)
 	{
-		CurrentTimers.Add(new Timer(duration, go, callback, interval, repeat));
+		Instance.CurrentTimers.Add(new Timer(duration, go, callback, interval, repeat));
 	}
 	public void AddTimer (Timer timer)
 	{
-		CurrentTimers.Add(timer);
+		Instance.CurrentTimers.Add(timer);
 	}
 
 	public void RemoveTimer(Timer timer)
 	{
-		CurrentTimers.Remove(timer);
+		Instance.CurrentTimers.Remove(timer);
 	}
 }

@@ -41,7 +41,7 @@ public abstract class BaseAI : MonoBehaviour
     {
         if (player == null)
         {
-            player = GameManager.Instance.GetManager<GameObjectManager>().player;
+            player = GameObjectManager.Instance.player;
             if (player == null)
                 return;
         }

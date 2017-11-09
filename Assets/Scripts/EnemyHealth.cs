@@ -39,7 +39,7 @@ public class EnemyHealth : Health
         rigid.velocity = new Vector2(0, rigid.velocity.y);
         enabled = false;
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(),
-            GameManager.Instance.GetManager<GameObjectManager>().player.GetComponent<Collider2D>(), true);
+            GameObjectManager.Instance.player.GetComponent<Collider2D>(), true);
         Destroy(healthBar.transform.parent.gameObject);
     }
     protected override void DestroyAction()

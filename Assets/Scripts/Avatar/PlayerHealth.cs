@@ -24,7 +24,7 @@ public class PlayerHealth : Health
     {
         // TODO: load resources 
         curHP = maxHP;
-        hUDCanvas = GameManager.Instance.GetManager<UIManager>().GetCanvas<HUDCanvas>();
+        hUDCanvas = UIManager.Instance.GetCanvas<HUDCanvas>();
         hUDCanvas.OnHPchange((float)curHP / maxHP);
         // transColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
         //                 transparentAmount);
@@ -59,7 +59,7 @@ public class PlayerHealth : Health
     {
         anim.SetTrigger("Hurt");
         ActivateCollision(true);
-        TimerManager timerManager = GameManager.Instance.GetManager<TimerManager>();
+        TimerManager timerManager = TimerManager.Instance;
         // flash effect
         timerManager.AddTimer(0, gameObject, Flash, flashIntervalWhenDamge,
         (int)(avoidDamageTimeDuration / flashIntervalWhenDamge));
@@ -76,7 +76,6 @@ public class PlayerHealth : Health
 
     void ResetToNormal()
     {
-        Debug.Log("reset to normal");
         spriteRenderer.color = normalColor;
         ActivateCollision(false);
     }

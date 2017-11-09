@@ -3,48 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameObjectManager : BaseManager {
-	[HideInInspector]
-	public GameObject player;
-	public GameObject playerPrefab;
-	// public HealthCanvas healthCanvas;
+public class GameObjectManager : SingletonBase<GameObjectManager>
+{
+    [HideInInspector]
+    public GameObject player;
+    public GameObject playerPrefab;
 
-	// void Start()
-	// {
-	// 	player = Instantiate(playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
-	// 		 EnvironmentUtil.Instance.playerSpawnPoint.rotation);
-	// 	// foreach(PlayerAbility ability in player.GetComponentsInChildren<PlayerAbility>())
-	// 	// {
-	// 		// TODO: resource data loading should be added here in the future
-	// 		// ability.Initialize();
-	// 	// }
-		
-	// 	UIManager uIManager = GameManager.Instance.GetManager<UIManager>();
-	// 	uIManager.Initialize();
-	// 	player.GetComponent<PlayerHealth>().Initialize();
-	// 	// uIManager.GetCanvas<SkillCanvas>().Initialize(player);
-	// 	// healthCanvas = uIManager.GetCanvas<HealthCanvas>();
-	// }
-	public override void Initialize()
-	{
-		player = Instantiate(playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
-			 EnvironmentUtil.Instance.playerSpawnPoint.rotation);
-		// foreach(PlayerAbility ability in player.GetComponentsInChildren<PlayerAbility>())
-		// {
-			// TODO: resource data loading should be added here in the future
-			// ability.Initialize();
-		// }
-		
-		// UIManager uIManager = GameManager.Instance.GetManager<UIManager>();
-		// uIManager.Initialize();
-		player.GetComponent<PlayerHealth>().Initialize();		
-		EnvironmentUtil.Instance.AferInit();
-	}
-	public void OnPlayerDie()
-	{
-		// GameOverCanvas gameOverCanvas = GameManager.Instance.GetManager<UIManager>().GetCanvas<GameOverCanvas>();
-		// gameOverCanvas.OnGameOver(score);
-		player = null;
-	}
+
+    protected override void Init()
+    {
+        transform.SetParent(GameManager.Instance.transform);
+    }
+    public static void OnPlayerDie()
+    {
+        // GameOverCanvas gameOverCanvas = GameManager.Instance.GetManager<UIManager>().GetCanvas<GameOverCanvas>();
+        // gameOverCanvas.OnGameOver(score);
+    	Instance.player = null;
+    }
+    public static void InitPlayer()
+    {
+        Instance.player = Instantiate(Instance.playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
+             EnvironmentUtil.Instance.playerSpawnPoint.rotation);
+        Instance.player.GetComponent<PlayerHealth>().Initialize();
+        EnvironmentUtil.Instance.AferInit();
+    }
 
 }

@@ -29,7 +29,7 @@ public class Timer
 		
 		if (go == null)
 		{
-			GameManager.Instance.GetManager<TimerManager>().RemoveTimer(this);
+			TimerManager.Instance.RemoveTimer(this);
 			return;
 		}
 		duration -= delta;

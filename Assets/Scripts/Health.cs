@@ -16,7 +16,6 @@ public abstract class Health : MonoBehaviour {
 	public virtual void TakeDamage(int amount)
 	{
 		if (!enabled) return;
-		Debug.Log("take damage");
 		curHP -= amount;
 		if (curHP <= 0 ){
 			curHP = 0;
@@ -29,9 +28,8 @@ public abstract class Health : MonoBehaviour {
 	}
 	protected virtual void OnDie()
 	{
-		Debug.Log("on die");
 		// anim.SetTrigger("Die");
-		GameManager.Instance.GetManager<TimerManager>().AddTimer(
+		TimerManager.Instance.AddTimer(
 			timeDisappearAfterDie, gameObject, DestroyAction);
 	}
 
@@ -42,7 +40,6 @@ public abstract class Health : MonoBehaviour {
 	}
 	protected virtual void OnDamage()
 	{
-		Debug.Log("On damage");
 		// anim.SetTrigger("Hurt");
 	}
 	protected abstract void OnHPchange(int HP);

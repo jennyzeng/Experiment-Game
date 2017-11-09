@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : BaseManager
+public class UIManager : SingletonBase<UIManager>
 {
     public BaseCanvas[] preloadCanvasList;
     List<BaseCanvas> canvasList;
     
-    public override void Initialize()
+    protected override void Init()
     {
         InitCanvasList();
     }
     
     public void InitCanvasList()
     {
-        canvasList = new List<BaseCanvas>();
-        for (int i= 0; i<preloadCanvasList.Length; i ++)
+        Instance.canvasList = new List<BaseCanvas>();
+        for (int i= 0; i<Instance.preloadCanvasList.Length; i ++)
         {
             canvasList.Add(Instantiate(preloadCanvasList[i], transform));
         }

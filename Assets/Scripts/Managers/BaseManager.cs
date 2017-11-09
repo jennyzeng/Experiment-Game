@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseManager : MonoBehaviour {
+// public abstract class BaseManager : SingletonBase {
 
-    public abstract void Initialize();
-}
+//     public abstract void Init();
+// }

@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnvironmentUtil : MonoBehaviour {
+public class EnvironmentUtil : SingletonBase<EnvironmentUtil> {
 
-private static EnvironmentUtil instance;
 
 	public Transform playerSpawnPoint;
 	public GameObject enemyContainer;
@@ -12,31 +11,15 @@ private static EnvironmentUtil instance;
 	[HideInInspector]
 	public int enemyCounter;
 
+	protected override void Init()
+	{
+		
+	}
 	void Awake()
 	{
-		if (instance!= null){
-			if (instance != this)
-				Destroy(instance.gameObject);
-			else
-			return;
-		}
-		EnvironmentUtil environmentUtil = GetComponent<EnvironmentUtil>();
-		instance = environmentUtil;
 		enemyCounter = enemyContainer.transform.childCount;
 
 	}
-   public static EnvironmentUtil Instance
-   {
-      get 
-      {
-         if (instance == null)
-         {
-			 Debug.LogError("No environment exists for current scene");
-			 return null;
-         }
-         return instance;
-      }
-   }
 
 	public void AferInit()
 	{

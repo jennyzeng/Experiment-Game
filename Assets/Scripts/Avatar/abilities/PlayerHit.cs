@@ -13,11 +13,9 @@ public class PlayerHit : PlayerAbility {
     public int attackAmount;
     float lastTriggerTime;
     PlayerMovement playerMovement;
-    BoxCollider2D boxCollider2D;
     protected override void Start()
     {
         base.Start();
-        boxCollider2D = GetComponent<BoxCollider2D>();
         lastTriggerTime = Time.time;
         attackRange *= Mathf.Abs(transform.localScale.x);
     }

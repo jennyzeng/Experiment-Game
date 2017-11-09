@@ -15,8 +15,8 @@ public abstract class PlayerAbility : MonoBehaviour {
 
 	public virtual void OnDisable()
 	{
-		if (GameManager.HasInstance())
-			GameManager.Instance.GetManager<InputManager>().UnregisterAction(axis);
+		if (InputManager.HasInstance())
+			InputManager.UnregisterAction(axis);
 	}
 
 	/// <summary>
@@ -24,7 +24,7 @@ public abstract class PlayerAbility : MonoBehaviour {
 	/// </summary>
 	void OnEnable()
 	{
-		GameManager.Instance.GetManager<InputManager>().RegisterAction(axis, Action);
+		InputManager.RegisterAction(axis, Action);
 	}
 
 	

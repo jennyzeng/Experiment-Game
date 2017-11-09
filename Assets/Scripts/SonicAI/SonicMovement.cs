@@ -10,13 +10,13 @@ public class SonicMovement : MonoBehaviour
     void Start()
     {
        
-       target = GameManager.Instance.GetManager<GameObjectManager>().player;
+       target = GameObjectManager.Instance.player;
         //GameManager.Instance.GetManager<TimerManager>().AddTimer;
     }
     void Update()
     {
         if (target == null)
-            target = GameManager.Instance.GetManager<GameObjectManager>().player;
+            target = GameObjectManager.Instance.player;
         if (target == null) return;
         Vector3 targetDir = target.transform.position - transform.position;
         float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
