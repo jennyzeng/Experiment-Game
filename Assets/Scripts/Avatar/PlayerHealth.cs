@@ -13,7 +13,7 @@ public class PlayerHealth : Health
     int score;
     Color normalColor;
     SpriteRenderer spriteRenderer;
-    private Color transColor= new Color(1f,1f,1f,0.5f);
+    private Color transColor = new Color(1f, 1f, 1f, 0.5f);
     protected override void Start()
     {
         anim = GetComponent<Animator>();
@@ -25,7 +25,7 @@ public class PlayerHealth : Health
     {
         // TODO: load resources 
         ConfigDataPlayer configData = new ConfigDataPlayer();
-        
+
         if (ResourceManager.Instance.configData.player.TryGetValue(ID, out configData))
         {
             DataConfig(configData);
@@ -51,29 +51,42 @@ public class PlayerHealth : Health
 
     public override void TakeDamage(int amount)
     {
-        if (amount > 0)
+        if (amount < 0)
         {
-            amount = Mathf.Max(0, (int)Mathf.Ceil((1-defendAmount) * amount));
-            curHP -= amount;
-            if (curHP <= 0)
-            {
-                curHP = 0;
-                OnDie();
-            }
-            else
-            {
-                OnDamage();
-            }
+            Debug.LogError("amount should be positive");
+            return;
+        }
+
+        amount = Mathf.Max(0, (int)Mathf.Ceil((1 - defendAmount) * amount));
+        curHP -= amount;
+        if (curHP <= 0)
+        {
+            curHP = 0;
+            OnDie();
         }
         else
-        {// add health
-            curHP -= amount;
-            if (curHP > maxHP) curHP = maxHP;
-            OnGetHealth();
+        {
+            OnDamage();
         }
         OnHPchange(curHP);
     }
-    void OnGetHealth() { }
+
+    public void AddHP(int amount)
+    {
+        if (amount < 0)
+        {
+            Debug.LogError("amount should be positive");
+            return;
+        }
+        curHP += amount;
+        if (curHP > maxHP) curHP = maxHP;
+        OnGetHealth();
+
+    }
+    void OnGetHealth() { 
+        // TODO: add anim in the future
+        OnHPchange(curHP);
+    }
 
     protected override void OnDamage()
     {
@@ -110,16 +123,7 @@ public class PlayerHealth : Health
             spriteRenderer.color = normalColor;
         }
     }
-    public void AddScore(int amount)
-    {
-        score += amount;
-        OnScoreChange(score);
-    }
 
-    void OnScoreChange(int score)
-    {
-
-    }
     protected override void OnHPchange(int HP)
     {
         hUDCanvas.OnHPchange((float)curHP / maxHP);
