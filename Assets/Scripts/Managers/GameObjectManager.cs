@@ -20,11 +20,15 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         // gameOverCanvas.OnGameOver(score);
     	Instance.player = null;
     }
-    public static void InitPlayer()
+    public void InitPlayer()
     {
-        Instance.player = Instantiate(Instance.playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
+        player = Instantiate(Instance.playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
              EnvironmentUtil.Instance.playerSpawnPoint.rotation);
-        Instance.player.GetComponent<PlayerHealth>().Initialize();
+        player.GetComponent<PlayerHealth>().Initialize();
+        foreach(PlayerAbility playerAbility in player.GetComponents<PlayerAbility>())
+        {
+            playerAbility.Initialize();
+        }
         EnvironmentUtil.Instance.AferInit();
     }
 

@@ -6,11 +6,7 @@ public class PlayerHit : PlayerAbility {
 
     public Transform bulletSpawnPoint;
     public Bullet bulletPrefab;
-    public float outForce;
     // use Fire1 axis
-    public float coolDownTime = 0.1f;
-    public float attackRange = 1f;
-    public int attackAmount;
     float lastTriggerTime;
     PlayerMovement playerMovement;
     protected override void Start()
@@ -49,11 +45,6 @@ public class PlayerHit : PlayerAbility {
         {
             bullet.initialize(outForce, attackAmount);
         }
-    }
-
-    public override void Initialize()
-    {
-        throw new System.NotImplementedException();
     }
 	
 }

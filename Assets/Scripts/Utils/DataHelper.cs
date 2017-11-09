@@ -11,14 +11,13 @@ public static class DataHelper {
 		TextAsset textAsset =  Resources.Load(dataPath) as TextAsset;
 		if (textAsset==null)
 		{
-			Debug.Log("file path "+ dataPath + " does not exist");
+			Debug.LogError("file path "+ dataPath + " does not exist");
 			return default(T);
 		}
 		string dataAsJson = textAsset.text;
 		
 		obj = JsonConvert.DeserializeObject<T>(dataAsJson);
 		return obj;
-		
 	}
 
 }

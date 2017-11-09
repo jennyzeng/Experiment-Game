@@ -33,9 +33,4 @@ public class PlayerMultiJump : PlayerAbility
             animator.SetTrigger("Jump");
         }
     }
-
-    public override void Initialize()
-    {
-        throw new System.NotImplementedException();
-    }
 }

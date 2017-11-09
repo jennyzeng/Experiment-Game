@@ -9,6 +9,7 @@ public class EnemyHealth : Health
     [HideInInspector]
     public Slider healthBar;
     public float transparencyAfterDie = 0.5f;
+    public int enemyScore=1;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -40,6 +41,7 @@ public class EnemyHealth : Health
         enabled = false;
         Physics2D.IgnoreCollision(GetComponent<Collider2D>(),
             GameObjectManager.Instance.player.GetComponent<Collider2D>(), true);
+        GameManager.Instance.AddScore(enemyScore);
         Destroy(healthBar.transform.parent.gameObject);
     }
     protected override void DestroyAction()

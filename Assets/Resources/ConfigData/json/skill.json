@@ -1,0 +1,23 @@
+{
+    "1": {
+        "id": 1,
+        "name": "PlayerHit",
+        "axis": "Fire1",
+        "isAttackSkill": true,
+        "coolDownTime": 0.1,
+        "attackRange": 1,
+        "attackAmount": 1,
+        "outForce": 1
+    },
+    "2": {
+        "id": 2,
+        "name": "PlayerMovement",
+        "axis": "Horizontal",
+        "maxSpeed": 4,
+        "isAttackSkill": false,
+        "coolDownTime": 0,
+        "attackRange": 0,
+        "attackAmount": 0,
+        "outForce": 0
+    }
+}

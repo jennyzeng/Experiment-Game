@@ -3,9 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class PlayerAbility : MonoBehaviour {
+	public string ID;
+	public float maxSpeed;
     protected Rigidbody2D rigid;
     protected Animator animator;
 	public string axis;
+
+	protected bool isAttackSkill;
+	protected float coolDownTime;
+	protected float attackRange;
+	protected int attackAmount;
+	protected float outForce;
+
 	// Use this for initialization
 	protected virtual void Start () 
 	{
@@ -28,6 +37,31 @@ public abstract class PlayerAbility : MonoBehaviour {
 	}
 
 	
-	public abstract void Initialize();	// TODO: resource data loading should be added here in the future
+	public virtual void Initialize()
+	{
+		ConfigDataSkill configData = new ConfigDataSkill();
+		if (ResourceManager.Instance.configData.skill.TryGetValue(ID, out configData))
+		{
+			DataConfig(configData);
+		}
+	}	
+
+	protected virtual void DataConfig(ConfigDataSkill configData)
+	{
+		if (!axis.Equals(configData.axis))
+		{
+			InputManager.UnregisterAction(axis);
+			axis = configData.axis;
+			InputManager.RegisterAction(axis, Action);
+		}
+		maxSpeed = configData.maxSpeed;
+		coolDownTime = configData.coolDownTime;
+		if (configData.isAttackSkill){
+			attackRange = configData.attackRange;
+			attackAmount = configData.attackAmount;
+			outForce = configData.outForce;
+		}
+
+	}
 	public abstract void Action();
 }

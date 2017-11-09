@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerHealth : Health
 {
     public string ID;
-    public float transparentAmount = 0.5f;
-    public float avoidDamageTimeDuration = 5f;
-    public float flashIntervalWhenDamge = 0.5f;
-    public int defendAmount = 0;
+    float transparentAmount = 0.5f;
+    float avoidDamageTimeDuration = 5f;
+    float flashIntervalWhenDamge = 0.5f;
+    float defendAmount = 0;
     HUDCanvas hUDCanvas;
     int score;
     Color normalColor;
@@ -24,11 +24,12 @@ public class PlayerHealth : Health
     public void Initialize()
     {
         // TODO: load resources 
-        maxHP= ResourceManager.Instance.configData.player[ID].maxHP;
+        ConfigDataPlayer configData = new ConfigDataPlayer();
         
-
-
-
+        if (ResourceManager.Instance.configData.player.TryGetValue(ID, out configData))
+        {
+            DataConfig(configData);
+        }
         curHP = maxHP;
         hUDCanvas = UIManager.Instance.GetCanvas<HUDCanvas>();
         hUDCanvas.OnHPchange((float)curHP / maxHP);
@@ -36,11 +37,24 @@ public class PlayerHealth : Health
         //                 transparentAmount);
 
     }
+    void DataConfig(ConfigDataPlayer configData)
+    {
+        maxHP = configData.maxHP;
+        timeDisappearAfterDie = configData.timeDisappearAfterDie;
+        transparentAmount = configData.transparentAmount;
+        transColor = new Color(1f, 1f, 1f, transparentAmount);
+        avoidDamageTimeDuration = configData.avoidDamageTimeDuration;
+        flashIntervalWhenDamge = configData.flashIntervalWhenDamge;
+        defendAmount = configData.defendAmount;
+        score = configData.score;
+    }
+
     public override void TakeDamage(int amount)
     {
         if (amount > 0)
         {
-            curHP -= Mathf.Max(0, (amount - defendAmount));
+            amount = Mathf.Max(0, (int)Mathf.Ceil((1-defendAmount) * amount));
+            curHP -= amount;
             if (curHP <= 0)
             {
                 curHP = 0;

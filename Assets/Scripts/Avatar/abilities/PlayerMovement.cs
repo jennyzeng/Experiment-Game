@@ -6,7 +6,6 @@ using UnityEngine;
 
  */
 public class PlayerMovement : PlayerAbility {
-	public float maxSpeed = 10f;
 	public bool facingRight = true;
 	// public string axis = "Horizontal";
 
@@ -31,12 +30,6 @@ public class PlayerMovement : PlayerAbility {
 		if (animator.GetBool("IsRunning") && Input.GetAxis("Horizontal") == 0) 
 			animator.SetBool("IsRunning", false);
 	}
-
-
-    public override void Initialize()
-    {
-        throw new System.NotImplementedException();
-    }
 
     void Flip()
 	{

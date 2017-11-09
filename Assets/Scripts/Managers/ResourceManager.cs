@@ -8,6 +8,7 @@ public class ResourceManager : SingletonBase<ResourceManager> {
     string dataPath = "ConfigData/json/";
     protected override void Init()
     {
+        transform.SetParent(GameManager.Instance.transform);
         if (configData==null)
             InitConfigData();
     }

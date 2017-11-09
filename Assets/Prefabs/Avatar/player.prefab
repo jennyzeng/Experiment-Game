@@ -167,14 +167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c750cc3f0f03486c82dc98200cf66c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ID: 1
+  maxSpeed: 0
   axis: Fire1
   bulletSpawnPoint: {fileID: 4607342676909680}
   bulletPrefab: {fileID: 114245459477031926, guid: 83542ce4c22294e59bfc55eaa78bdf15,
     type: 2}
-  outForce: 1
-  coolDownTime: 0.5
-  attackRange: 1.5
-  attackAmount: 1
 --- !u!114 &114765088731004202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,8 +184,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4745bc331c285543a8a07976670c08a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axis: Horizontal
+  ID: 2
   maxSpeed: 4
+  axis: Horizontal
   facingRight: 1
 --- !u!114 &114947947817356204
 MonoBehaviour:
@@ -200,6 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92bf0869771a546149b37b606224109a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ID: 3
+  maxSpeed: 0
   axis: Jump
   jumpVelocity: 5
   controlKey: 32
