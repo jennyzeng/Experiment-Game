@@ -71,6 +71,10 @@ public class PlayerHealth : Health
         OnHPchange(curHP);
     }
 
+    public bool IsFullHP()
+    {
+        return curHP == maxHP;
+    }
     public void AddHP(int amount)
     {
         if (amount < 0)
