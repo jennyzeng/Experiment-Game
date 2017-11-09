@@ -10,6 +10,7 @@ public class UIManager : SingletonBase<UIManager>
     protected override void Init()
     {
         InitCanvasList();
+        transform.SetParent(GameManager.Instance.transform);
     }
     
     public void InitCanvasList()

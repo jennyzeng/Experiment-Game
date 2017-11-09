@@ -221,7 +221,7 @@ Prefab:
     - target: {fileID: 20225386228895406, guid: ada1b64e33cd6e64085e977210178026,
         type: 2}
       propertyPath: orthographic size
-      value: 4.6688743
+      value: 4.6483517
       objectReference: {fileID: 0}
     - target: {fileID: 114224228171195432, guid: ada1b64e33cd6e64085e977210178026,
         type: 2}
@@ -2291,8 +2291,7 @@ Prefab:
       propertyPath: m_Name
       value: FrogAI
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114682065203892780, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1368943775
@@ -3792,6 +3791,22 @@ Transform:
   m_Father: {fileID: 56350020}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2145949155 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1772183066704350, guid: f9b611cd16dd0b64b83a378cbd391169,
+    type: 2}
+  m_PrefabInternal: {fileID: 1096700512}
+--- !u!114 &2145949156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145949155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ea8b373b8e1bde458ba3fd87b9aa4f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2145949157 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4721489110450326, guid: f9b611cd16dd0b64b83a378cbd391169,

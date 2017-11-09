@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 95718873764245922}
   - component: {fileID: 50166854025283304}
   - component: {fileID: 61651072229227228}
+  - component: {fileID: 114046520447371372}
   - component: {fileID: 114765088731004202}
   - component: {fileID: 114947947817356204}
-  - component: {fileID: 114046520447371372}
   - component: {fileID: 114035708685802474}
   m_Layer: 9
   m_Name: player
@@ -152,10 +152,6 @@ MonoBehaviour:
   maxHP: 5
   timeDisappearAfterDie: 1
   ID: 1
-  transparentAmount: 0.5
-  avoidDamageTimeDuration: 3
-  flashIntervalWhenDamge: 0.2
-  defendAmount: 0
 --- !u!114 &114046520447371372
 MonoBehaviour:
   m_ObjectHideFlags: 1

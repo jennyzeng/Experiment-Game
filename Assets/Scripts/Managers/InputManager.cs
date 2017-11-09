@@ -13,6 +13,7 @@ public class InputManager : SingletonBase<InputManager>
     protected override void Init()
     {
         Instance.inputMap = new Dictionary<String, Action>();
+        transform.SetParent(GameManager.Instance.transform);
         // register in game manager		
     }
     public static void RegisterAction(String axis, Action action)
