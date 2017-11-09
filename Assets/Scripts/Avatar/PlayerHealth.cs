@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : Health
 {
+    public string ID;
     public float transparentAmount = 0.5f;
     public float avoidDamageTimeDuration = 5f;
     public float flashIntervalWhenDamge = 0.5f;
@@ -23,6 +24,11 @@ public class PlayerHealth : Health
     public void Initialize()
     {
         // TODO: load resources 
+        maxHP= ResourceManager.Instance.configData.player[ID].maxHP;
+        
+
+
+
         curHP = maxHP;
         hUDCanvas = UIManager.Instance.GetCanvas<HUDCanvas>();
         hUDCanvas.OnHPchange((float)curHP / maxHP);

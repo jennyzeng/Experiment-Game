@@ -34,7 +34,6 @@ public abstract class BaseAI : MonoBehaviour
         next = 1;
         isIdling = true;
         transform.position = idleRoute[0].position;
-
     }
 
     protected virtual void FixedUpdate()

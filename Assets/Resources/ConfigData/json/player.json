@@ -1,0 +1,11 @@
+{
+    "1": {
+        "id": 1,
+        "maxHP": 100,
+        "transparentAmount": 0.5,
+        "avoidDamageTimeDuration": 2,
+        "flashIntervalWhenDamge": 0.5,
+        "defendAmount": 1,
+        "score": 0
+    }
+}

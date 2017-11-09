@@ -151,8 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 5
   timeDisappearAfterDie: 1
+  ID: 1
   transparentAmount: 0.5
-  transColor: {r: 1, g: 1, b: 1, a: 0.359}
   avoidDamageTimeDuration: 3
   flashIntervalWhenDamge: 0.2
   defendAmount: 0

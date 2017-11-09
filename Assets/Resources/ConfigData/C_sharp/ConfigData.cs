@@ -10,7 +10,7 @@ public class ConfigData {
 
 	public ConfigData()
 	{
-		player = new  Dictionary<string, ConfigDataPlayer>();
+		player = new Dictionary<string, ConfigDataPlayer>();
 		monster = new Dictionary<string, ConfigDataMonster>();
 		item = new Dictionary<string, ConfigDataItem>();
 		skill = new Dictionary<string, ConfigDataSkill>();
