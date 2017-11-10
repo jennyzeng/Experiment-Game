@@ -12,6 +12,7 @@ public class AboutCanvas : MonoBehaviour
     void Start()
     {
         configData = DataHelper.DeserializeObject(datapath, new ConfigDataAbout());
+		SwitchText(configData.defaultContent);
     }
     public void OnBackButtonClicked()
     {
