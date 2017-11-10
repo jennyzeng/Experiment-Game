@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class GameManager : SingletonBase<GameManager>
 {
@@ -37,7 +38,11 @@ public class GameManager : SingletonBase<GameManager>
 
     public void RestartGame()
     {
-        
+        Destroy(GameObjectManager.Instance.player);
+        Destroy(gameObject);
+
+        SceneManager.LoadScene("avatarTest", LoadSceneMode.Single);
+
     }
 
     public void BackToMenu()

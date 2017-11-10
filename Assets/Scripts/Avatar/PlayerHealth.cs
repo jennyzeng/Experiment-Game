@@ -20,6 +20,7 @@ public class PlayerHealth : Health
         spriteRenderer = GetComponent<SpriteRenderer>();
         normalColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
                         spriteRenderer.color.a);
+        ActivateCollision(false);
     }
     public void Initialize()
     {
@@ -108,6 +109,7 @@ public class PlayerHealth : Health
     {
         // base.OnDie();
         anim.SetTrigger("Die");
+        ActivateCollision(true);
         GameManager.Instance.GameOver();
         foreach(PlayerAbility ability in GetComponents<PlayerAbility>())
         {
