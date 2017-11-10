@@ -10,7 +10,6 @@ public class PlayerHealth : Health
     float flashIntervalWhenDamge = 0.5f;
     float defendAmount = 0;
     HUDCanvas hUDCanvas;
-    int score;
     Color normalColor;
     SpriteRenderer spriteRenderer;
     private Color transColor = new Color(1f, 1f, 1f, 0.5f);
@@ -47,7 +46,6 @@ public class PlayerHealth : Health
         avoidDamageTimeDuration = configData.avoidDamageTimeDuration;
         flashIntervalWhenDamge = configData.flashIntervalWhenDamge;
         defendAmount = configData.defendAmount;
-        score = configData.score;
     }
 
     public override void TakeDamage(int amount)

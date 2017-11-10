@@ -12,5 +12,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/Menu.unity
     guid: 34af724221ef440cd9ebd68f4fff4030
   - enabled: 1
+    path: Assets/_Scenes/about.unity
+    guid: fffe2180c9e2345c7a120fc6408c966a
+  - enabled: 1
     path: Assets/_Scenes/avatarTest.unity
     guid: 851d2cc7e6850428c9710009b101faac
