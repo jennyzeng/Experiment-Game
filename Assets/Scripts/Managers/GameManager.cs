@@ -15,7 +15,6 @@ public class GameManager : SingletonBase<GameManager>
     void OnEnable()
     {
         GameObjectManager.Instance.InitPlayer();
-        score = 0;
         OnScoreChange(score);
     }
     
