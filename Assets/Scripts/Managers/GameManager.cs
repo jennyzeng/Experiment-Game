@@ -38,6 +38,10 @@ public class GameManager : SingletonBase<GameManager>
 
     public void RestartGame()
     {
+        /*
+        TODO: need further editing after levels are created
+        https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html
+         */
         Destroy(GameObjectManager.Instance.player);
         Destroy(gameObject);
 
