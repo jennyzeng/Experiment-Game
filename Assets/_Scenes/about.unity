@@ -312,12 +312,12 @@ Prefab:
     - target: {fileID: 224090254356463028, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.63441455
+      value: 0.000000017630027
       objectReference: {fileID: 0}
     - target: {fileID: 224090254356463028, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.46551126
       objectReference: {fileID: 0}
     - target: {fileID: 224090254356463028, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
@@ -327,32 +327,22 @@ Prefab:
     - target: {fileID: 114056387943046136, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_Value
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114056387943046136, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_Size
-      value: 0.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 114995662178454444, guid: 0f0068dae589d244eb18b984f21ee0e0,
-        type: 2}
-      propertyPath: m_FontData.m_VerticalOverflow
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114205622484362544, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
-      propertyPath: m_VerticalScrollbarVisibility
-      value: 1
+      propertyPath: m_ScrollSensitivity
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224118253995827154, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -541.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 224118253995827154, guid: 0f0068dae589d244eb18b984f21ee0e0,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 1082.1
+      value: 59.69998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f0068dae589d244eb18b984f21ee0e0, type: 2}
