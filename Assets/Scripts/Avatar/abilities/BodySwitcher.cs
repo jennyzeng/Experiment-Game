@@ -6,7 +6,7 @@ public class BodySwitcher : PlayerAbility {
 
 	public GameObject human;
 	public GameObject ball;
-	private PlayerHealth _ballHealth;// = ball.GetComponent<PlayerHealth>();
+	private PlayerHealth _ballHealth;
 	private PlayerHealth _humanHealth;
 	private bool _isHumanStatus;
 	
@@ -48,7 +48,6 @@ public class BodySwitcher : PlayerAbility {
 		{
 			// transform.position = ball.transform.position;
 			_humanHealth.SyncHealth(_ballHealth);
-			PlayerHealth ballHealth = ball.GetComponent<PlayerHealth>();
 			human.transform.position = ball.transform.position;
 		}
 	}
