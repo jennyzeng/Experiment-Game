@@ -4,7 +4,7 @@
         "name": "gas bullet",
         "outForce": 1,
         "damageAmount": 1,
-        "duration": 0.3
+        "duration": 0.5
     },
     "2":{
         "id": 2,

@@ -37,7 +37,6 @@ public class PlayerHit : PlayerAbility {
             animator.SetTrigger("Hit");
             TriggerBullet();
             lastTriggerTime = Time.time;
-            
         }
     }
 
@@ -63,6 +62,7 @@ public class PlayerHit : PlayerAbility {
         {
             RefreshBulletEnum();
             bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab;
+            Bullet.ConfigBullet(bulletEnum.Current);
         }
         return bulletDict[bulletEnum.Current];
     }
