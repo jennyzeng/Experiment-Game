@@ -5,31 +5,33 @@ using UnityEngine;
 public class BulletPackage : CollectableObject
 {
     public string id;
-		private Bullet bulletPrefab;
+
     protected override void OnBeingPickedUp(Collider2D player)
     {
-				PlayerHit playerHit = player.GetComponent<PlayerHit>();
-				if (playerHit.IsBulletAlreadyCollected(id)) return;
-				ConfigData();
+        PlayerHit playerHit = player.GetComponent<PlayerHit>();
+        if (playerHit.IsBulletAlreadyCollected(id)) return;
+        Bullet bulletPrefab = ConfigData();
         playerHit.AddBulletType(id, bulletPrefab);
         player.GetComponent<PlayerAbilitySwitcher>().SwitchBulletAndShowChangeOnUI(id);
         Destroy(gameObject);
     }
 
-		void ConfigData()
-		{
-			ConfigDataBullet configData;
+    Bullet ConfigData()
+    {
+        ConfigDataBullet configData;
+        Bullet bulletPrefab = null;
         if (ResourceManager.Instance.configData.bullet.TryGetValue(id, out configData))
         {
-						bulletPrefab = Resources.Load<Bullet>(configData.bulletPrefab);
-						if (bulletPrefab==null)
-						{
-							Debug.LogError("bullet prefab path does not exist: "+ configData.bulletPrefab);
-						}
+            bulletPrefab = Resources.Load<Bullet>(configData.bulletPrefab);
+            if (bulletPrefab == null)
+            {
+                Debug.LogError("bullet prefab path does not exist: " + configData.bulletPrefab);
+            }
         }
-				else
-				{
-						Debug.LogError("Bullet id "+ id + " does not exist");
-				}
-		}
+        else
+        {
+            Debug.LogError("Bullet id " + id + " does not exist");
+        }
+        return bulletPrefab;
+    }
 }

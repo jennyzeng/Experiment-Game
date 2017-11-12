@@ -2281,6 +2281,10 @@ Prefab:
       propertyPath: damageAmount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4590655958979022, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 4.59
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
   m_IsPrefabParent: 0
@@ -3162,7 +3166,7 @@ GameObject:
   - component: {fileID: 1884892619}
   - component: {fileID: 1884892621}
   - component: {fileID: 1884892622}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletPackage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3458,6 +3462,10 @@ Prefab:
     - target: {fileID: 4286716786032554, guid: 929b03acfa383fa41803c08cba052c2e, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1073443548665124, guid: 929b03acfa383fa41803c08cba052c2e, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 929b03acfa383fa41803c08cba052c2e, type: 2}
