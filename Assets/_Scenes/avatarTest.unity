@@ -3251,7 +3251,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
-  bulletScriptable: {fileID: 11400000, guid: ca9f95bc2962d444fa1e4e47e2eb9847, type: 2}
 --- !u!1 &1927303749
 GameObject:
   m_ObjectHideFlags: 0

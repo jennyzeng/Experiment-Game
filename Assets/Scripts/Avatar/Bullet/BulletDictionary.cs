@@ -3,6 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable()]
-public class BulletDictionary : SerializableDictionaryBase<string, BulletScriptable> {
+public class BulletDictionary : SerializableDictionaryBase<string, Bullet> {
 
 }

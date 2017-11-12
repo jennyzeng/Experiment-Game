@@ -6,4 +6,6 @@ public class ConfigDataBullet : IConfigData {
 	public int damageAmount {get;set;}
 	public int outForce {get;set;}
 	public float duration {get;set;}
+	public string sound  {get;set;}
+	public string bulletPrefab  {get;set;}
 }

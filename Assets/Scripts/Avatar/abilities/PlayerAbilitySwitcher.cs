@@ -27,16 +27,18 @@ public class PlayerAbilitySwitcher : PlayerAbility
     }
 	public void SwitchBulletAndShowChangeOnUI()
 	{
-		BulletScriptable bulletScriptable = playerAttackAbility.SwitchBullet();
-		ShowChangeOnUI(bulletScriptable);
+		Bullet bullet = playerAttackAbility.SwitchBullet();
+		ShowChangeOnUI(bullet);
 	}
 	public void SwitchBulletAndShowChangeOnUI(string id)
 	{
-		BulletScriptable bulletScriptable = playerAttackAbility.SwitchBullet(id);
-		ShowChangeOnUI(bulletScriptable);
+		Bullet bullet = playerAttackAbility.SwitchBullet(id);
+		ShowChangeOnUI(bullet);
 	}
-	void ShowChangeOnUI(BulletScriptable bulletScriptable)
+	void ShowChangeOnUI(Bullet bullet)
 	{
-		UIManager.Instance.GetCanvas<HUDCanvas>().OnBulletChange(bulletScriptable.bulletImg);
+		// bulletScriptable.bulletPrefab.GetComponent<SpriteRenderer>().sprite
+		UIManager.Instance.GetCanvas<HUDCanvas>().OnBulletChange(
+			bullet.GetComponent<SpriteRenderer>().sprite);
 	}
 }

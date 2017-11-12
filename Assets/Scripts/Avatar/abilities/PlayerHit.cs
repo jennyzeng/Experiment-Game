@@ -20,6 +20,7 @@ public class PlayerHit : PlayerAbility {
         if (bulletDict.Count == 0) 
             Debug.LogError("Please add at least one bullet for the player");
         RefreshBulletEnum();
+        SwitchBullet();
     }
 
     /// <summary>
@@ -42,37 +43,43 @@ public class PlayerHit : PlayerAbility {
 
     void TriggerBullet()
     {
-        Bullet bullet = GameObject.Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        Bullet bullet = GameObject.Instantiate(bulletPrefab,
+             bulletSpawnPoint.position, bulletSpawnPoint.rotation);
         bullet.initialize(playerMovement.facingRight);
     }
 
-    public void AddBulletType(string id, BulletScriptable bullet)
+    public bool IsBulletAlreadyCollected(string id)
+    {
+        return bulletDict.ContainsKey(id);
+    }
+
+    public void AddBulletType(string id, Bullet bullet)
     {
         bulletDict.Add(id, bullet);
         RefreshBulletEnum();
     }
-    public BulletScriptable SwitchBullet()
+    public Bullet SwitchBullet()
     {
         if (!bulletEnum.MoveNext())
         {
             RefreshBulletEnum();
-            bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab; 
+            bulletPrefab = bulletDict[bulletEnum.Current]; 
         }
-        bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab;
+        bulletPrefab = bulletDict[bulletEnum.Current];
         Bullet.ConfigBullet(bulletEnum.Current);
         return bulletDict[bulletEnum.Current];
     }
 
-    public BulletScriptable SwitchBullet(string id)
+    public Bullet SwitchBullet(string id)
     {
-        BulletScriptable bulletScriptable;
-        if (bulletDict.TryGetValue(id, out bulletScriptable))
+        Bullet bullet;
+        if (bulletDict.TryGetValue(id, out bullet))
         {
-            bulletPrefab = bulletScriptable.bulletPrefab; 
+            bulletPrefab = bullet; 
             Bullet.ConfigBullet(id);
             RefreshBulletEnum();
         }
-        return bulletScriptable;
+        return bullet;
     }
 
     void RefreshBulletEnum()
