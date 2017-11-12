@@ -172,10 +172,8 @@ MonoBehaviour:
   bulletDict:
     _keys:
     - 1
-    - 2
     _values:
     - {fileID: 11400000, guid: 2a1214e16052a48918b80b992bc111a7, type: 2}
-    - {fileID: 11400000, guid: ca9f95bc2962d444fa1e4e47e2eb9847, type: 2}
 --- !u!114 &114232910457228580
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -7,9 +7,9 @@ public abstract class CollectableObject : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.CompareTag("Player")){
-			ActionWhenCollected();
+			OnBeingPickedUp(other);
 		}
 	}
-	protected abstract void ActionWhenCollected();
+	protected abstract void OnBeingPickedUp(Collider2D player);
 
 }

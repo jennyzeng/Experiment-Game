@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthPackage : MedPackage {
-    protected override void ActionWhenCollected()
+    protected override void OnBeingPickedUp(Collider2D other)
     {
-        PlayerHealth playerHealth = GameObjectManager.Instance.player.GetComponent<PlayerHealth>();
+        PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
         if (playerHealth.IsFullHP()) return;
         GameObjectManager.Instance.player.GetComponent<PlayerHealth>().AddHP(amount);
         Destroy(gameObject);

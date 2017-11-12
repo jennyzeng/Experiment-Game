@@ -53,18 +53,26 @@ public class PlayerHit : PlayerAbility {
     }
     public BulletScriptable SwitchBullet()
     {
-        if (bulletEnum.MoveNext())
-        {
-            bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab;
-            Bullet.ConfigBullet(bulletEnum.Current);
-        }
-        else
+        if (!bulletEnum.MoveNext())
         {
             RefreshBulletEnum();
-            bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab;
-            Bullet.ConfigBullet(bulletEnum.Current);
+            bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab; 
         }
+        bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab;
+        Bullet.ConfigBullet(bulletEnum.Current);
         return bulletDict[bulletEnum.Current];
+    }
+
+    public BulletScriptable SwitchBullet(string id)
+    {
+        BulletScriptable bulletScriptable;
+        if (bulletDict.TryGetValue(id, out bulletScriptable))
+        {
+            bulletPrefab = bulletScriptable.bulletPrefab; 
+            Bullet.ConfigBullet(id);
+            RefreshBulletEnum();
+        }
+        return bulletScriptable;
     }
 
     void RefreshBulletEnum()

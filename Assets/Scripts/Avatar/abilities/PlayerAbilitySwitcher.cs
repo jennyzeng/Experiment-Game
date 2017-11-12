@@ -25,14 +25,17 @@ public class PlayerAbilitySwitcher : PlayerAbility
 			SwitchBulletAndShowChangeOnUI();
 		}
     }
-
-	void SwitchBulletAndShowChangeOnUI()
+	public void SwitchBulletAndShowChangeOnUI()
 	{
 		BulletScriptable bulletScriptable = playerAttackAbility.SwitchBullet();
 		ShowChangeOnUI(bulletScriptable);
-
 	}
-	public void ShowChangeOnUI(BulletScriptable bulletScriptable)
+	public void SwitchBulletAndShowChangeOnUI(string id)
+	{
+		BulletScriptable bulletScriptable = playerAttackAbility.SwitchBullet(id);
+		ShowChangeOnUI(bulletScriptable);
+	}
+	void ShowChangeOnUI(BulletScriptable bulletScriptable)
 	{
 		UIManager.Instance.GetCanvas<HUDCanvas>().OnBulletChange(bulletScriptable.bulletImg);
 	}
