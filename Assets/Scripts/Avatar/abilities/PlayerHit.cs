@@ -5,15 +5,21 @@ using UnityEngine;
 public class PlayerHit : PlayerAbility {
 
     public Transform bulletSpawnPoint;
-    public Bullet bulletPrefab;
+    public BulletDictionary bulletDict;
+    
+    private Bullet bulletPrefab;
     // use Fire1 axis
     float lastTriggerTime;
     PlayerMovement playerMovement;
+    List<string>.Enumerator bulletEnum;
+
     protected override void Start()
     {
         base.Start();
         lastTriggerTime = Time.time;
-        attackRange *= Mathf.Abs(transform.localScale.x);
+        if (bulletDict.Count == 0) 
+            Debug.LogError("Please add at least one bullet for the player");
+        RefreshBulletEnum();
     }
 
     /// <summary>
@@ -25,26 +31,48 @@ public class PlayerHit : PlayerAbility {
     }
     public override void Action()
     {
+
         if (Time.time - lastTriggerTime >= coolDownTime)
         {
-            DetectHit();
-            lastTriggerTime = Time.time;
             animator.SetTrigger("Hit");
+            TriggerBullet();
+            lastTriggerTime = Time.time;
+            
         }
     }
 
-    void DetectHit()
+    void TriggerBullet()
     {
-        Bullet bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-        if (!playerMovement.facingRight)
+        Bullet bullet = GameObject.Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+        bullet.initialize(playerMovement.facingRight);
+    }
+
+    public void AddBulletType(string id, BulletScriptable bullet)
+    {
+        bulletDict.Add(id, bullet);
+        RefreshBulletEnum();
+    }
+    public BulletScriptable SwitchBullet()
+    {
+        if (bulletEnum.MoveNext())
         {
-            MathTools.Flip(bullet.transform);
-            bullet.initialize(-outForce, attackAmount);
+            bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab;
+            Bullet.ConfigBullet(bulletEnum.Current);
         }
         else
         {
-            bullet.initialize(outForce, attackAmount);
+            RefreshBulletEnum();
+            bulletPrefab = bulletDict[bulletEnum.Current].bulletPrefab;
         }
+        return bulletDict[bulletEnum.Current];
+    }
+
+    void RefreshBulletEnum()
+    {
+        List<string> bulletlist = new List<string> ( bulletDict.Keys);
+        bulletlist.Sort();
+        bulletEnum = bulletlist.GetEnumerator();
+        bulletEnum.MoveNext();
     }
 	
 }

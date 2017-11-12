@@ -1,0 +1,16 @@
+{
+    "1": {
+        "id": 1,
+        "name": "gas bullet",
+        "outForce": 1,
+        "damageAmount": 1,
+        "duration": 0.3
+    },
+    "2":{
+        "id": 2,
+        "name": "real bullet",
+        "outForce": 2,
+        "damageAmount": 2,
+        "duration": 10
+    }
+}

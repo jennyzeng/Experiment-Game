@@ -9,11 +9,7 @@ public abstract class PlayerAbility : MonoBehaviour {
     protected Animator animator;
 	public string axis;
 
-	protected bool isAttackSkill;
 	protected float coolDownTime;
-	protected float attackRange;
-	protected int attackAmount;
-	protected float outForce;
 
 	// Use this for initialization
 	protected virtual void Start () 
@@ -56,11 +52,6 @@ public abstract class PlayerAbility : MonoBehaviour {
 		}
 		maxSpeed = configData.maxSpeed;
 		coolDownTime = configData.coolDownTime;
-		if (configData.isAttackSkill){
-			attackRange = configData.attackRange;
-			attackAmount = configData.attackAmount;
-			outForce = configData.outForce;
-		}
 
 	}
 	public abstract void Action();

@@ -9,7 +9,7 @@ public class PlayerFrogJump : PlayerAbility
     public float maxJumpVelocity;
     public float addAmountEachTime;
     public float sensitivity;
-    public KeyCode controlKey = KeyCode.Space;
+    // public KeyCode controlKey = KeyCode.Space;
     // public string axis = "Jump";
     public Animator preparingEffectAnim;
     float pastTime;
@@ -18,7 +18,7 @@ public class PlayerFrogJump : PlayerAbility
 
     public override void Action()
     {
-        if (!isPreparing && rigid.velocity.y == 0 && Input.GetKeyDown(controlKey))
+        if (!isPreparing && rigid.velocity.y == 0 && Input.GetButtonDown(axis))
         {// prepare
             isPreparing = true;
             preparingEffectAnim.gameObject.SetActive(true);
@@ -26,13 +26,13 @@ public class PlayerFrogJump : PlayerAbility
             pastTime = Time.time;
             curVelocity = addAmountEachTime;
         }
-        if (isPreparing && Input.GetKey(controlKey) && Time.time - pastTime >= sensitivity)
+        if (isPreparing && Input.GetButton(axis) && Time.time - pastTime >= sensitivity)
         {// add amount
             curVelocity += addAmountEachTime;
             if (curVelocity > maxJumpVelocity) curVelocity = maxJumpVelocity;
             pastTime = Time.time;
         }
-        if (isPreparing && Input.GetKeyUp(controlKey))
+        if (isPreparing && Input.GetButtonUp(axis))
         {// jump
             isPreparing = false;
             rigid.velocity = new Vector2(rigid.velocity.x, curVelocity);

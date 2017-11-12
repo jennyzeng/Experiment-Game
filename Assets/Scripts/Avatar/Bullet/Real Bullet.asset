@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e89efcad7944caabb9689396afe9c6, type: 3}
+  m_Name: Real Bullet
+  m_EditorClassIdentifier: 
+  bulletImg: {fileID: 21300934, guid: b04e7ff5373ac4525bf072201041bdc7, type: 3}
+  sound: {fileID: 0}
+  bulletPrefab: {fileID: 114412473014575406, guid: ad9d1516996e44b8d85cb359bbc5e268,
+    type: 2}

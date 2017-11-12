@@ -7,6 +7,7 @@ public class ConfigData {
 	public Dictionary<string, ConfigDataMonster> monster;
 	public Dictionary<string, ConfigDataItem> item;
 	public Dictionary<string, ConfigDataSkill> skill;
+	public Dictionary<string, ConfigDataBullet> bullet;
 
 	public ConfigData()
 	{
@@ -14,5 +15,6 @@ public class ConfigData {
 		monster = new Dictionary<string, ConfigDataMonster>();
 		item = new Dictionary<string, ConfigDataItem>();
 		skill = new Dictionary<string, ConfigDataSkill>();
+		bullet = new Dictionary<string, ConfigDataBullet>();
 	}
 }

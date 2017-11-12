@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class HUDCanvas : BaseCanvas {
 	public Slider hpSlider;
 	public Text scoreText;
+	public Image bulletImage;
 
 	public void OnHPchange(float value)
 	{
@@ -15,5 +16,11 @@ public class HUDCanvas : BaseCanvas {
 	public void OnScoreChange(int score)
 	{
 		scoreText.text = "SCORE: "+ score.ToString();
+	}
+
+	public void OnBulletChange(Sprite bulletSprite)
+	{
+		bulletImage.sprite = bulletSprite;
+		bulletImage.SetNativeSize();
 	}
 }

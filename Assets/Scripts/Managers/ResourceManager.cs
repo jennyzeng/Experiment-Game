@@ -20,5 +20,6 @@ public class ResourceManager : SingletonBase<ResourceManager> {
         configData.monster = DataHelper.DeserializeObject(dataPath+"monster", configData.monster);
         configData.skill = DataHelper.DeserializeObject(dataPath+"skill", configData.skill);
         configData.item = DataHelper.DeserializeObject(dataPath+"item", configData.item);
+        configData.bullet = DataHelper.DeserializeObject(dataPath+"bullet", configData.bullet);
     }
 }

@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerMultiJump : PlayerAbility
 {
     public float jumpVelocity;
-    public KeyCode controlKey = KeyCode.Space;
+    // public KeyCode controlKey = KeyCode.Space;
     // public string axis="Jump";
 
 	public int maxJumpTime=2; // how many times can the player jump
 	private int curJumpTime=0;
+
 	// PlayerStates playerStates;
 
 
@@ -26,7 +27,7 @@ public class PlayerMultiJump : PlayerAbility
 			curJumpTime = 0;
 		}
 
-        if (curJumpTime < maxJumpTime && Input.GetKeyDown(controlKey))
+        if (curJumpTime < maxJumpTime && Input.GetButtonDown(axis))
         {
 			curJumpTime += 1;
             rigid.velocity = new Vector2(rigid.velocity.x, jumpVelocity);
