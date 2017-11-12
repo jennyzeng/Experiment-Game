@@ -6,10 +6,6 @@ public class InputManager : SingletonBase<InputManager>
 {
     Dictionary<String, Action> inputMap;
 
-    // Use this for initialization
-    // void Start () {
-    // 	inputMap = new Dictionary<String, Action> ();
-    // }
     protected override void Init()
     {
         Instance.inputMap = new Dictionary<String, Action>();
@@ -21,15 +17,26 @@ public class InputManager : SingletonBase<InputManager>
     {
         Instance.inputMap.Clear();
     }
-    public static void RegisterAction(String axis, Action action)
+    public static void RegisterAction(String axis, Action action, bool forceRegister = false)
     {
         if (Instance.inputMap.ContainsKey(axis))
         {
-            Debug.LogError("axis " + axis + " already assigned.");
-            return;
+            if (!forceRegister)
+            {
+                Debug.LogError("axis " + axis + " already assigned for action" + action.Target + " .");
+                return;
+            }
+            else
+            {
+                Instance.inputMap.Remove(axis);
+                Instance.inputMap.Add(axis, action);
+                Debug.Log("force register action "+action.Target + " to axis "+ axis);
+                return;
+            }
         }
         Instance.inputMap.Add(axis, action);
     }
+
 
     public static void UnregisterAction(string axis)
     {
@@ -37,11 +44,17 @@ public class InputManager : SingletonBase<InputManager>
     }
     void Update()
     {
-        foreach (KeyValuePair<String, Action> pair in inputMap)
+        List<String>.Enumerator enumerator = new List<String>(Instance.inputMap.Keys).GetEnumerator();
+
+        while (enumerator.MoveNext())
         {
-            if (Input.GetAxis(pair.Key) != 0)
+            if (Input.GetAxis(enumerator.Current) != 0)
             {
-                pair.Value();
+                Action curAction;
+                if (Instance.inputMap.TryGetValue(enumerator.Current, out curAction))
+                {
+                    curAction();
+                }
             }
         }
     }

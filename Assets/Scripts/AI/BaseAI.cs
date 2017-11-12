@@ -133,7 +133,9 @@ public abstract class BaseAI : MonoBehaviour
     {
         if (enabled && other.collider.CompareTag("Player"))
         {
-            other.collider.gameObject.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
+            foreach(PlayerHealth health in other.collider.gameObject.GetComponents<PlayerHealth>())
+            if (health.enabled)
+                health.TakeDamage(damageAmount);
         }
     }
 }

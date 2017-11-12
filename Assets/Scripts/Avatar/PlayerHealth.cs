@@ -15,11 +15,24 @@ public class PlayerHealth : Health
     private Color transColor = new Color(1f, 1f, 1f, 0.5f);
     protected override void Start()
     {
+        base.Start();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         normalColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
                         spriteRenderer.color.a);
         ActivateCollision(false);
+    }
+
+    public void SyncHealth(PlayerHealth anotherBodyHealth)
+    {
+        transparentAmount = anotherBodyHealth.transparentAmount;
+        avoidDamageTimeDuration = anotherBodyHealth.avoidDamageTimeDuration;
+        flashIntervalWhenDamge = anotherBodyHealth.flashIntervalWhenDamge;
+        defendAmount = anotherBodyHealth.defendAmount;
+        curHP = anotherBodyHealth.curHP;
+        hUDCanvas = anotherBodyHealth.hUDCanvas;
+        maxHP= anotherBodyHealth.maxHP;
+        GetComponent<Rigidbody2D>().velocity = anotherBodyHealth.GetComponent<Rigidbody2D>().velocity;
     }
     public void Initialize()
     {
@@ -93,7 +106,8 @@ public class PlayerHealth : Health
 
     protected override void OnDamage()
     {
-        anim.SetTrigger("Hurt");
+        if (anim)
+            anim.SetTrigger("Hurt");
         ActivateCollision(true);
         TimerManager timerManager = TimerManager.Instance;
         // flash effect
@@ -141,7 +155,8 @@ public class PlayerHealth : Health
 
     protected override void OnHPchange(int HP)
     {
-        hUDCanvas.OnHPchange((float)curHP / maxHP);
+        UIManager.Instance.GetCanvas<HUDCanvas>().OnHPchange((float)curHP / maxHP);
+        // hUDCanvas.
     }
 
 }

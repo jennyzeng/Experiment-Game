@@ -18,7 +18,7 @@ public abstract class PlayerAbility : MonoBehaviour {
         animator = GetComponent<Animator>();
 	}
 
-	public virtual void OnDisable()
+	protected virtual void OnDisable()
 	{
 		if (InputManager.HasInstance())
 			InputManager.UnregisterAction(axis);
@@ -27,7 +27,7 @@ public abstract class PlayerAbility : MonoBehaviour {
 	/// <summary>
 	/// This function is called when the object becomes enabled and active.
 	/// </summary>
-	void OnEnable()
+	protected virtual void OnEnable()
 	{
 		InputManager.RegisterAction(axis, Action);
 	}

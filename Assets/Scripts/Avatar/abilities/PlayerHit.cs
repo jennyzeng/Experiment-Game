@@ -9,14 +9,14 @@ public class PlayerHit : PlayerAbility {
     
     private Bullet bulletPrefab;
     // use Fire1 axis
-    float lastTriggerTime;
     PlayerMovement playerMovement;
-    List<string>.Enumerator bulletEnum;
+    private List<string>.Enumerator _bulletEnum;
+        private float _lastTriggerTime;
 
     protected override void Start()
     {
         base.Start();
-        lastTriggerTime = Time.time;
+        _lastTriggerTime = Time.time;
         if (bulletDict.Count == 0) 
             Debug.LogError("Please add at least one bullet for the player");
         RefreshBulletEnum();
@@ -33,11 +33,12 @@ public class PlayerHit : PlayerAbility {
     public override void Action()
     {
 
-        if (Time.time - lastTriggerTime >= coolDownTime)
+        if (Time.time - _lastTriggerTime >= coolDownTime && Input.GetButtonDown(axis))
         {
+
             animator.SetTrigger("Hit");
             TriggerBullet();
-            lastTriggerTime = Time.time;
+            _lastTriggerTime = Time.time;
         }
     }
 
@@ -60,14 +61,14 @@ public class PlayerHit : PlayerAbility {
     }
     public Bullet SwitchBullet()
     {
-        if (!bulletEnum.MoveNext())
+        if (!_bulletEnum.MoveNext())
         {
             RefreshBulletEnum();
-            bulletPrefab = bulletDict[bulletEnum.Current]; 
+            bulletPrefab = bulletDict[_bulletEnum.Current]; 
         }
-        bulletPrefab = bulletDict[bulletEnum.Current];
-        Bullet.ConfigBullet(bulletEnum.Current);
-        return bulletDict[bulletEnum.Current];
+        bulletPrefab = bulletDict[_bulletEnum.Current];
+        Bullet.ConfigBullet(_bulletEnum.Current);
+        return bulletDict[_bulletEnum.Current];
     }
 
     public Bullet SwitchBullet(string id)
@@ -86,8 +87,8 @@ public class PlayerHit : PlayerAbility {
     {
         List<string> bulletlist = new List<string> ( bulletDict.Keys);
         bulletlist.Sort();
-        bulletEnum = bulletlist.GetEnumerator();
-        bulletEnum.MoveNext();
+        _bulletEnum = bulletlist.GetEnumerator();
+        _bulletEnum.MoveNext();
     }
 	
 }

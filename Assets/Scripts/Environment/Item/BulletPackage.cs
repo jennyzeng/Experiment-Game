@@ -8,11 +8,13 @@ public class BulletPackage : CollectableObject
 
     protected override void OnBeingPickedUp(Collider2D player)
     {
-        PlayerHit playerHit = player.GetComponent<PlayerHit>();
+        BodySwitcher bodySwitcher= player.transform.GetComponentInParent<BodySwitcher>();
+        GameObject human =  bodySwitcher.human;
+        PlayerHit playerHit = human.GetComponent<PlayerHit>();
         if (playerHit.IsBulletAlreadyCollected(id)) return;
         Bullet bulletPrefab = ConfigData();
         playerHit.AddBulletType(id, bulletPrefab);
-        player.GetComponent<PlayerAbilitySwitcher>().SwitchBulletAndShowChangeOnUI(id);
+        human.GetComponent<PlayerAbilitySwitcher>().SwitchBulletAndShowChangeOnUI(id);
         Destroy(gameObject);
     }
 

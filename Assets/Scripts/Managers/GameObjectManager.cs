@@ -19,19 +19,15 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
     	Instance.player = null;
     }
     public void InitPlayer()
-    {
-        if (player == null)
-        {
-            player = GameObject.FindGameObjectWithTag("Player");
-        }
-        if (player) 
-        {
-            SetPlayerStartLocationOnScene();
-            return;
-        }
+    {     
         player = Instantiate(Instance.playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
              EnvironmentUtil.Instance.playerSpawnPoint.rotation);
-        player.GetComponent<PlayerHealth>().Initialize();
+        foreach(PlayerHealth health in player.GetComponentsInChildren<PlayerHealth>())
+        {
+            if (health.enabled)
+                health.Initialize();
+        }
+        // player.GetComponentInChildren<PlayerHealth>().Initialize();
         foreach(PlayerAbility playerAbility in player.GetComponents<PlayerAbility>())
         {
             playerAbility.Initialize();

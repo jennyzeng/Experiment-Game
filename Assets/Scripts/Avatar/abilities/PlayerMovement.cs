@@ -9,9 +9,22 @@ public class PlayerMovement : PlayerAbility {
 	public bool facingRight = true;
 	// public string axis = "Horizontal";
 
+	
+	/// <summary>
+	/// OnBecameVisible is called when the renderer became visible by any camera.
+	/// </summary>
+	void OnBecameVisible()
+	{
+		InputManager.RegisterAction(axis, Action);
+	}
+
+	protected override void OnEnable()
+	{
+		
+	}
     public override void Action()
     {
-        float move = Input.GetAxis("Horizontal");
+        float move = Input.GetAxis(axis);
 		if (move != 0)
 		{
 			animator.SetBool("IsRunning", true);
@@ -27,7 +40,7 @@ public class PlayerMovement : PlayerAbility {
 	/// </summary>
 	void Update()
 	{ // had to add this to correct the animation
-		if (animator.GetBool("IsRunning") && Input.GetAxis("Horizontal") == 0) 
+		if (animator.GetBool("IsRunning") && Input.GetAxis(axis) == 0) 
 			animator.SetBool("IsRunning", false);
 	}
 

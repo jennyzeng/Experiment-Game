@@ -10,8 +10,8 @@
     "2":{
         "id": 2,
         "name": "real bullet",
-        "outForce": 2,
-        "damageAmount": 2,
+        "outForce": 4,
+        "damageAmount": 1,
         "duration": 10,
         "bulletPrefab": "Prefabs/RealBullet"
     }

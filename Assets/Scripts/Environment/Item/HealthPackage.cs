@@ -7,7 +7,7 @@ public class HealthPackage : MedPackage {
     {
         PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
         if (playerHealth.IsFullHP()) return;
-        GameObjectManager.Instance.player.GetComponent<PlayerHealth>().AddHP(amount);
+        playerHealth.AddHP(amount);
         Destroy(gameObject);
     }
 
