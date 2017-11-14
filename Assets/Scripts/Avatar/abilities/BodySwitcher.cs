@@ -9,6 +9,7 @@ public class BodySwitcher : PlayerAbility {
 	private PlayerHealth _ballHealth;
 	private PlayerHealth _humanHealth;
 	private bool _isHumanStatus;
+	private Vector3 defaultOffset;
 	
 
     public override void Action()
@@ -28,6 +29,7 @@ public class BodySwitcher : PlayerAbility {
 		_ballHealth = ball.GetComponent<PlayerHealth>();
 		_isHumanStatus = true;
 		ActiveHumanStatus(_isHumanStatus);
+		defaultOffset = ball.transform.position-human.transform.position;
 	}
 	
 	void ActiveHumanStatus(bool active)
@@ -40,15 +42,14 @@ public class BodySwitcher : PlayerAbility {
 		if (ball.activeSelf)
 		{
 			_ballHealth.SyncHealth(_humanHealth);
-			// transform.position = human.transform.position;
-			ball.transform.position = human.transform.position;
+			ball.transform.position = human.transform.position+ defaultOffset;
 			return;
 		}
 		else
 		{
-			// transform.position = ball.transform.position;
 			_humanHealth.SyncHealth(_ballHealth);
-			human.transform.position = ball.transform.position;
+			human.transform.position = ball.transform.position - defaultOffset;
+
 		}
 	}
 }
