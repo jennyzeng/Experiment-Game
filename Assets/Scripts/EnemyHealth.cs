@@ -9,7 +9,7 @@ public class EnemyHealth : Health
     [HideInInspector]
     public Slider healthBar;
     public float transparencyAfterDie = 0.5f;
-    public int enemyScore=1;
+    public int enemyScore = 1;
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -39,8 +39,7 @@ public class EnemyHealth : Health
         Rigidbody2D rigid = GetComponent<Rigidbody2D>();
         rigid.velocity = new Vector2(0, rigid.velocity.y);
         enabled = false;
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(),
-            GameObjectManager.Instance.player.GetComponent<Collider2D>(), true);
+        gameObject.layer = LayerMask.NameToLayer("DiedEnemies");
         GameManager.Instance.AddScore(enemyScore);
         Destroy(healthBar.transform.parent.gameObject);
     }

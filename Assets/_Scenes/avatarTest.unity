@@ -2276,15 +2276,6 @@ Prefab:
       propertyPath: m_Name
       value: FrogAI
       objectReference: {fileID: 0}
-    - target: {fileID: 114611961532197662, guid: d03002688e7134600bb26c2f622bbb88,
-        type: 2}
-      propertyPath: damageAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4590655958979022, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 4.59
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d03002688e7134600bb26c2f622bbb88, type: 2}
   m_IsPrefabParent: 0
