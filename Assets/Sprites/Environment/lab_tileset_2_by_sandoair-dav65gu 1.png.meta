@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: b0c7d51d8f3b34abda8c7d548176fa31
-timeCreated: 1509151197
+guid: 59d8ffae31c124b9ead80e1449901e99
+timeCreated: 1509151800
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -20,8 +20,16 @@ TextureImporter:
     21300026: lab_tileset_2_by_sandoair-dav65gu_12
     21300028: lab_tileset_2_by_sandoair-dav65gu_13
     21300030: lab_tileset_2_by_sandoair-dav65gu_14
-    21300032: lab_tileset_2_by_sandoair-dav65gu_15
-    21300034: lab_tileset_2_by_sandoair-dav65gu_16
+    21300032: lab_tileset_2_by_sandoair-dav65gu 1_0
+    21300034: lab_tileset_2_by_sandoair-dav65gu 1_1
+    21300036: lab_tileset_2_by_sandoair-dav65gu 1_2
+    21300038: lab_tileset_2_by_sandoair-dav65gu 1_3
+    21300040: lab_tileset_2_by_sandoair-dav65gu 1_4
+    21300042: lab_tileset_2_by_sandoair-dav65gu 1_5
+    21300044: lab_tileset_2_by_sandoair-dav65gu 1_6
+    21300046: lab_tileset_2_by_sandoair-dav65gu 1_7
+    21300048: lab_tileset_2_by_sandoair-dav65gu 1_8
+    21300050: lab_tileset_2_by_sandoair-dav65gu 1_9
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -64,7 +72,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 35
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -320,13 +328,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: lab_tileset_2_by_sandoair-dav65gu_15
+      name: lab_tileset_2_by_sandoair-dav65gu 1_0
       rect:
         serializedVersion: 2
-        x: 320
-        y: 171
-        width: 71
-        height: 35
+        x: 97
+        y: 190
+        width: 96
+        height: 98
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,12 +342,124 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: lab_tileset_2_by_sandoair-dav65gu_16
+      name: lab_tileset_2_by_sandoair-dav65gu 1_1
       rect:
         serializedVersion: 2
-        x: 321
-        y: 258
+        x: 415
+        y: 451
         width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_2
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 167
+        width: 64
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 289
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_4
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 446
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 479
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_6
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 466
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_7
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 225
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 258
+        width: 64
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lab_tileset_2_by_sandoair-dav65gu 1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 289
+        width: 33
         height: 61
       alignment: 0
       pivot: {x: 0, y: 0}
