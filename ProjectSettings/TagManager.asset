@@ -18,7 +18,7 @@ TagManager:
   - Players
   - Enemies
   - Bullets
-  - 
+  - Items
   - 
   - 
   - 
@@ -50,6 +50,9 @@ TagManager:
   - name: GameObjects
     uniqueID: 3765407437
     locked: 0
-  - name: UI
+  - name: Items
     uniqueID: 42942045
+    locked: 0
+  - name: UI
+    uniqueID: 2815409259
     locked: 0

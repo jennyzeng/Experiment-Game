@@ -34,4 +34,8 @@ public class PlayerMultiJump : PlayerAbility
             animator.SetTrigger("Jump");
         }
     }
+    protected override void DataConfig(ConfigDataSkill configData)
+    {
+        maxJumpTime = configData.consecutiveTimes;
+    }
 }

@@ -11,6 +11,24 @@
         "axis": "Horizontal",
         "maxSpeed": 4,
         "coolDownTime": 0
+    },
+    "3": {
+        "id":3,
+        "name": "PlayerOneTimeJump",
+        "axis" : "Jump",
+        "consecutiveTimes": 1,
+        "coolDownTime": 0
+    },
+    "4":{
+        "id": 4,
+        "name": "AbilityBulletSwicher",
+        "axis": "SwitchBullet"
+    },
+    "5":{
+        "id": 5,
+        "name": "PlayerDoubleJump",
+        "axis": "Jump",
+        "consecutiveTimes": 2
     }
 
 }

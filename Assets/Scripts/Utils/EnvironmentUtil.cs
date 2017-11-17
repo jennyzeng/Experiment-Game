@@ -21,11 +21,6 @@ public class EnvironmentUtil : SingletonBase<EnvironmentUtil> {
 
 	}
 
-	public void AferInit()
-	{
-		if (door != null)
-			door.Trigger();
-	}
    public bool IsAllEnemyDestroyed()
    {
 	   return enemyCounter == 0;

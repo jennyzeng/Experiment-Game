@@ -16,6 +16,7 @@ public abstract class PlayerAbility : MonoBehaviour {
 	{
 		rigid = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+		// Initialize();
 	}
 
 	protected virtual void OnDisable()

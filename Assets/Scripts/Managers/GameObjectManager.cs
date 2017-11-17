@@ -32,7 +32,7 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         {
             playerAbility.Initialize();
         }
-        EnvironmentUtil.Instance.AferInit();
+        // EnvironmentUtil.Instance.AferInit();
     }
 
     void SetPlayerStartLocationOnScene()

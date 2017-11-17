@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4620352346345908}
   - component: {fileID: 114332517998536160}
   - component: {fileID: 114686190683437364}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 50484459051895160}
   - component: {fileID: 114878839788628138}
   - component: {fileID: 114891186009162290}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: BallModel
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4607342676909680}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 114129702594896946}
   - component: {fileID: 114225855466460054}
   - component: {fileID: 114009426729248604}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: Human
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -268,7 +268,7 @@ MonoBehaviour:
   maxSpeed: 0
   axis: Jump
   jumpVelocity: 5
-  maxJumpTime: 2
+  maxJumpTime: 1
 --- !u!114 &114225855466460054
 MonoBehaviour:
   m_ObjectHideFlags: 1

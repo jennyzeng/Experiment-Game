@@ -8,6 +8,7 @@ public class ConfigDataSkill : IConfigData
     public string axis { get; set; }
     public float maxSpeed{get; set;}
     public float coolDownTime { get; set; }	// skill cooldown time
+    public int consecutiveTimes{get;set;} // can use how many times consecutively
 
 	
 }
