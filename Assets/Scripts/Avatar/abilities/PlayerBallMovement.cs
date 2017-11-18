@@ -9,7 +9,8 @@ public class PlayerBallMovement : PlayerAbility {
     {
         float move = Input.GetAxis(axis);
 		rigid.velocity = new Vector2(0, rigid.velocity.y);
-		rigid.AddForce(new Vector2(maxSpeed*move, 0), ForceMode2D.Impulse);
+		rigid.velocity = new Vector2(maxSpeed*move, rigid.velocity.y);
+		// rigid.AddForce(new Vector2(maxSpeed*move, 0), ForceMode2D.Impulse);
 		
     }
 	void OnBecameVisible()
@@ -17,6 +18,8 @@ public class PlayerBallMovement : PlayerAbility {
 		InputManager.RegisterAction(axis, Action);
 	}
 
-	protected override void OnEnable(){}
+	protected override void OnEnable(){
+		GameObjectManager.Instance.SetIsHuman(transform, false);
+	}
 
 }

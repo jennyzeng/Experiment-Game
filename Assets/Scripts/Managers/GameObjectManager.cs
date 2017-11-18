@@ -8,11 +8,18 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
     [HideInInspector]
     public GameObject player;
     public GameObject playerPrefab;
-
+    public Transform playerTransform;
+    public bool isHumanMode=true;
 
     protected override void Init()
     {
         transform.SetParent(GameManager.Instance.transform);
+    }
+
+    public void SetIsHuman(Transform activeTransform, bool isHuman)
+    {
+        isHumanMode = isHuman;
+        playerTransform = activeTransform;
     }
     public static void OnPlayerDie()
     {
@@ -26,6 +33,7 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         {
             if (health.enabled)
                 health.Initialize();
+
         }
         // player.GetComponentInChildren<PlayerHealth>().Initialize();
         foreach(PlayerAbility playerAbility in player.GetComponents<PlayerAbility>())

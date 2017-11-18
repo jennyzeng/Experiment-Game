@@ -20,7 +20,7 @@ public class PlayerMovement : PlayerAbility {
 
 	protected override void OnEnable()
 	{
-		
+		GameObjectManager.Instance.SetIsHuman(transform, true);
 	}
     public override void Action()
     {
