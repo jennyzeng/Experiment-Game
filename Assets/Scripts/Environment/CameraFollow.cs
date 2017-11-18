@@ -6,16 +6,7 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform Up, Down, Left, Right;
     Transform player;
-    // float zPos;
 
-    /// <summary>
-    /// Start is called on the frame when a script is enabled just before
-    /// any of the Update methods is called the first time.
-    /// </summary>
-    void Start()
-    {
-        // zPos = transform.position.z;
-    }
     void Update()
     {
 		player = GameObjectManager.Instance.playerTransform;

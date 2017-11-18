@@ -2757,7 +2757,6 @@ MonoBehaviour:
   Down: {fileID: 1846303748}
   Left: {fileID: 787592383}
   Right: {fileID: 1506335713}
-  lerpSpeed: 0.1
 --- !u!4 &1042030933 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4312916185872514, guid: ada1b64e33cd6e64085e977210178026,
@@ -3086,6 +3085,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 61018836254462986, guid: a577b4f2a90d14169affd8a2a443311a,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: c9be691c6182346a48a469e149ac86f8, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a577b4f2a90d14169affd8a2a443311a, type: 2}
   m_IsPrefabParent: 0
