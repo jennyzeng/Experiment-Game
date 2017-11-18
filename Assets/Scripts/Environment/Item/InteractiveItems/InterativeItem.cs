@@ -16,6 +16,6 @@ public abstract class InterativeItem : MonoBehaviour {
 			InteractAction(other);
 		}
 	}
-	protected abstract void InteractAction(Collision2D other);
+	protected abstract void InteractAction(Collision2D player);
 
 }

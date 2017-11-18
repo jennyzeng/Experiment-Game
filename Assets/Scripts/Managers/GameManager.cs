@@ -50,6 +50,8 @@ public class GameManager : SingletonBase<GameManager>
 
     public void BackToMenu()
     {
-
+        Destroy(GameObjectManager.Instance.player);
+        Destroy(gameObject);
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
     }
 }

@@ -22,6 +22,18 @@ public class BodySwitcher : PlayerAbility {
 		}
     }
 
+	public GameObject GetcurBody()
+	{
+		if (_isHumanStatus)
+		{
+			return human;
+		}
+		else
+		{
+			return ball;
+		}
+	}
+
     // Use this for initialization
     protected override void Start () {
 		base.Start();

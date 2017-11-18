@@ -120,7 +120,8 @@ public class PlayerHealth : Health
     protected override void OnDie()
     {
         // base.OnDie();
-        anim.SetTrigger("Die");
+        if (anim!=null)
+            anim.SetTrigger("Die");
         ActivateCollision(true);
         GameManager.Instance.GameOver();
         foreach(PlayerAbility ability in GetComponents<PlayerAbility>())
