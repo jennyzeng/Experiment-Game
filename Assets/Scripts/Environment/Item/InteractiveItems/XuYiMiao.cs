@@ -22,7 +22,6 @@ public class XuYiMiao : CollectableObject
 
 		PlayerMultiJump ability= player.gameObject.GetComponentInChildren<PlayerMultiJump>();
 		if (ability == null) return;
-		Debug.Log("add jump");
 		bool isAdded = ability.AddJumpTime(addJumpPerTouch);
 		if (isAdded)
 		{

@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/avatarTest.unity
     guid: 851d2cc7e6850428c9710009b101faac
+  - enabled: 1
+    path: Assets/_Scenes/SecondSceneTest.unity
+    guid: be1c4185d64b657499472c8ebc601e51

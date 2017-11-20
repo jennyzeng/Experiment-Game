@@ -14,8 +14,9 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
     protected override void Init()
     {
         transform.SetParent(GameManager.Instance.transform);
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
-
+    
     public void SetIsHuman(Transform activeTransform, bool isHuman)
     {
         isHumanMode = isHuman;
@@ -27,7 +28,7 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
     }
     public void InitPlayer()
     {     
-        player = Instantiate(Instance.playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
+        player = Instantiate(playerPrefab, EnvironmentUtil.Instance.playerSpawnPoint.position,
              EnvironmentUtil.Instance.playerSpawnPoint.rotation);
         foreach(PlayerHealth health in player.GetComponentsInChildren<PlayerHealth>())
         {
@@ -43,10 +44,21 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         // EnvironmentUtil.Instance.AferInit();
     }
 
-    void SetPlayerStartLocationOnScene()
+    public void SetPlayerStartLocationOnScene()
     {   
         player.transform.position = EnvironmentUtil.Instance.playerSpawnPoint.position;
         player.transform.rotation = EnvironmentUtil.Instance.playerSpawnPoint.rotation;
+        for(int child = 0; child < player.transform.childCount; child++)
+        {
+            player.transform.GetChild(child).transform.localPosition=playerPrefab.transform.GetChild(child).localPosition;
+        }
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (player!=null)
+        {
+            SetPlayerStartLocationOnScene();
+        }
+    }
 }
