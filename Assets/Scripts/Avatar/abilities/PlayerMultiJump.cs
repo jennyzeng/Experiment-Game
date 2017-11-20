@@ -13,6 +13,12 @@ public class PlayerMultiJump : PlayerAbility
 
 	// PlayerStates playerStates;
 
+    public bool AddJumpTime(int amount)
+    {
+        if (curJumpTime <= 0) return false;
+        curJumpTime -= 1;
+        return true;
+    }
 
     protected override void Start()
     {

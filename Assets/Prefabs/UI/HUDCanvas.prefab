@@ -529,7 +529,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'BULEET:'
+  m_Text: 'BULLET:'
 --- !u!114 &114873756452326186
 MonoBehaviour:
   m_ObjectHideFlags: 1
