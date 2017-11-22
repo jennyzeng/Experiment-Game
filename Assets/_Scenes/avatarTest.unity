@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7608a5c2b9cbb4264b462cbd4940f613, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ResetAfterSecs: 10
+  ResetAfterSecs: 1
 --- !u!1 &401590104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,6 +1753,10 @@ Prefab:
     - target: {fileID: 4241125043878946, guid: d174fcf69438dd945b9a072893284911, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378851887354862, guid: d174fcf69438dd945b9a072893284911, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d174fcf69438dd945b9a072893284911, type: 2}
