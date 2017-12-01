@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fire : InterativeItem
+public class SetDamage : InterativeItem
 {
 	public int damageAmount = 2;
     protected override void InteractAction(Collision2D player)
