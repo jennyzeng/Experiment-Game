@@ -7,24 +7,52 @@ public class EventTest : MonoBehaviour {
 	private UnityAction listener;
 	Rigidbody2D rigid;
 
-	void Awake()
+	float t;
+	Vector3 startPosition;
+	Vector3 target;
+	float timeToReachTarget;
+	bool triggered;
+
+	void Awake ()
 	{
+		startPosition = target = transform.position;
 		listener = new UnityAction (TestFunction);
 		rigid = GetComponent<Rigidbody2D>();
 	}
 	void OnEnable()
 	{
-		EventManager.StartListening("test", listener);
+		EventManager.StartListening("Door", listener);
 	}
 
 	void OnDisable()
 	{
-		EventManager.StopListening("test", listener);
+		EventManager.StopListening("Door", listener);
 	}
 
 	void TestFunction()
 	{
-		Debug.Log("Test function was called");
-		rigid.AddForce(Vector2.right, ForceMode2D.Impulse);
+		target.y = -10;
+		Vector3 result = target;
+		triggered = true;
+		SetDestination (result, 2);
 	}
+
+	void Update() 
+	{
+		if(triggered){
+			t += Time.deltaTime/timeToReachTarget;
+			transform.position = Vector3.Lerp(startPosition, target, t);
+			if (transform.position == target)
+				triggered = false;
+		}
+	}
+	public void SetDestination(Vector3 destination, float time)
+	{
+		t = 0;
+		startPosition = transform.position;
+		timeToReachTarget = time;
+		target = destination; 
+	}
+
+
 }
