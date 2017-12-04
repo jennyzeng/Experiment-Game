@@ -81,7 +81,7 @@ public abstract class BaseAI : MonoBehaviour
             GoToNextPoint(nextTargetPoint);
             if (ShouldUpdateNextPoint())
             {
-                if (nextIdleIdx >= idleRoute.Length-1 || nextIdleIdx == 0)
+                if (nextIdleIdx == idleRoute.Length-1 || nextIdleIdx == 0)
                 {
                     next = -next;
                 }

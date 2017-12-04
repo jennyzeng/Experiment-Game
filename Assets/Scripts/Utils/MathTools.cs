@@ -10,4 +10,9 @@ public static class MathTools {
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+
+	public static bool IsOnLeft(Vector3 curPoint, Vector3 relatePoint)
+	{
+		return curPoint.x > relatePoint.x;
+	}
 }
