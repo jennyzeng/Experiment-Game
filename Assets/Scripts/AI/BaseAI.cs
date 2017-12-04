@@ -14,6 +14,7 @@ public abstract class BaseAI : MonoBehaviour
     protected Rigidbody2D rigid;
     protected Animator anim;
     protected GameObject player;
+    public Transform playerTransform;
     protected int nextIdleIdx;
     protected Vector2 nextTargetPoint;
     protected int next;
