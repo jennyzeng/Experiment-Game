@@ -32,8 +32,8 @@ public class GameManager : SingletonBase<GameManager>
     {
         UIManager.Instance.GetCanvas<HUDCanvas>().gameObject.SetActive(false);
         UIManager.Instance.GetCanvas<GameOverCanvas>().OpenCanvas(score);
+        InputManager.Instance.enabled = false;
     }
-
 
     public void RestartGame()
     {
@@ -43,7 +43,7 @@ public class GameManager : SingletonBase<GameManager>
          */
         Destroy(GameObjectManager.Instance.player);
         Destroy(gameObject);
-
+        InputManager.Instance.enabled = true;
         SceneManager.LoadScene("avatarTest", LoadSceneMode.Single);
 
     }
