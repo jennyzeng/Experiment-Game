@@ -13,6 +13,7 @@ public class Loading : MonoBehaviour {
 	void Start () {
 		startTime = Time.time;
 		UIManager.Instance.gameObject.SetActive(false);
+		InputManager.Instance.gameObject.SetActive(false);
 	}
 	
 	// Update is called once per frame
@@ -20,6 +21,7 @@ public class Loading : MonoBehaviour {
 		if (Time.time-startTime > loadingTime)
 		{
 			UIManager.Instance.gameObject.SetActive(true);
+			InputManager.Instance.gameObject.SetActive(true);
 			SceneManager.LoadScene(nextSceneName, LoadSceneMode.Single);
 			Destroy(gameObject);
 		}

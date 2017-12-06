@@ -27,6 +27,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1302818317852494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4704227433979160}
+  - component: {fileID: 114525192203785682}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1333048023014004
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,22 +108,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1937745774605078
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4782720900759836}
-  - component: {fileID: 114227621854506566}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &4124977868110448
 Transform:
   m_ObjectHideFlags: 1
@@ -160,6 +160,19 @@ Transform:
   m_Father: {fileID: 4721489110450326}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4704227433979160
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302818317852494}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 112.25141, y: 327.69388, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4721489110450326}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4721489110450326
 Transform:
   m_ObjectHideFlags: 1
@@ -170,25 +183,12 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4782720900759836}
+  - {fileID: 4704227433979160}
   - {fileID: 4138532301292544}
   - {fileID: 4124977868110448}
   - {fileID: 4654176852758246}
   - {fileID: 4602399212714234}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4782720900759836
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1937745774605078}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 112.25141, y: 327.69388, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4721489110450326}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114007346825854092
@@ -213,20 +213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7833a264f4d750448823a2ed9b84b332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114227621854506566
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1937745774605078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4448c152da5fa4440acfe0b8691706e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  preloadCanvasList:
-  - {fileID: 114535792701161154, guid: 6c920613e80a74e35b46a9707bff8592, type: 2}
-  - {fileID: 114172808919178228, guid: 64d66b8e84d714ea28f2289ae774513f, type: 2}
 --- !u!114 &114248687746332136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,6 +227,9 @@ MonoBehaviour:
   player: {fileID: 0}
   playerPrefab: {fileID: 1294081627572534, guid: b9e3410f7362c4e0aa9b21fecaf1a4b8,
     type: 2}
+  playerTransform: {fileID: 0}
+  isHumanMode: 1
+  playerCopy: {fileID: 0}
 --- !u!114 &114415788885380458
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -252,6 +241,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ea8b373b8e1bde458ba3fd87b9aa4f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114525192203785682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302818317852494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4448c152da5fa4440acfe0b8691706e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preloadCanvasList:
+  - {fileID: 114535792701161154, guid: 6c920613e80a74e35b46a9707bff8592, type: 2}
+  - {fileID: 114172808919178228, guid: 64d66b8e84d714ea28f2289ae774513f, type: 2}
+  - {fileID: 114461415043031536, guid: 122d1320aa0d94a28a9cf4d9a52c9dd1, type: 2}
 --- !u!114 &114589280571007494
 MonoBehaviour:
   m_ObjectHideFlags: 1
