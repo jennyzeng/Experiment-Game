@@ -6,7 +6,7 @@ public abstract class Health : MonoBehaviour {
 
 	public int maxHP;
 	public float timeDisappearAfterDie;
-	protected int curHP;
+	public int curHP;
 	protected Animator anim;
 	protected virtual void Start () {
 		curHP = maxHP;
