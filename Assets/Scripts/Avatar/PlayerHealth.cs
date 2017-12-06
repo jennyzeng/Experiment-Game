@@ -48,7 +48,12 @@ public class PlayerHealth : Health
         hUDCanvas.OnHPchange((float)curHP / maxHP);
         // transColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
         //                 transparentAmount);
+    }
 
+    void OnEnable()
+    {
+        hUDCanvas = UIManager.Instance.GetCanvas<HUDCanvas>();
+        hUDCanvas.OnHPchange((float)curHP / maxHP);
     }
     void DataConfig(ConfigDataPlayer configData)
     {

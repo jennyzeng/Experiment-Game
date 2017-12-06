@@ -53,4 +53,9 @@ public class Bullet : MonoBehaviour
         SelfDestroy();
         
     }
+
+    void OnBecameInvisible()
+    {
+        SelfDestroy();
+    }
 }

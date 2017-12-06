@@ -10,11 +10,13 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
     public GameObject playerPrefab;
     public Transform playerTransform;
     public bool isHumanMode=true;
+    public GameObject playerCopy;
 
     protected override void Init()
     {
         transform.SetParent(GameManager.Instance.transform);
         SceneManager.sceneLoaded += OnSceneLoaded;
+        
     }
     
     public void SetIsHuman(Transform activeTransform, bool isHuman)
@@ -43,7 +45,23 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         }
         // EnvironmentUtil.Instance.AferInit();
     }
+    void UpdatePlayerCopy(GameObject curPlayer)
+    {
+        if (playerCopy != null) {
+            Destroy(playerCopy);
+        }
+        player.SetActive(false);
+        playerCopy = Instantiate(player, transform);
+        playerCopy.SetActive(false);
+        player.SetActive(true);
+    }
 
+    public void OnRestartGame()
+    {
+        DestroyImmediate(player);
+        player = Instantiate(playerCopy);
+        player.SetActive(true);
+    }
     public void SetPlayerStartLocationOnScene()
     {   
         player.transform.position = EnvironmentUtil.Instance.playerSpawnPoint.position;
@@ -60,5 +78,6 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         {
             SetPlayerStartLocationOnScene();
         }
+        UpdatePlayerCopy(player);
     }
 }

@@ -8,6 +8,24 @@ public class HUDCanvas : BaseCanvas {
 	public Text scoreText;
 	public Image bulletImage;
 
+	public void OpenCanvas(int score)
+	{
+		int childCount = transform.childCount;
+		for(int i = 0; i <  childCount; i++)
+		{
+			transform.GetChild(i).gameObject.SetActive(true);
+		}
+		// OnHPchange(HP);
+		OnScoreChange(score);
+	}
+	public void CloseCanvas()
+	{
+		int childCount = transform.childCount;
+		for(int i = 0; i <  childCount; i++)
+		{
+			transform.GetChild(i).gameObject.SetActive(false);
+		}
+	}
 	public void OnHPchange(float value)
 	{
 		hpSlider.value = value;
