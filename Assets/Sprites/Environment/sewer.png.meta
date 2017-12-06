@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 24835ae9088cd4a2390ed765dedab64c
-timeCreated: 1512175925
+timeCreated: 1512535005
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,11 @@ TextureImporter:
     21300006: sewer_3
     21300008: sewer_4
     21300010: sewer_5
+    21300012: sewer_6
+    21300014: sewer_7
+    21300016: sewer_8
+    21300018: sewer_9
+    21300020: sewer_10
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -52,7 +57,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 80
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -101,6 +106,20 @@ TextureImporter:
       name: sewer_1
       rect:
         serializedVersion: 2
+        x: 820
+        y: 2233
+        width: 261
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sewer_2
+      rect:
+        serializedVersion: 2
         x: 272
         y: 2164
         width: 503
@@ -112,7 +131,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sewer_2
+      name: sewer_3
       rect:
         serializedVersion: 2
         x: 272
@@ -126,7 +145,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sewer_3
+      name: sewer_4
       rect:
         serializedVersion: 2
         x: 512
@@ -140,7 +159,21 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sewer_4
+      name: sewer_5
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1992
+        width: 248
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sewer_6
       rect:
         serializedVersion: 2
         x: 270
@@ -154,7 +187,49 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: sewer_5
+      name: sewer_7
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 1800
+        width: 249
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sewer_8
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 1674
+        width: 249
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sewer_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1480
+        width: 249
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: sewer_10
       rect:
         serializedVersion: 2
         x: 890
