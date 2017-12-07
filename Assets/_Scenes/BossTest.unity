@@ -7234,7 +7234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46534e34ba8744f52a94a7291e66beea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelHPs: 0500000000000000
+  levelHPs: 0c00000000000000
   stageBehaviors:
   - {fileID: 260925288}
   - {fileID: 1429731011}
@@ -7243,8 +7243,8 @@ MonoBehaviour:
   shootSpeed: 100
   ballPrefab: {fileID: 50865983950981570, guid: 55583b6eef74244fbb1908de0558e315,
     type: 2}
-  numPerRow: 10
-  rowCount: 2
+  numPerRow: 15
+  rowCount: 3
   shootPeriod: 1
 --- !u!114 &2141481179
 MonoBehaviour:
@@ -7257,7 +7257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3bf99d21be5d84025b428c9422ed757e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 10
+  maxHP: 20
   timeDisappearAfterDie: 0
   curHP: 0
   popUpItem: {fileID: 0}

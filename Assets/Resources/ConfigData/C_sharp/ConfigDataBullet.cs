@@ -8,4 +8,5 @@ public class ConfigDataBullet : IConfigData {
 	public float duration {get;set;}
 	public string sound  {get;set;}
 	public string bulletPrefab  {get;set;}
+	public float coolDownTime{get;set;}
 }

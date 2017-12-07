@@ -5,14 +5,16 @@
         "outForce": 1,
         "damageAmount": 1,
         "duration": 0.5,
-        "bulletPrefab ": "Prefabs/gas"
+        "bulletPrefab ": "Prefabs/gas",
+        "coolDownTime":1
     },
     "2":{
         "id": 2,
         "name": "real bullet",
-        "outForce": 4,
+        "outForce": 3,
         "damageAmount": 1,
-        "duration": 10,
-        "bulletPrefab": "Prefabs/RealBullet"
+        "duration": 3,
+        "bulletPrefab": "Prefabs/RealBullet",
+        "coolDownTime":1
     }
 }

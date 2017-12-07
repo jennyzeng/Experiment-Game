@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour
 {
     static ConfigDataBullet configData;
     float outForce = 1f;
+    // [HideInInspector]
+    public float coolDownTime=0.5f;
     float duration;
     [HideInInspector]
     int damageAmount;
@@ -26,6 +28,7 @@ public class Bullet : MonoBehaviour
         outForce = configData.outForce;
         damageAmount = configData.damageAmount;
         duration = configData.duration;
+        coolDownTime = configData.coolDownTime;
         if (!facingRight)
         {
             MathTools.Flip(transform);
