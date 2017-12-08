@@ -269,7 +269,7 @@ MonoBehaviour:
   maxSpeed: 0
   axis: Jump
   jumpVelocity: 5
-  maxJumpTime: 1
+  maxJumpTime: 3
 --- !u!114 &114225855466460054
 MonoBehaviour:
   m_ObjectHideFlags: 1
