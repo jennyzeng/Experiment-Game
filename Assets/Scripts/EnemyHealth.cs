@@ -16,8 +16,9 @@ public class EnemyHealth : Health
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
-    void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         GameObject healthBarGo = Instantiate(healthBarPrefab, transform);
         healthBar = healthBarGo.GetComponentInChildren<Slider>();
     }
@@ -26,9 +27,8 @@ public class EnemyHealth : Health
     /// Start is called on the frame when a script is enabled just before
     /// any of the Update methods is called the first time.
     /// </summary>
-    protected override void Start()
+    protected void Start()
     {
-        base.Start();
         if (transform.localScale.x < 0)
         {
             FlipHealthCanvas();

@@ -34,7 +34,7 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
              EnvironmentUtil.Instance.playerSpawnPoint.rotation);
         foreach(PlayerHealth health in player.GetComponentsInChildren<PlayerHealth>())
         {
-            if (health.enabled)
+            // if (health.enabled)
                 health.Initialize();
 
         }
