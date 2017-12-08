@@ -8,7 +8,12 @@ public abstract class Health : MonoBehaviour {
 	public float timeDisappearAfterDie;
 	public int curHP;
 	protected Animator anim;
-	protected virtual void Start () {
+
+	/// <summary>
+	/// Awake is called when the script instance is being loaded.
+	/// </summary>
+	protected virtual void Awake()
+	{
 		curHP = maxHP;
 		anim = GetComponent<Animator>();
 	}
@@ -35,7 +40,6 @@ public abstract class Health : MonoBehaviour {
 
 	protected virtual void DestroyAction()
 	{
-		Debug.Log("destroy it");
 		Destroy(gameObject);
 	}
 	protected virtual void OnDamage()

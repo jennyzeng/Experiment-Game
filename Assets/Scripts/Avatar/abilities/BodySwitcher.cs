@@ -51,7 +51,7 @@ public class BodySwitcher : PlayerAbility {
 	}
 	void SyncBody()
 	{
-		if (ball.activeSelf)
+		if (!_isHumanStatus)
 		{
 			_ballHealth.SyncHealth(_humanHealth);
 			ball.transform.position = human.transform.position+ defaultOffset;
@@ -61,7 +61,7 @@ public class BodySwitcher : PlayerAbility {
 		{
 			_humanHealth.SyncHealth(_ballHealth);
 			human.transform.position = ball.transform.position - defaultOffset;
-
+			return;
 		}
 	}
 }

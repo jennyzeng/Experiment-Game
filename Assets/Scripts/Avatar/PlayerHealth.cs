@@ -13,9 +13,8 @@ public class PlayerHealth : Health
     Color normalColor;
     SpriteRenderer spriteRenderer;
     private Color transColor = new Color(1f, 1f, 1f, 0.5f);
-    protected override void Start()
+    protected void Start()
     {
-        base.Start();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         normalColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
@@ -29,10 +28,12 @@ public class PlayerHealth : Health
         avoidDamageTimeDuration = anotherBodyHealth.avoidDamageTimeDuration;
         flashIntervalWhenDamge = anotherBodyHealth.flashIntervalWhenDamge;
         defendAmount = anotherBodyHealth.defendAmount;
+        maxHP= anotherBodyHealth.maxHP;
         curHP = anotherBodyHealth.curHP;
         hUDCanvas = anotherBodyHealth.hUDCanvas;
-        maxHP= anotherBodyHealth.maxHP;
+        OnHPchange(curHP);
         GetComponent<Rigidbody2D>().velocity = anotherBodyHealth.GetComponent<Rigidbody2D>().velocity;
+        
     }
     public void Initialize()
     {
@@ -43,18 +44,20 @@ public class PlayerHealth : Health
         {
             DataConfig(configData);
         }
+        Debug.Log("init");
         curHP = maxHP;
-        hUDCanvas = UIManager.Instance.GetCanvas<HUDCanvas>();
-        hUDCanvas.OnHPchange((float)curHP / maxHP);
+        OnHPchange(curHP);
+
         // transColor = new Color(spriteRenderer.color.r, spriteRenderer.color.g, spriteRenderer.color.b,
         //                 transparentAmount);
     }
 
-    void OnEnable()
-    {
-        hUDCanvas = UIManager.Instance.GetCanvas<HUDCanvas>();
-        hUDCanvas.OnHPchange((float)curHP / maxHP);
-    }
+    // void OnEnable()
+    // {
+    //     // Debug.Log("on enable");
+    //     // hUDCanvas = UIManager.Instance.GetCanvas<HUDCanvas>();
+    //     // hUDCanvas.OnHPchange((float)curHP / maxHP);
+    // }
     void DataConfig(ConfigDataPlayer configData)
     {
         maxHP = configData.maxHP;
