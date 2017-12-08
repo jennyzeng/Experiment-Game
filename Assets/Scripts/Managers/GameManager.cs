@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : SingletonBase<GameManager>
 {
     int score;
+    int levelScore;
     protected override void Init(){}
 
     /// <summary>
@@ -14,6 +15,7 @@ public class GameManager : SingletonBase<GameManager>
     /// </summary>
     void OnEnable()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         GameObjectManager.Instance.InitPlayer();
         OnScoreChange(score);
     }
@@ -30,10 +32,10 @@ public class GameManager : SingletonBase<GameManager>
 
     public void GameOver()
     {
-        UIManager.Instance.GetCanvas<HUDCanvas>().gameObject.SetActive(false);
+        UIManager.Instance.GetCanvas<HUDCanvas>().CloseCanvas();
         UIManager.Instance.GetCanvas<GameOverCanvas>().OpenCanvas(score);
+        InputManager.Instance.enabled = false;
     }
-
 
     public void RestartGame()
     {
@@ -41,11 +43,16 @@ public class GameManager : SingletonBase<GameManager>
         TODO: need further editing after levels are created
         https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html
          */
-        Destroy(GameObjectManager.Instance.player);
-        Destroy(gameObject);
-
-        SceneManager.LoadScene("avatarTest", LoadSceneMode.Single);
-
+        // Destroy(GameObjectManager.Instance.player);
+        GameObjectManager.Instance.OnRestartGame();
+        // Destroy(gameObject);
+        InputManager.Instance.enabled = true;
+        score = levelScore;
+        UIManager.Instance.GetCanvas<GameOverCanvas>().CloseCanvas();
+        Debug.Log(GameObjectManager.Instance.player);
+        UIManager.Instance.GetCanvas<HUDCanvas>().OpenCanvas(score);
+        // SceneManager.LoadScene("avatarTest", LoadSceneMode.Single);
+         SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
     }
 
     public void BackToMenu()
@@ -53,5 +60,9 @@ public class GameManager : SingletonBase<GameManager>
         Destroy(GameObjectManager.Instance.player);
         Destroy(gameObject);
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        levelScore = score;
     }
 }

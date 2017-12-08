@@ -7,7 +7,7 @@ public class MenuSceneControlCanvas : MonoBehaviour {
 
 	public void StartGame()
 	{
-		SceneManager.LoadScene("avatarTest");
+		SceneManager.LoadScene("LoadingScene");
 	}
 
 	public void About()

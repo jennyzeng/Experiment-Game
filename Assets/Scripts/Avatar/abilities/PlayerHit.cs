@@ -33,7 +33,7 @@ public class PlayerHit : PlayerAbility {
     public override void Action()
     {
 
-        if (Time.time - _lastTriggerTime >= coolDownTime && Input.GetButtonDown(axis))
+        if (Time.time - _lastTriggerTime >= bulletPrefab.coolDownTime && Input.GetButtonDown(axis))
         {
 
             animator.SetTrigger("Hit");

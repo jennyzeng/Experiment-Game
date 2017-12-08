@@ -16,6 +16,11 @@ public class GameOverCanvas : BaseCanvas {
 		finalScoreText.text = "SCORE: "+score.ToString();
 	}
 
+	public void CloseCanvas()
+	{
+		gameObject.SetActive(false);
+	}
+
 	public void RequestGameRestart()
 	{
 		GameManager.Instance.RestartGame();

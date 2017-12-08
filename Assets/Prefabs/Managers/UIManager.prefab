@@ -53,3 +53,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   preloadCanvasList:
   - {fileID: 114535792701161154, guid: 6c920613e80a74e35b46a9707bff8592, type: 2}
+  - {fileID: 114172808919178228, guid: 64d66b8e84d714ea28f2289ae774513f, type: 2}
