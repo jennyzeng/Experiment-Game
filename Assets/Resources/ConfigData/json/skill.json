@@ -29,6 +29,13 @@
         "name": "PlayerDoubleJump",
         "axis": "Jump",
         "consecutiveTimes": 2
+    },
+	 "6":{
+        "id": 6,
+        "name": "PlayerRollMove",
+        "axis": "Horizontal",
+		"maxSpeed": 500,
+        "coolDownTime":0
     }
 
 }
