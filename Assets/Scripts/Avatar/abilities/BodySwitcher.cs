@@ -10,13 +10,14 @@ public class BodySwitcher : PlayerAbility {
 	private PlayerHealth _humanHealth;
 	private bool _isHumanStatus;
 	private Vector3 defaultOffset;
-	
+    public bool canSwitchToBall;
 
     public override void Action()
     {
         if (Input.GetButtonDown(axis))
 		{
-			_isHumanStatus = !_isHumanStatus;
+            if (!canSwitchToBall) return;
+            _isHumanStatus = !_isHumanStatus;
 			ActiveHumanStatus(_isHumanStatus);
 			SyncBody();
 		}
@@ -42,10 +43,14 @@ public class BodySwitcher : PlayerAbility {
 		_isHumanStatus = true;
 		ActiveHumanStatus(_isHumanStatus);
 		defaultOffset = ball.transform.position-human.transform.position;
+        canSwitchToBall = false;
 	}
+
+
 	
 	void ActiveHumanStatus(bool active)
 	{
+        
 		ball.SetActive(!active);
 		human.SetActive(active);
 	}
