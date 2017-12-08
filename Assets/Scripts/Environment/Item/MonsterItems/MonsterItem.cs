@@ -20,7 +20,7 @@ public abstract class MonsterItem<T> : CollectableObject where T:PlayerAbility{
     {
         if (!enabled) return;
         T ability = OnAddComponent(player);
-        if(!ability.ID.Equals(abilityID)) 
+        if(ability!= null && !ability.ID.Equals(abilityID)) 
         {
             ability.ID = abilityID;
             ability.Initialize();

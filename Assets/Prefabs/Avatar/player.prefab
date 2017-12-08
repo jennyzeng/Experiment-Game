@@ -47,7 +47,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1375188252962404
 GameObject:
   m_ObjectHideFlags: 1
@@ -252,6 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 5
   timeDisappearAfterDie: 1
+  curHP: 0
   ID: 1
 --- !u!114 &114129702594896946
 MonoBehaviour:
@@ -268,7 +269,7 @@ MonoBehaviour:
   maxSpeed: 0
   axis: Jump
   jumpVelocity: 5
-  maxJumpTime: 1
+  maxJumpTime: 3
 --- !u!114 &114225855466460054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -299,6 +300,7 @@ MonoBehaviour:
   axis: SwitchBody
   human: {fileID: 1753498188166362}
   ball: {fileID: 1322057888106066}
+  canSwitchToBall: 0
 --- !u!114 &114608003897709920
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -359,6 +361,7 @@ MonoBehaviour:
   ID: 
   maxSpeed: 10
   axis: Horizontal
+  maxRunSpeed: 10
 --- !u!114 &114891186009162290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -372,6 +375,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 5
   timeDisappearAfterDie: 1
+  curHP: 0
   ID: 1
 --- !u!212 &212041995714228852
 SpriteRenderer:

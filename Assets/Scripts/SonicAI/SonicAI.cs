@@ -33,9 +33,11 @@ public class SonicAI : BaseAI
             moveRight = false;
         }
 
-        if (Vector2.Distance(playerTransform.transform.position, rigid.transform.position) <= 2f)
+        if (Vector2.Distance(playerTransform.transform.position, rigid.transform.position) == 0)
         {
             moveRight = false;
+            rigid.AddForce(Vector2.right * EnemySpeed * Time.deltaTime);
+
         }
 
 
@@ -47,7 +49,7 @@ public class SonicAI : BaseAI
         }
         if (!moveRight)
         {
-            rigid.AddForce(-Vector2.right * EnemySpeed * Time.deltaTime * 10);
+            rigid.AddForce(-Vector2.right * EnemySpeed * Time.deltaTime * 2);
             if (!facingRight) Flip();
 
         }
