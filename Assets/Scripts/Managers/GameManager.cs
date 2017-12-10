@@ -43,17 +43,13 @@ public class GameManager : SingletonBase<GameManager>
         TODO: need further editing after levels are created
         https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html
          */
-        // Destroy(GameObjectManager.Instance.player);
         GameObjectManager.Instance.OnRestartGame();
-        // Destroy(gameObject);
         InputManager.Instance.enabled = true;
         score = levelScore;
         UIManager.Instance.GetCanvas<GameOverCanvas>().CloseCanvas();
-        Debug.Log(GameObjectManager.Instance.player);
         UIManager.Instance.GetCanvas<HUDCanvas>().OpenCanvas(score);
         OnScoreChange(score);
-        // SceneManager.LoadScene("avatarTest", LoadSceneMode.Single);
-         SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+        SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
     }
 
     public void BackToMenu()
@@ -64,7 +60,7 @@ public class GameManager : SingletonBase<GameManager>
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name.Equals("EndingScene")|| scene.name.Equals("Menu"))
+        if (scene.name.Equals("EndingScene"))
         {
             Destroy(GameObjectManager.Instance.player);
             Destroy(gameObject);

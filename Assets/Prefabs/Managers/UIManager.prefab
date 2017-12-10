@@ -54,3 +54,4 @@ MonoBehaviour:
   preloadCanvasList:
   - {fileID: 114535792701161154, guid: 6c920613e80a74e35b46a9707bff8592, type: 2}
   - {fileID: 114172808919178228, guid: 64d66b8e84d714ea28f2289ae774513f, type: 2}
+  - {fileID: 114461415043031536, guid: 122d1320aa0d94a28a9cf4d9a52c9dd1, type: 2}

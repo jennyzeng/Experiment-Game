@@ -23,6 +23,7 @@ public class GameOverCanvas : BaseCanvas {
 
 	public void RequestGameRestart()
 	{
+		
 		GameManager.Instance.RestartGame();
 	}
 
