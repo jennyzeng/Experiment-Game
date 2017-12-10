@@ -90,7 +90,11 @@ public class PlayerHealth : Health
         }
         OnHPchange(curHP);
     }
-
+    public void ResetToFullHP()
+    {
+        curHP = maxHP;
+        OnHPchange(curHP);
+    }
     public bool IsFullHP()
     {
         return curHP == maxHP;

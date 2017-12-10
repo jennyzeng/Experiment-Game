@@ -61,6 +61,7 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         DestroyImmediate(player);
         player = Instantiate(playerCopy);
         player.SetActive(true);
+        player.GetComponentInChildren<PlayerHealth>().ResetToFullHP();
     }
     public void SetPlayerStartLocationOnScene()
     {   

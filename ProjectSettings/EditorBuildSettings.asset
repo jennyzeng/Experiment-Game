@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/_Scenes/about.unity
     guid: fffe2180c9e2345c7a120fc6408c966a
   - enabled: 1
-    path: Assets/_Scenes/LoadingScene.unity
-    guid: 5f472059b9cb8df4487766017651859d
+    path: Assets/_Scenes/IntroScene.unity
+    guid: 992aeecd052c64f3eb867635900e0418
   - enabled: 1
     path: Assets/_Scenes/tutorial.unity
     guid: 2a8a70d7766664a078e7734695c984a0
@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/BossTest.unity
     guid: 6dc0c85b1b9744cb0becbed13bd9377e
+  - enabled: 1
+    path: Assets/_Scenes/EndingScene.unity
+    guid: e688bb7d22199493b904aa2c3896f181

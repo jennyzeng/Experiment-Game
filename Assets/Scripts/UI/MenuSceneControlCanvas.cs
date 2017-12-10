@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuSceneControlCanvas : MonoBehaviour {
 
-	public void StartGame()
+	public void StartGame(string sceneName)
 	{
-		SceneManager.LoadScene("LoadingScene");
+		SceneManager.LoadScene(sceneName);
 	}
 
 	public void About()
