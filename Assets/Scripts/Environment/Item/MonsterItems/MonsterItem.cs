@@ -11,7 +11,6 @@ public abstract class MonsterItem<T> : CollectableObject where T:PlayerAbility{
     /// <param name="other">The Collision2D data associated with this collision.</param>
     void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log("called");
         if (other.gameObject.CompareTag("Player")){
 			OnBeingPickedUp(other.collider);
 		}

@@ -44,7 +44,6 @@ public class PlayerHealth : Health
         {
             DataConfig(configData);
         }
-        Debug.Log("init");
         curHP = maxHP;
         OnHPchange(curHP);
 

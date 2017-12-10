@@ -8,7 +8,7 @@ public class BodySwitcher : PlayerAbility {
 	public GameObject ball;
 	private PlayerHealth _ballHealth;
 	private PlayerHealth _humanHealth;
-	private bool _isHumanStatus;
+	public bool _isHumanStatus;
 	private Vector3 defaultOffset;
     public bool canSwitchToBall;
 
@@ -40,10 +40,10 @@ public class BodySwitcher : PlayerAbility {
 		base.Start();
 		_humanHealth = human.GetComponent<PlayerHealth>();
 		_ballHealth = ball.GetComponent<PlayerHealth>();
-		_isHumanStatus = true;
+		// _isHumanStatus = true;
 		ActiveHumanStatus(_isHumanStatus);
 		defaultOffset = ball.transform.position-human.transform.position;
-        canSwitchToBall = false;
+        // canSwitchToBall = false;
 	}
 
 

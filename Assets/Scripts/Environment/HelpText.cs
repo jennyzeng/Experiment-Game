@@ -10,7 +10,7 @@ public class HelpText : MonoBehaviour {
 	public string SortingLayerName = "Platform";
 	public int SortingOrder = 10;
 
-	void Awake ()
+	void Start ()
 	{
 		gameObject.GetComponent<MeshRenderer> ().sortingLayerName = SortingLayerName;
 		gameObject.GetComponent<MeshRenderer> ().sortingOrder = SortingOrder;
@@ -24,12 +24,11 @@ public class HelpText : MonoBehaviour {
 
 	void OnDisable()
 	{
-		EventManager.StopListening("test", listener);
+		// EventManager.StopListening("test", listener);
 	}
 
 	void TestFunction()
 	{
-		Debug.Log("Test function was called");
 		rigid.AddForce(Vector2.right, ForceMode2D.Impulse);
 	}
 }

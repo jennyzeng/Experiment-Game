@@ -60,7 +60,7 @@ public class GameManager : SingletonBase<GameManager>
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name.Equals("EndingScene"))
+        if (scene.name.Equals("EndingScene")|| scene.name.Equals("Menu"))
         {
             Destroy(GameObjectManager.Instance.player);
             Destroy(gameObject);

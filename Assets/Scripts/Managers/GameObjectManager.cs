@@ -54,6 +54,7 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         playerCopy = Instantiate(player, transform);
         playerCopy.SetActive(false);
         player.SetActive(true);
+        player.name = "Player";
     }
 
     public void OnRestartGame()

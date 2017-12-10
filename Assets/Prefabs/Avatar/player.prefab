@@ -300,6 +300,7 @@ MonoBehaviour:
   axis: SwitchBody
   human: {fileID: 1753498188166362}
   ball: {fileID: 1322057888106066}
+  _isHumanStatus: 1
   canSwitchToBall: 0
 --- !u!114 &114608003897709920
 MonoBehaviour:
