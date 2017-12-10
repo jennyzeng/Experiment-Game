@@ -133,11 +133,12 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &122968620 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1303856748961552, guid: 0f0068dae589d244eb18b984f21ee0e0,
+--- !u!114 &122968621 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114174574896796508, guid: 0f0068dae589d244eb18b984f21ee0e0,
     type: 2}
   m_PrefabInternal: {fileID: 1358638310}
+  m_Script: {fileID: 11500000, guid: bb1555a9d116d492fb39307a461ded2b, type: 3}
 --- !u!1001 &686691679
 Prefab:
   m_ObjectHideFlags: 0
@@ -347,12 +348,12 @@ Prefab:
     - target: {fileID: 224090254356463028, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.000000012768863
       objectReference: {fileID: 0}
     - target: {fileID: 224090254356463028, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5888504
+      value: 0.4264854
       objectReference: {fileID: 0}
     - target: {fileID: 224090254356463028, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
@@ -452,7 +453,7 @@ Prefab:
     - target: {fileID: 224118253995827154, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -153.80002
+      value: 175.69995
       objectReference: {fileID: 0}
     - target: {fileID: 114314958907294574, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
@@ -463,11 +464,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 122968620}
+      objectReference: {fileID: 122968621}
     - target: {fileID: 114561179750177960, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: OnNotes
       objectReference: {fileID: 0}
     - target: {fileID: 114314311132532858, guid: 0f0068dae589d244eb18b984f21ee0e0,
         type: 2}
@@ -514,6 +515,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224118253995827154, guid: 0f0068dae589d244eb18b984f21ee0e0,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 2390
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114314958907294574, guid: 0f0068dae589d244eb18b984f21ee0e0, type: 2}
