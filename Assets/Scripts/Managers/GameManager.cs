@@ -51,6 +51,7 @@ public class GameManager : SingletonBase<GameManager>
         UIManager.Instance.GetCanvas<GameOverCanvas>().CloseCanvas();
         Debug.Log(GameObjectManager.Instance.player);
         UIManager.Instance.GetCanvas<HUDCanvas>().OpenCanvas(score);
+        OnScoreChange(score);
         // SceneManager.LoadScene("avatarTest", LoadSceneMode.Single);
          SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
     }
