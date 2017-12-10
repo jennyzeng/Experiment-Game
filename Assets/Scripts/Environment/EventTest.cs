@@ -31,7 +31,7 @@ public class EventTest : MonoBehaviour {
 
 	void TestFunction()
 	{
-		target.y = -10;
+		target.y = -15;
 		Vector3 result = target;
 		triggered = true;
 		SetDestination (result, 2);
