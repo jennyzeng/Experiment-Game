@@ -11,10 +11,8 @@ public class EventTriggerTest : MonoBehaviour {
 	/// <param name="other">The other Collider2D involved in this collision.</param>
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		Debug.Log ("collided");
 		if (other.gameObject.layer == (LayerMask.NameToLayer("Bullets")))
 		{
-			Debug.Log ("triggered");
 			EventManager.TriggerEvent("Door");
 		}
 	}

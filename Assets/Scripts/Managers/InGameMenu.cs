@@ -10,25 +10,33 @@ public class InGameMenu : BaseCanvas
 
 	void Start()
 	{
-		InputManager.RegisterAction(axis, StopGame);
+		InputManager.RegisterAction(axis, StopGameAction);
 		gameObject.SetActive(false);
 	}
 
-    void StopGame()
+    public void StopGameAction()
     {
         if (Input.GetButtonDown(axis))
         {
-            if (Time.timeScale == 0)
-            {
-                Time.timeScale = 1;
-				gameObject.SetActive(false);
-            }
-            else
-            {
-                Time.timeScale = 0;
-				gameObject.SetActive(true);
-            }
+            StopGame();
+        }
+    }
+    public void StopGame()
+    {
+        if (Time.timeScale == 0)
+        {
+            ResumeGame();
+        }
+        else
+        {
+            Time.timeScale = 0;
+            gameObject.SetActive(true);
         }
     }
 
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
+        gameObject.SetActive(false);
+    }
 }

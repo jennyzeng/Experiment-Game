@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartScene : MonoBehaviour {
+public class TextScene : MonoBehaviour {
 
 	void Start () {
 		UIManager.Instance.gameObject.SetActive(false);

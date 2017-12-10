@@ -37,7 +37,8 @@ public class EnemyHealth : Health
     protected override void OnDie()
     {
         base.OnDie();
-        GetComponent<BaseAI>().enabled = false;
+        BaseAI ai = GetComponent<BaseAI>();
+        if (ai!=null) ai.enabled = false;
         Rigidbody2D rigid = GetComponent<Rigidbody2D>();
         rigid.velocity = new Vector2(0, rigid.velocity.y);
         enabled = false;
