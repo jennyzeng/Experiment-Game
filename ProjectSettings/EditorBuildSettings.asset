@@ -24,6 +24,18 @@ EditorBuildSettings:
     path: Assets/_Scenes/avatarTest.unity
     guid: 851d2cc7e6850428c9710009b101faac
   - enabled: 1
+    path: Assets/_Scenes/Level1-2 transition.unity
+    guid: f4a515c26512642f7b8399d37f3a8ae0
+  - enabled: 1
+    path: Assets/_Scenes/Level1TransitionText.unity
+    guid: 0ef0110b35aa84dfa991366141f2ffeb
+  - enabled: 1
+    path: Assets/_Scenes/Level2 map.unity
+    guid: 0ae913dfd7e0244cb95d440fb2131d4b
+  - enabled: 1
+    path: Assets/_Scenes/Level2TransitionText.unity
+    guid: 71dab29462fda46c1adcd25f2c731bbc
+  - enabled: 1
     path: Assets/_Scenes/BossTest.unity
     guid: 6dc0c85b1b9744cb0becbed13bd9377e
   - enabled: 1

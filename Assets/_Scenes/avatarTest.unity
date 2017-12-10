@@ -1814,7 +1814,7 @@ Prefab:
     - target: {fileID: 114370718145283672, guid: d174fcf69438dd945b9a072893284911,
         type: 2}
       propertyPath: nextSceneName
-      value: BossTest
+      value: Level1-2transition
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d174fcf69438dd945b9a072893284911, type: 2}
