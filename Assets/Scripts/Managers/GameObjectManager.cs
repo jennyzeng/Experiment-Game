@@ -53,6 +53,7 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
         player.SetActive(false);
         playerCopy = Instantiate(player, transform);
         playerCopy.SetActive(false);
+        playerCopy.name ="PlayerCopy";
         player.SetActive(true);
         player.name = "Player";
     }

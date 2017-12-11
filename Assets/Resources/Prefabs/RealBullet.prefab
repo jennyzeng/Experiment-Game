@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 70598909762189942}
   - component: {fileID: 50337563074246434}
   - component: {fileID: 114412473014575406}
+  - component: {fileID: 82087969853995872}
   m_Layer: 12
   m_Name: RealBullet
   m_TagString: Untagged
@@ -79,6 +80,86 @@ CapsuleCollider2D:
   m_Offset: {x: 0.68790513, y: -0.20209414}
   m_Size: {x: 1.3758134, y: 0.45870355}
   m_Direction: 1
+--- !u!82 &82087969853995872
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1435759089827874}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7070c7650ef944be299d730c91334db9, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95800858065813504
 Animator:
   serializedVersion: 3
@@ -107,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a3bb0973aef42a982690b0381e12f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coolDownTime: 0.5
 --- !u!212 &212882790895393774
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -37,6 +37,10 @@ public class AboutCanvas : MonoBehaviour
     {
         SwitchText(configData.notes);
     }
+    public void OnWebsite(string websitelink)
+    {
+        Application.OpenURL(websitelink);
+    }
 
     void SwitchText(string newText)
     {

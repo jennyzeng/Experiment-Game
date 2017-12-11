@@ -3,7 +3,7 @@
         "id": 1,
         "name": "gas bullet",
         "outForce": 1,
-        "damageAmount": 1,
+        "damageAmount": 2,
         "duration": 0.5,
         "bulletPrefab ": "Prefabs/gas",
         "coolDownTime":1
