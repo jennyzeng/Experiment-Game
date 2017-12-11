@@ -82,5 +82,6 @@ public class GameObjectManager : SingletonBase<GameObjectManager>
             SetPlayerStartLocationOnScene();
         }
         UpdatePlayerCopy(player);
+        SetPlayerStartLocationOnScene();
     }
 }
